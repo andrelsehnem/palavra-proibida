@@ -60,3 +60,6 @@ GoogleService-Info.plist
 .idea/
 .vscode/
 *.tmp
+
+android/keystore.properties
+KEYSTORE_INFO.txt

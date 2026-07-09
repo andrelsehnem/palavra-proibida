@@ -1,6 +1,6 @@
 {
   "name": "palavra-proibida",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "main": "index.ts",
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.19.4",

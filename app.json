@@ -2,7 +2,7 @@
   "expo": {
     "name": "palavra-proibida",
     "slug": "palavra-proibida",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -15,7 +15,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "dev.andre100.palavrasproibidas",
+      "package": "dev.andre100.palavraproibida",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
