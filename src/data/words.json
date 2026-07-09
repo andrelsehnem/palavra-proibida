@@ -1,0 +1,7274 @@
+{
+  "pt-br": {
+    "animais": [
+      {
+        "mainWord": "gato",
+        "forbiddenWords": [
+          "felino",
+          "bigode",
+          "miar",
+          "rato",
+          "animal"
+        ]
+      },
+      {
+        "mainWord": "cachorro",
+        "forbiddenWords": [
+          "latir",
+          "osso",
+          "pet",
+          "cao",
+          "coleira"
+        ]
+      },
+      {
+        "mainWord": "elefante",
+        "forbiddenWords": [
+          "tromba",
+          "grande",
+          "cinza",
+          "presa",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "tubarao",
+        "forbiddenWords": [
+          "mar",
+          "nadadeira",
+          "dente",
+          "peixe",
+          "oceano"
+        ]
+      },
+      {
+        "mainWord": "coruja",
+        "forbiddenWords": [
+          "noturno",
+          "ave",
+          "olhos",
+          "voar",
+          "sabia"
+        ]
+      },
+      {
+        "mainWord": "cavalo",
+        "forbiddenWords": [
+          "montar",
+          "sela",
+          "haras",
+          "galopar",
+          "equino"
+        ]
+      },
+      {
+        "mainWord": "girafa",
+        "forbiddenWords": [
+          "pescoco",
+          "alta",
+          "savana",
+          "manchas",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "panda",
+        "forbiddenWords": [
+          "preto",
+          "branco",
+          "bambu",
+          "china",
+          "urso"
+        ]
+      },
+      {
+        "mainWord": "raposa",
+        "forbiddenWords": [
+          "astuta",
+          "cauda",
+          "laranja",
+          "selvagem",
+          "toca"
+        ]
+      },
+      {
+        "mainWord": "crocodilo",
+        "forbiddenWords": [
+          "reptil",
+          "rio",
+          "jacare",
+          "dentes",
+          "escamas"
+        ]
+      },
+      {
+        "mainWord": "golfinho",
+        "forbiddenWords": [
+          "oceano",
+          "mamifero",
+          "saltar",
+          "inteligente",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "coelho",
+        "forbiddenWords": [
+          "cenoura",
+          "orelha",
+          "pular",
+          "fofo",
+          "toca"
+        ]
+      },
+      {
+        "mainWord": "leao",
+        "forbiddenWords": [
+          "selva",
+          "juba",
+          "rei",
+          "rugido",
+          "felino"
+        ]
+      },
+      {
+        "mainWord": "zebra",
+        "forbiddenWords": [
+          "listras",
+          "preto",
+          "branco",
+          "savana",
+          "equino"
+        ]
+      },
+      {
+        "mainWord": "urso",
+        "forbiddenWords": [
+          "floresta",
+          "hibernar",
+          "grande",
+          "patas",
+          "mamifero"
+        ]
+      },
+      {
+        "mainWord": "macaco",
+        "forbiddenWords": [
+          "arvore",
+          "banana",
+          "selva",
+          "primata",
+          "cauda"
+        ]
+      },
+      {
+        "mainWord": "lobo",
+        "forbiddenWords": [
+          "alcateia",
+          "uivar",
+          "selvagem",
+          "floresta",
+          "canino"
+        ]
+      },
+      {
+        "mainWord": "tartaruga",
+        "forbiddenWords": [
+          "casco",
+          "lenta",
+          "mar",
+          "reptil",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "aguia",
+        "forbiddenWords": [
+          "ave",
+          "ceu",
+          "garras",
+          "voar",
+          "rapina"
+        ]
+      },
+      {
+        "mainWord": "cobra",
+        "forbiddenWords": [
+          "veneno",
+          "reptil",
+          "rastejar",
+          "morder",
+          "escamas"
+        ]
+      }
+    ],
+    "trabalho": [
+      {
+        "mainWord": "medico",
+        "forbiddenWords": [
+          "hospital",
+          "paciente",
+          "consulta",
+          "saude",
+          "doutor"
+        ]
+      },
+      {
+        "mainWord": "professor",
+        "forbiddenWords": [
+          "escola",
+          "aula",
+          "aluno",
+          "ensinar",
+          "quadro"
+        ]
+      },
+      {
+        "mainWord": "programador",
+        "forbiddenWords": [
+          "codigo",
+          "software",
+          "computador",
+          "bug",
+          "aplicativo"
+        ]
+      },
+      {
+        "mainWord": "cozinheiro",
+        "forbiddenWords": [
+          "cozinha",
+          "receita",
+          "restaurante",
+          "chef",
+          "panela"
+        ]
+      },
+      {
+        "mainWord": "piloto",
+        "forbiddenWords": [
+          "aviao",
+          "voo",
+          "cockpit",
+          "aeroporto",
+          "decolar"
+        ]
+      },
+      {
+        "mainWord": "bombeiro",
+        "forbiddenWords": [
+          "fogo",
+          "incendio",
+          "mangueira",
+          "resgate",
+          "sirene"
+        ]
+      },
+      {
+        "mainWord": "engenheiro",
+        "forbiddenWords": [
+          "obra",
+          "calculo",
+          "projeto",
+          "construcao",
+          "tecnico"
+        ]
+      },
+      {
+        "mainWord": "advogado",
+        "forbiddenWords": [
+          "lei",
+          "tribunal",
+          "cliente",
+          "processo",
+          "juiz"
+        ]
+      },
+      {
+        "mainWord": "arquiteto",
+        "forbiddenWords": [
+          "planta",
+          "predio",
+          "design",
+          "projeto",
+          "urbanismo"
+        ]
+      },
+      {
+        "mainWord": "jornalista",
+        "forbiddenWords": [
+          "noticia",
+          "reportagem",
+          "entrevista",
+          "imprensa",
+          "camera"
+        ]
+      },
+      {
+        "mainWord": "dentista",
+        "forbiddenWords": [
+          "dente",
+          "consultorio",
+          "sorriso",
+          "canal",
+          "boca"
+        ]
+      },
+      {
+        "mainWord": "motorista",
+        "forbiddenWords": [
+          "carro",
+          "volante",
+          "transito",
+          "corrida",
+          "passageiro"
+        ]
+      },
+      {
+        "mainWord": "vendedor",
+        "forbiddenWords": [
+          "loja",
+          "cliente",
+          "produto",
+          "venda",
+          "meta"
+        ]
+      },
+      {
+        "mainWord": "enfermeiro",
+        "forbiddenWords": [
+          "hospital",
+          "paciente",
+          "cuidado",
+          "plantao",
+          "medicacao"
+        ]
+      },
+      {
+        "mainWord": "contador",
+        "forbiddenWords": [
+          "imposto",
+          "empresa",
+          "planilha",
+          "financeiro",
+          "balanco"
+        ]
+      },
+      {
+        "mainWord": "policial",
+        "forbiddenWords": [
+          "delegacia",
+          "farda",
+          "seguranca",
+          "prisao",
+          "viatura"
+        ]
+      },
+      {
+        "mainWord": "designer",
+        "forbiddenWords": [
+          "criativo",
+          "layout",
+          "arte",
+          "tipografia",
+          "interface"
+        ]
+      },
+      {
+        "mainWord": "cientista",
+        "forbiddenWords": [
+          "laboratorio",
+          "pesquisa",
+          "experimento",
+          "teoria",
+          "descoberta"
+        ]
+      },
+      {
+        "mainWord": "fotografo",
+        "forbiddenWords": [
+          "camera",
+          "lente",
+          "ensaio",
+          "flash",
+          "imagem"
+        ]
+      },
+      {
+        "mainWord": "ator",
+        "forbiddenWords": [
+          "filme",
+          "teatro",
+          "personagem",
+          "cena",
+          "papel"
+        ]
+      }
+    ],
+    "objetos": [
+      {
+        "mainWord": "cadeira",
+        "forbiddenWords": [
+          "sentar",
+          "encosto",
+          "mesa",
+          "quatro",
+          "perna"
+        ]
+      },
+      {
+        "mainWord": "guarda chuva",
+        "forbiddenWords": [
+          "chuva",
+          "molhar",
+          "abrir",
+          "cabo",
+          "tempestade"
+        ]
+      },
+      {
+        "mainWord": "tesoura",
+        "forbiddenWords": [
+          "cortar",
+          "papel",
+          "duas",
+          "lamina",
+          "escritorio"
+        ]
+      },
+      {
+        "mainWord": "relogio",
+        "forbiddenWords": [
+          "hora",
+          "pulso",
+          "ponteiro",
+          "tempo",
+          "alarme"
+        ]
+      },
+      {
+        "mainWord": "espelho",
+        "forbiddenWords": [
+          "reflexo",
+          "vidro",
+          "rosto",
+          "imagem",
+          "banheiro"
+        ]
+      },
+      {
+        "mainWord": "carregador",
+        "forbiddenWords": [
+          "celular",
+          "energia",
+          "cabo",
+          "bateria",
+          "tomada"
+        ]
+      },
+      {
+        "mainWord": "mochila",
+        "forbiddenWords": [
+          "costas",
+          "ziper",
+          "escola",
+          "bolso",
+          "alca"
+        ]
+      },
+      {
+        "mainWord": "lampada",
+        "forbiddenWords": [
+          "luz",
+          "energia",
+          "teto",
+          "iluminar",
+          "quebrar"
+        ]
+      },
+      {
+        "mainWord": "panela",
+        "forbiddenWords": [
+          "cozinhar",
+          "fogao",
+          "tampa",
+          "comida",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "martelo",
+        "forbiddenWords": [
+          "prego",
+          "bater",
+          "ferramenta",
+          "obra",
+          "madeira"
+        ]
+      },
+      {
+        "mainWord": "oculos",
+        "forbiddenWords": [
+          "visao",
+          "lente",
+          "armao",
+          "grau",
+          "enxergar"
+        ]
+      },
+      {
+        "mainWord": "garrafa",
+        "forbiddenWords": [
+          "agua",
+          "beber",
+          "plastico",
+          "tampa",
+          "liquido"
+        ]
+      },
+      {
+        "mainWord": "caderno",
+        "forbiddenWords": [
+          "folha",
+          "escrever",
+          "escola",
+          "anotacao",
+          "espiral"
+        ]
+      },
+      {
+        "mainWord": "caneta",
+        "forbiddenWords": [
+          "tinta",
+          "escrever",
+          "papel",
+          "azul",
+          "tampa"
+        ]
+      },
+      {
+        "mainWord": "chave",
+        "forbiddenWords": [
+          "porta",
+          "fechadura",
+          "abrir",
+          "metal",
+          "casa"
+        ]
+      },
+      {
+        "mainWord": "teclado",
+        "forbiddenWords": [
+          "computador",
+          "digitar",
+          "teclas",
+          "mouse",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "mouse",
+        "forbiddenWords": [
+          "cursor",
+          "computador",
+          "clicar",
+          "teclado",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "toalha",
+        "forbiddenWords": [
+          "banho",
+          "secar",
+          "tecido",
+          "corpo",
+          "toalheiro"
+        ]
+      },
+      {
+        "mainWord": "copo",
+        "forbiddenWords": [
+          "beber",
+          "vidro",
+          "agua",
+          "liquido",
+          "cozinha"
+        ]
+      },
+      {
+        "mainWord": "travesseiro",
+        "forbiddenWords": [
+          "cama",
+          "sono",
+          "cabeca",
+          "dormir",
+          "macio"
+        ]
+      },
+      {
+        "mainWord": "geladeira",
+        "forbiddenWords": [
+          "frio",
+          "cozinha",
+          "comida",
+          "porta",
+          "freezer"
+        ]
+      },
+      {
+        "mainWord": "sofá",
+        "forbiddenWords": [
+          "sala",
+          "sentar",
+          "almofada",
+          "conforto",
+          "estofar"
+        ]
+      },
+      {
+        "mainWord": "ventilador",
+        "forbiddenWords": [
+          "vento",
+          "calor",
+          "helice",
+          "ligar",
+          "ar"
+        ]
+      },
+      {
+        "mainWord": "televisao",
+        "forbiddenWords": [
+          "canal",
+          "controle",
+          "filme",
+          "tela",
+          "assistir"
+        ]
+      },
+      {
+        "mainWord": "controle remoto",
+        "forbiddenWords": [
+          "televisao",
+          "botao",
+          "pilha",
+          "canal",
+          "distancia"
+        ]
+      },
+      {
+        "mainWord": "fogao",
+        "forbiddenWords": [
+          "cozinhar",
+          "gas",
+          "boca",
+          "panela",
+          "fogo"
+        ]
+      },
+      {
+        "mainWord": "microondas",
+        "forbiddenWords": [
+          "aquecer",
+          "comida",
+          "cozinha",
+          "prato",
+          "timer"
+        ]
+      },
+      {
+        "mainWord": "aspirador",
+        "forbiddenWords": [
+          "poeira",
+          "limpeza",
+          "sugar",
+          "casa",
+          "chao"
+        ]
+      },
+      {
+        "mainWord": "vassoura",
+        "forbiddenWords": [
+          "varrer",
+          "chao",
+          "limpeza",
+          "cabo",
+          "sujeira"
+        ]
+      },
+      {
+        "mainWord": "rodo",
+        "forbiddenWords": [
+          "agua",
+          "limpeza",
+          "puxar",
+          "chao",
+          "secar"
+        ]
+      },
+      {
+        "mainWord": "escova",
+        "forbiddenWords": [
+          "cabelo",
+          "pentear",
+          "cerdas",
+          "banheiro",
+          "desembaracar"
+        ]
+      },
+      {
+        "mainWord": "pente",
+        "forbiddenWords": [
+          "cabelo",
+          "dentes",
+          "pentear",
+          "beleza",
+          "fio"
+        ]
+      },
+      {
+        "mainWord": "sabonete",
+        "forbiddenWords": [
+          "banho",
+          "limpeza",
+          "espuma",
+          "perfume",
+          "lavar"
+        ]
+      },
+      {
+        "mainWord": "shampoo",
+        "forbiddenWords": [
+          "cabelo",
+          "banho",
+          "lavar",
+          "frasco",
+          "espuma"
+        ]
+      },
+      {
+        "mainWord": "escova de dentes",
+        "forbiddenWords": [
+          "dente",
+          "pasta",
+          "banheiro",
+          "higiene",
+          "escovar"
+        ]
+      },
+      {
+        "mainWord": "pasta de dente",
+        "forbiddenWords": [
+          "escova",
+          "higiene",
+          "menta",
+          "dente",
+          "tubo"
+        ]
+      },
+      {
+        "mainWord": "bicicleta",
+        "forbiddenWords": [
+          "pedal",
+          "roda",
+          "ciclista",
+          "guidao",
+          "corrente"
+        ]
+      },
+      {
+        "mainWord": "capacete",
+        "forbiddenWords": [
+          "cabeca",
+          "seguranca",
+          "moto",
+          "protecao",
+          "usar"
+        ]
+      },
+      {
+        "mainWord": "mala",
+        "forbiddenWords": [
+          "viagem",
+          "roupa",
+          "rodinha",
+          "bagagem",
+          "aeroporto"
+        ]
+      },
+      {
+        "mainWord": "elevador",
+        "forbiddenWords": [
+          "andar",
+          "predio",
+          "subir",
+          "descer",
+          "porta"
+        ]
+      },
+      {
+        "mainWord": "escada",
+        "forbiddenWords": [
+          "degrau",
+          "subir",
+          "descer",
+          "andar",
+          "altura"
+        ]
+      },
+      {
+        "mainWord": "janela",
+        "forbiddenWords": [
+          "vidro",
+          "abrir",
+          "casa",
+          "cortina",
+          "vista"
+        ]
+      },
+      {
+        "mainWord": "cortina",
+        "forbiddenWords": [
+          "janela",
+          "tecido",
+          "fechar",
+          "sala",
+          "luz"
+        ]
+      },
+      {
+        "mainWord": "tapete",
+        "forbiddenWords": [
+          "chao",
+          "sala",
+          "tecido",
+          "pisar",
+          "decoracao"
+        ]
+      },
+      {
+        "mainWord": "quadro",
+        "forbiddenWords": [
+          "parede",
+          "imagem",
+          "arte",
+          "moldura",
+          "decoracao"
+        ]
+      },
+      {
+        "mainWord": "livro",
+        "forbiddenWords": [
+          "ler",
+          "pagina",
+          "historia",
+          "autor",
+          "biblioteca"
+        ]
+      },
+      {
+        "mainWord": "borracha",
+        "forbiddenWords": [
+          "apagar",
+          "lapis",
+          "escola",
+          "erro",
+          "papel"
+        ]
+      },
+      {
+        "mainWord": "lapis",
+        "forbiddenWords": [
+          "escrever",
+          "grafite",
+          "apontar",
+          "papel",
+          "desenho"
+        ]
+      },
+      {
+        "mainWord": "apontador",
+        "forbiddenWords": [
+          "lapis",
+          "grafite",
+          "afiar",
+          "escola",
+          "madeira"
+        ]
+      },
+      {
+        "mainWord": "calculadora",
+        "forbiddenWords": [
+          "conta",
+          "numero",
+          "somar",
+          "tecla",
+          "resultado"
+        ]
+      },
+      {
+        "mainWord": "impressora",
+        "forbiddenWords": [
+          "papel",
+          "tinta",
+          "documento",
+          "computador",
+          "imprimir"
+        ]
+      },
+      {
+        "mainWord": "monitor",
+        "forbiddenWords": [
+          "tela",
+          "computador",
+          "imagem",
+          "video",
+          "display"
+        ]
+      },
+      {
+        "mainWord": "pendrive",
+        "forbiddenWords": [
+          "usb",
+          "arquivo",
+          "armazenamento",
+          "computador",
+          "dados"
+        ]
+      },
+      {
+        "mainWord": "fone de ouvido",
+        "forbiddenWords": [
+          "musica",
+          "ouvido",
+          "som",
+          "escutar",
+          "cabo"
+        ]
+      },
+      {
+        "mainWord": "caixa de som",
+        "forbiddenWords": [
+          "musica",
+          "audio",
+          "alto",
+          "som",
+          "volume"
+        ]
+      },
+      {
+        "mainWord": "violao",
+        "forbiddenWords": [
+          "corda",
+          "musica",
+          "tocar",
+          "instrumento",
+          "acorde"
+        ]
+      },
+      {
+        "mainWord": "microfone",
+        "forbiddenWords": [
+          "voz",
+          "som",
+          "cantar",
+          "audio",
+          "gravar"
+        ]
+      },
+      {
+        "mainWord": "camera",
+        "forbiddenWords": [
+          "foto",
+          "imagem",
+          "lente",
+          "gravar",
+          "flash"
+        ]
+      },
+      {
+        "mainWord": "lanterna",
+        "forbiddenWords": [
+          "luz",
+          "escuro",
+          "pilha",
+          "iluminar",
+          "mão"
+        ]
+      },
+      {
+        "mainWord": "vela",
+        "forbiddenWords": [
+          "fogo",
+          "cera",
+          "acender",
+          "luz",
+          "derreter"
+        ]
+      },
+      {
+        "mainWord": "isqueiro",
+        "forbiddenWords": [
+          "fogo",
+          "acender",
+          "gas",
+          "chama",
+          "cigarro"
+        ]
+      },
+      {
+        "mainWord": "cofre",
+        "forbiddenWords": [
+          "dinheiro",
+          "senha",
+          "seguranca",
+          "guardar",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "carteira",
+        "forbiddenWords": [
+          "dinheiro",
+          "documento",
+          "bolso",
+          "cartao",
+          "guardar"
+        ]
+      },
+      {
+        "mainWord": "anel",
+        "forbiddenWords": [
+          "dedo",
+          "joia",
+          "casamento",
+          "ouro",
+          "usar"
+        ]
+      },
+      {
+        "mainWord": "colar",
+        "forbiddenWords": [
+          "pescoço",
+          "joia",
+          "corrente",
+          "usar",
+          "acessorio"
+        ]
+      },
+      {
+        "mainWord": "guarda roupa",
+        "forbiddenWords": [
+          "roupa",
+          "porta",
+          "quarto",
+          "cabide",
+          "armario"
+        ]
+      },
+      {
+        "mainWord": "cabide",
+        "forbiddenWords": [
+          "roupa",
+          "armario",
+          "pendurar",
+          "gancho",
+          "quarto"
+        ]
+      },
+      {
+        "mainWord": "abajur",
+        "forbiddenWords": [
+          "luz",
+          "quarto",
+          "mesa",
+          "lampada",
+          "iluminar"
+        ]
+      },
+      {
+        "mainWord": "despertador",
+        "forbiddenWords": [
+          "acordar",
+          "alarme",
+          "hora",
+          "sono",
+          "manha"
+        ]
+      },
+      {
+        "mainWord": "termometro",
+        "forbiddenWords": [
+          "temperatura",
+          "febre",
+          "medir",
+          "calor",
+          "grau"
+        ]
+      }
+    ],
+    "geral": [
+      {
+        "mainWord": "pastel",
+        "forbiddenWords": [
+          "comida",
+          "feira",
+          "frito",
+          "massa",
+          "recheio"
+        ]
+      },
+      {
+        "mainWord": "praia",
+        "forbiddenWords": [
+          "areia",
+          "mar",
+          "sol",
+          "onda",
+          "verao"
+        ]
+      },
+      {
+        "mainWord": "amizade",
+        "forbiddenWords": [
+          "amigo",
+          "parceria",
+          "confianca",
+          "companheiro",
+          "lealdade"
+        ]
+      },
+      {
+        "mainWord": "aniversario",
+        "forbiddenWords": [
+          "festa",
+          "bolo",
+          "vela",
+          "presente",
+          "parabens"
+        ]
+      },
+      {
+        "mainWord": "cozinha",
+        "forbiddenWords": [
+          "fogao",
+          "panela",
+          "comida",
+          "receita",
+          "casa"
+        ]
+      },
+      {
+        "mainWord": "internet",
+        "forbiddenWords": [
+          "site",
+          "rede",
+          "online",
+          "wifi",
+          "navegar"
+        ]
+      },
+      {
+        "mainWord": "mercado",
+        "forbiddenWords": [
+          "compras",
+          "carrinho",
+          "caixa",
+          "supermercado",
+          "produto"
+        ]
+      },
+      {
+        "mainWord": "escola",
+        "forbiddenWords": [
+          "aluno",
+          "professor",
+          "aula",
+          "prova",
+          "uniforme"
+        ]
+      },
+      {
+        "mainWord": "hospital",
+        "forbiddenWords": [
+          "medico",
+          "emergencia",
+          "enfermeiro",
+          "doenca",
+          "leito"
+        ]
+      },
+      {
+        "mainWord": "futuro",
+        "forbiddenWords": [
+          "amanha",
+          "tempo",
+          "plano",
+          "destino",
+          "objetivo"
+        ]
+      },
+      {
+        "mainWord": "musica",
+        "forbiddenWords": [
+          "som",
+          "ritmo",
+          "cantor",
+          "instrumento",
+          "melodia"
+        ]
+      },
+      {
+        "mainWord": "viagem",
+        "forbiddenWords": [
+          "mala",
+          "destino",
+          "passeio",
+          "aviao",
+          "turismo"
+        ]
+      },
+      {
+        "mainWord": "familia",
+        "forbiddenWords": [
+          "pai",
+          "mae",
+          "filhos",
+          "casa",
+          "parentes"
+        ]
+      },
+      {
+        "mainWord": "tempo",
+        "forbiddenWords": [
+          "horas",
+          "relampago",
+          "passar",
+          "relogio",
+          "minuto"
+        ]
+      },
+      {
+        "mainWord": "chuva",
+        "forbiddenWords": [
+          "agua",
+          "nuvem",
+          "molhar",
+          "tempestade",
+          "garoa"
+        ]
+      },
+      {
+        "mainWord": "jardim",
+        "forbiddenWords": [
+          "flores",
+          "plantas",
+          "grama",
+          "quintal",
+          "rega"
+        ]
+      },
+      {
+        "mainWord": "cidade",
+        "forbiddenWords": [
+          "rua",
+          "predio",
+          "transito",
+          "urbano",
+          "bairro"
+        ]
+      },
+      {
+        "mainWord": "parque",
+        "forbiddenWords": [
+          "arvores",
+          "lazer",
+          "brincar",
+          "grama",
+          "banco"
+        ]
+      },
+      {
+        "mainWord": "janela",
+        "forbiddenWords": [
+          "vidro",
+          "casa",
+          "abrir",
+          "cortina",
+          "vista"
+        ]
+      },
+      {
+        "mainWord": "porta",
+        "forbiddenWords": [
+          "entrada",
+          "fechar",
+          "chave",
+          "casa",
+          "batente"
+        ]
+      },
+      {
+        "mainWord": "saudade",
+        "forbiddenWords": [
+          "distancia",
+          "longe",
+          "falta",
+          "memoria",
+          "sentir"
+        ]
+      },
+      {
+        "mainWord": "medo",
+        "forbiddenWords": [
+          "susto",
+          "escuro",
+          "panico",
+          "terror",
+          "coragem"
+        ]
+      },
+      {
+        "mainWord": "sonho",
+        "forbiddenWords": [
+          "dormir",
+          "noite",
+          "pesadelo",
+          "desejo",
+          "imaginacao"
+        ]
+      },
+      {
+        "mainWord": "raiva",
+        "forbiddenWords": [
+          "bravo",
+          "gritar",
+          "nervoso",
+          "irritado",
+          "emocao"
+        ]
+      },
+      {
+        "mainWord": "ciume",
+        "forbiddenWords": [
+          "inveja",
+          "desconfianca",
+          "possessivo",
+          "relacionamento",
+          "amor"
+        ]
+      },
+      {
+        "mainWord": "alegria",
+        "forbiddenWords": [
+          "feliz",
+          "sorriso",
+          "animado",
+          "festa",
+          "humor"
+        ]
+      },
+      {
+        "mainWord": "tristeza",
+        "forbiddenWords": [
+          "chorar",
+          "triste",
+          "dor",
+          "sofrimento",
+          "lagrima"
+        ]
+      },
+      {
+        "mainWord": "vergonha",
+        "forbiddenWords": [
+          "envergonhado",
+          "situacao",
+          "constrangimento",
+          "timido",
+          "rubor"
+        ]
+      },
+      {
+        "mainWord": "orgulho",
+        "forbiddenWords": [
+          "conquista",
+          "filho",
+          "vaidade",
+          "merecimento",
+          "arrogancia"
+        ]
+      },
+      {
+        "mainWord": "esperanca",
+        "forbiddenWords": [
+          "futuro",
+          "fé",
+          "otimismo",
+          "acreditar",
+          "aguardar"
+        ]
+      },
+      {
+        "mainWord": "solidao",
+        "forbiddenWords": [
+          "sozinho",
+          "isolamento",
+          "silencio",
+          "abandono",
+          "vazio"
+        ]
+      },
+      {
+        "mainWord": "ansiedade",
+        "forbiddenWords": [
+          "nervoso",
+          "preocupacao",
+          "aperto",
+          "sufoco",
+          "tensao"
+        ]
+      },
+      {
+        "mainWord": "amor",
+        "forbiddenWords": [
+          "casal",
+          "sentimento",
+          "carinho",
+          "apaixonado",
+          "coração"
+        ]
+      },
+      {
+        "mainWord": "odio",
+        "forbiddenWords": [
+          "rancor",
+          "raiva",
+          "sentimento",
+          "inimigo",
+          "aversao"
+        ]
+      },
+      {
+        "mainWord": "paz",
+        "forbiddenWords": [
+          "tranquilo",
+          "calma",
+          "guerra",
+          "silencio",
+          "harmonia"
+        ]
+      },
+      {
+        "mainWord": "liberdade",
+        "forbiddenWords": [
+          "livre",
+          "preso",
+          "escolha",
+          "independencia",
+          "asas"
+        ]
+      },
+      {
+        "mainWord": "mentira",
+        "forbiddenWords": [
+          "enganar",
+          "verdade",
+          "falso",
+          "fingir",
+          "iludir"
+        ]
+      },
+      {
+        "mainWord": "segredo",
+        "forbiddenWords": [
+          "guardar",
+          "revelar",
+          "esconder",
+          "silencio",
+          "contar"
+        ]
+      },
+      {
+        "mainWord": "traicao",
+        "forbiddenWords": [
+          "trair",
+          "deslealdade",
+          "confiar",
+          "casal",
+          "amigo"
+        ]
+      },
+      {
+        "mainWord": "perdao",
+        "forbiddenWords": [
+          "desculpa",
+          "erro",
+          "reconciliacao",
+          "magoa",
+          "superar"
+        ]
+      },
+      {
+        "mainWord": "natal",
+        "forbiddenWords": [
+          "dezembro",
+          "familia",
+          "presente",
+          "arvore",
+          "papai noel"
+        ]
+      },
+      {
+        "mainWord": "carnaval",
+        "forbiddenWords": [
+          "folia",
+          "fantasia",
+          "bloco",
+          "samba",
+          "confete"
+        ]
+      },
+      {
+        "mainWord": "feriado",
+        "forbiddenWords": [
+          "descanso",
+          "folga",
+          "dia",
+          "trabalho",
+          "calendario"
+        ]
+      },
+      {
+        "mainWord": "ferias",
+        "forbiddenWords": [
+          "descanso",
+          "viagem",
+          "folga",
+          "verao",
+          "escola"
+        ]
+      },
+      {
+        "mainWord": "casamento",
+        "forbiddenWords": [
+          "noiva",
+          "altar",
+          "uniao",
+          "festa",
+          "anel"
+        ]
+      },
+      {
+        "mainWord": "divorcio",
+        "forbiddenWords": [
+          "separacao",
+          "casal",
+          "termino",
+          "advogado",
+          "partilha"
+        ]
+      },
+      {
+        "mainWord": "gravidez",
+        "forbiddenWords": [
+          "bebe",
+          "barriga",
+          "mae",
+          "gestacao",
+          "parto"
+        ]
+      },
+      {
+        "mainWord": "aposentadoria",
+        "forbiddenWords": [
+          "descanso",
+          "velhice",
+          "pensao",
+          "trabalho",
+          "INSS"
+        ]
+      },
+      {
+        "mainWord": "formatura",
+        "forbiddenWords": [
+          "diploma",
+          "beca",
+          "faculdade",
+          "conclusao",
+          "festa"
+        ]
+      },
+      {
+        "mainWord": "vestibular",
+        "forbiddenWords": [
+          "prova",
+          "universidade",
+          "concorrencia",
+          "estudar",
+          "nota"
+        ]
+      },
+      {
+        "mainWord": "eleicao",
+        "forbiddenWords": [
+          "voto",
+          "candidato",
+          "urna",
+          "partido",
+          "politica"
+        ]
+      },
+      {
+        "mainWord": "greve",
+        "forbiddenWords": [
+          "trabalhador",
+          "paralisacao",
+          "protesto",
+          "salario",
+          "sindicato"
+        ]
+      },
+      {
+        "mainWord": "pandemia",
+        "forbiddenWords": [
+          "virus",
+          "doenca",
+          "isolamento",
+          "vacina",
+          "mascara"
+        ]
+      },
+      {
+        "mainWord": "guerra",
+        "forbiddenWords": [
+          "conflito",
+          "pais",
+          "morte",
+          "exercito",
+          "bombas"
+        ]
+      },
+      {
+        "mainWord": "crise",
+        "forbiddenWords": [
+          "economia",
+          "dificuldade",
+          "problema",
+          "desemprego",
+          "solucao"
+        ]
+      },
+      {
+        "mainWord": "inflacao",
+        "forbiddenWords": [
+          "preco",
+          "dinheiro",
+          "economia",
+          "caro",
+          "mercado"
+        ]
+      },
+      {
+        "mainWord": "desemprego",
+        "forbiddenWords": [
+          "trabalho",
+          "demissao",
+          "vaga",
+          "salario",
+          "crise"
+        ]
+      },
+      {
+        "mainWord": "reuniao",
+        "forbiddenWords": [
+          "trabalho",
+          "pauta",
+          "empresa",
+          "discussao",
+          "apresentacao"
+        ]
+      },
+      {
+        "mainWord": "fila",
+        "forbiddenWords": [
+          "esperar",
+          "banco",
+          "demora",
+          "vez",
+          "atendimento"
+        ]
+      },
+      {
+        "mainWord": "transito",
+        "forbiddenWords": [
+          "engarrafamento",
+          "carro",
+          "hora",
+          "cidade",
+          "buzina"
+        ]
+      },
+      {
+        "mainWord": "academia",
+        "forbiddenWords": [
+          "treino",
+          "exercicio",
+          "musculo",
+          "suor",
+          "disciplina"
+        ]
+      },
+      {
+        "mainWord": "dieta",
+        "forbiddenWords": [
+          "emagrecer",
+          "comida",
+          "restricao",
+          "peso",
+          "saude"
+        ]
+      },
+      {
+        "mainWord": "ressaca",
+        "forbiddenWords": [
+          "bebida",
+          "alcool",
+          "dor",
+          "cabeca",
+          "festa"
+        ]
+      },
+      {
+        "mainWord": "preguica",
+        "forbiddenWords": [
+          "descanso",
+          "cama",
+          "trabalho",
+          "moleza",
+          "preguicoso"
+        ]
+      },
+      {
+        "mainWord": "habito",
+        "forbiddenWords": [
+          "rotina",
+          "costume",
+          "repeticao",
+          "comportamento",
+          "diario"
+        ]
+      },
+      {
+        "mainWord": "infancia",
+        "forbiddenWords": [
+          "crianca",
+          "brincar",
+          "escola",
+          "inocencia",
+          "passado"
+        ]
+      },
+      {
+        "mainWord": "adolescencia",
+        "forbiddenWords": [
+          "jovem",
+          "puberdade",
+          "rebelde",
+          "identidade",
+          "escola"
+        ]
+      },
+      {
+        "mainWord": "velhice",
+        "forbiddenWords": [
+          "idoso",
+          "rugas",
+          "experiencia",
+          "aposentadoria",
+          "idade"
+        ]
+      },
+      {
+        "mainWord": "sucesso",
+        "forbiddenWords": [
+          "conquista",
+          "fama",
+          "dinheiro",
+          "esforco",
+          "vitoria"
+        ]
+      },
+      {
+        "mainWord": "fracasso",
+        "forbiddenWords": [
+          "derrota",
+          "erro",
+          "decepção",
+          "tentar",
+          "perder"
+        ]
+      }
+    ],
+    "filmes": [
+      {
+        "mainWord": "matrix",
+        "forbiddenWords": [
+          "neo",
+          "simulacao",
+          "pill",
+          "maquina",
+          "acao"
+        ]
+      },
+      {
+        "mainWord": "titanic",
+        "forbiddenWords": [
+          "navio",
+          "iceberg",
+          "romance",
+          "afundar",
+          "jack"
+        ]
+      },
+      {
+        "mainWord": "shrek",
+        "forbiddenWords": [
+          "ogro",
+          "burro",
+          "princesa",
+          "pantano",
+          "verde"
+        ]
+      },
+      {
+        "mainWord": "frozen",
+        "forbiddenWords": [
+          "gelo",
+          "elsa",
+          "anna",
+          "neve",
+          "disney"
+        ]
+      },
+      {
+        "mainWord": "jurassic park",
+        "forbiddenWords": [
+          "dinossauro",
+          "ilha",
+          "parque",
+          "cientista",
+          "aventura"
+        ]
+      },
+      {
+        "mainWord": "avatar",
+        "forbiddenWords": [
+          "pandora",
+          "azul",
+          "navi",
+          "floresta",
+          "ficcao"
+        ]
+      },
+      {
+        "mainWord": "interestelar",
+        "forbiddenWords": [
+          "espaco",
+          "nasa",
+          "buraco",
+          "tempo",
+          "planeta"
+        ]
+      },
+      {
+        "mainWord": "toy story",
+        "forbiddenWords": [
+          "brinquedo",
+          "woody",
+          "buzz",
+          "animacao",
+          "andy"
+        ]
+      },
+      {
+        "mainWord": "batman",
+        "forbiddenWords": [
+          "gotham",
+          "morcego",
+          "heroi",
+          "coringa",
+          "wayne"
+        ]
+      },
+      {
+        "mainWord": "rocky",
+        "forbiddenWords": [
+          "boxe",
+          "luta",
+          "treino",
+          "campeao",
+          "ringue"
+        ]
+      },
+      {
+        "mainWord": "coco",
+        "forbiddenWords": [
+          "pixar",
+          "musica",
+          "familia",
+          "mexico",
+          "violao"
+        ]
+      },
+      {
+        "mainWord": "godzilla",
+        "forbiddenWords": [
+          "monstro",
+          "gigante",
+          "cidade",
+          "destruir",
+          "japao"
+        ]
+      },
+      {
+        "mainWord": "inception",
+        "forbiddenWords": [
+          "sonho",
+          "mente",
+          "camadas",
+          "heist",
+          "nolan"
+        ]
+      },
+      {
+        "mainWord": "gladiador",
+        "forbiddenWords": [
+          "roma",
+          "arena",
+          "imperio",
+          "luta",
+          "espada"
+        ]
+      },
+      {
+        "mainWord": "alien",
+        "forbiddenWords": [
+          "espaco",
+          "nave",
+          "xenomorfo",
+          "terror",
+          "ripley"
+        ]
+      },
+      {
+        "mainWord": "predador",
+        "forbiddenWords": [
+          "cacador",
+          "selva",
+          "invisivel",
+          "extraterrestre",
+          "acao"
+        ]
+      },
+      {
+        "mainWord": "duna",
+        "forbiddenWords": [
+          "deserto",
+          "arrakis",
+          "especiaria",
+          "fremen",
+          "ficcao"
+        ]
+      },
+      {
+        "mainWord": "inside out",
+        "forbiddenWords": [
+          "emocao",
+          "pixar",
+          "mente",
+          "alegria",
+          "tristeza"
+        ]
+      },
+      {
+        "mainWord": "moana",
+        "forbiddenWords": [
+          "oceano",
+          "ilha",
+          "disney",
+          "navegar",
+          "aventura"
+        ]
+      },
+      {
+        "mainWord": "mad max",
+        "forbiddenWords": [
+          "deserto",
+          "carros",
+          "pos apocalipse",
+          "furiosa",
+          "acao"
+        ]
+      }
+    ],
+    "celebridades": [
+      {
+        "mainWord": "Neymar",
+        "forbiddenWords": [
+          "futebol",
+          "psg",
+          "Santos",
+          "cair",
+          "gol"
+        ]
+      },
+      {
+        "mainWord": "Faustão",
+        "forbiddenWords": [
+          "Globo",
+          "domingo",
+          "plateia",
+          "apresentador",
+          "gordo"
+        ]
+      },
+      {
+        "mainWord": "Ana Maria Braga",
+        "forbiddenWords": [
+          "culinária",
+          "Louro",
+          "papagaio",
+          "receita",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Xuxa",
+        "forbiddenWords": [
+          "loira",
+          "crianças",
+          "Paquita",
+          "dancinha",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Silvio Santos",
+        "forbiddenWords": [
+          "SBT",
+          "domingo",
+          "Show",
+          "apresentador",
+          "microfone"
+        ]
+      },
+      {
+        "mainWord": "Pelé",
+        "forbiddenWords": [
+          "rei",
+          "gol",
+          "copa",
+          "Santos",
+          "futebol"
+        ]
+      },
+      {
+        "mainWord": "Hebe Camargo",
+        "forbiddenWords": [
+          "apresentadora",
+          "SBT",
+          "talk show",
+          "joias",
+          "loira"
+        ]
+      },
+      {
+        "mainWord": "Senna",
+        "forbiddenWords": [
+          "Fórmula 1",
+          "McLaren",
+          "capacete",
+          "piloto",
+          "acidente"
+        ]
+      },
+      {
+        "mainWord": "Cazuza",
+        "forbiddenWords": [
+          "rock",
+          "Barão",
+          "AIDS",
+          "poeta",
+          "música"
+        ]
+      },
+      {
+        "mainWord": "Roberto Carlos",
+        "forbiddenWords": [
+          "cantor",
+          "Rei",
+          "iate",
+          "Jovem Guarda",
+          "sertanejo"
+        ]
+      },
+      {
+        "mainWord": "Xororó",
+        "forbiddenWords": [
+          "dupla",
+          "sertanejo",
+          "boiadeiro",
+          "palco",
+          "caipira"
+        ]
+      },
+      {
+        "mainWord": "Elis Regina",
+        "forbiddenWords": [
+          "cantora",
+          "voz",
+          "MPB",
+          "Falso Brilhante",
+          "anos 70"
+        ]
+      },
+      {
+        "mainWord": "Ronaldo Fenômeno",
+        "forbiddenWords": [
+          "Nazário",
+          "dente",
+          "gol",
+          "Copa",
+          "gordo"
+        ]
+      },
+      {
+        "mainWord": "Ivete Sangalo",
+        "forbiddenWords": [
+          "axé",
+          "Bahia",
+          "carnaval",
+          "cantora",
+          "Claudinha"
+        ]
+      },
+      {
+        "mainWord": "Ratinho",
+        "forbiddenWords": [
+          "SBT",
+          "caipira",
+          "programa",
+          "auditório",
+          "bigode"
+        ]
+      },
+      {
+        "mainWord": "Gugu Liberato",
+        "forbiddenWords": [
+          "Record",
+          "domingo",
+          "apresentador",
+          "piscina",
+          "brincadeira"
+        ]
+      },
+      {
+        "mainWord": "Adriane Galisteu",
+        "forbiddenWords": [
+          "Senna",
+          "modelo",
+          "namorada",
+          "loira",
+          "apresentadora"
+        ]
+      },
+      {
+        "mainWord": "Zeca Pagodinho",
+        "forbiddenWords": [
+          "pagode",
+          "samba",
+          "cerveja",
+          "Rio",
+          "cantor"
+        ]
+      },
+      {
+        "mainWord": "Marilia Mendonça",
+        "forbiddenWords": [
+          "sertanejo",
+          "rainha",
+          "amor",
+          "feminejo",
+          "tristeza"
+        ]
+      },
+      {
+        "mainWord": "Chitãozinho",
+        "forbiddenWords": [
+          "dupla",
+          "sertanejo",
+          "Xororó",
+          "boiadeiro",
+          "caipira"
+        ]
+      },
+      {
+        "mainWord": "Luan Santana",
+        "forbiddenWords": [
+          "sertanejo",
+          "cantor",
+          "fã",
+          "jovem",
+          "guitarra"
+        ]
+      },
+      {
+        "mainWord": "Anitta",
+        "forbiddenWords": [
+          "funkeira",
+          "Rio",
+          "hit",
+          "dançarina",
+          "internacional"
+        ]
+      },
+      {
+        "mainWord": "Caetano Veloso",
+        "forbiddenWords": [
+          "tropicália",
+          "baiano",
+          "MPB",
+          "cantor",
+          "poesia"
+        ]
+      },
+      {
+        "mainWord": "Glória Maria",
+        "forbiddenWords": [
+          "jornalista",
+          "Globo",
+          "repórter",
+          "viagem",
+          "negra"
+        ]
+      },
+      {
+        "mainWord": "Romário",
+        "forbiddenWords": [
+          "gol",
+          "futebol",
+          "Vasco",
+          "Copa",
+          "Baixinho"
+        ]
+      },
+      {
+        "mainWord": "Angélica",
+        "forbiddenWords": [
+          "loira",
+          "apresentadora",
+          "Huck",
+          "Globo",
+          "infantil"
+        ]
+      },
+      {
+        "mainWord": "Luciano Huck",
+        "forbiddenWords": [
+          "Caldeirão",
+          "Globo",
+          "apresentador",
+          "Angélica",
+          "milionário"
+        ]
+      },
+      {
+        "mainWord": "Fernanda Montenegro",
+        "forbiddenWords": [
+          "atriz",
+          "Oscar",
+          "Central do Brasil",
+          "teatro",
+          "veterana"
+        ]
+      },
+      {
+        "mainWord": "Michel Teló",
+        "forbiddenWords": [
+          "Ai Se Eu Te Pego",
+          "sertanejo",
+          "cantor",
+          "Thais Fersoza",
+          "viola"
+        ]
+      },
+      {
+        "mainWord": "Claudia Leitte",
+        "forbiddenWords": [
+          "axé",
+          "carnaval",
+          "cantora",
+          "Bahia",
+          "loira"
+        ]
+      },
+      {
+        "mainWord": "Galvão Bueno",
+        "forbiddenWords": [
+          "narrador",
+          "Globo",
+          "esporte",
+          "polêmica",
+          "comentarista"
+        ]
+      },
+      {
+        "mainWord": "Larissa Manoela",
+        "forbiddenWords": [
+          "atriz",
+          "novela",
+          "jovem",
+          "SBT",
+          "Instagram"
+        ]
+      },
+      {
+        "mainWord": "Thiaguinho",
+        "forbiddenWords": [
+          "pagode",
+          "Exaltasamba",
+          "cantor",
+          "sorriso",
+          "Fernanda"
+        ]
+      },
+      {
+        "mainWord": "Whindersson Nunes",
+        "forbiddenWords": [
+          "youtuber",
+          "humorista",
+          "nordestino",
+          "piauiense",
+          "viral"
+        ]
+      },
+      {
+        "mainWord": "Bebeto",
+        "forbiddenWords": [
+          "futebol",
+          "Copa 94",
+          "gol",
+          "Romário",
+          "bebê"
+        ]
+      },
+      {
+        "mainWord": "Sandy",
+        "forbiddenWords": [
+          "dupla",
+          "Junior",
+          "cantora",
+          "infância",
+          "família"
+        ]
+      },
+      {
+        "mainWord": "Leandro",
+        "forbiddenWords": [
+          "dupla",
+          "Leonardo",
+          "sertanejo",
+          "morte",
+          "cantor"
+        ]
+      },
+      {
+        "mainWord": "Fausto Silva",
+        "forbiddenWords": [
+          "Faustão",
+          "Globo",
+          "domingo",
+          "apresentador",
+          "coração"
+        ]
+      },
+      {
+        "mainWord": "Zico",
+        "forbiddenWords": [
+          "Flamengo",
+          "futebol",
+          "galinho",
+          "craque",
+          "Japão"
+        ]
+      },
+      {
+        "mainWord": "Elza Soares",
+        "forbiddenWords": [
+          "samba",
+          "cantora",
+          "voz",
+          "rainha",
+          "Garrincha"
+        ]
+      },
+      {
+        "mainWord": "Leonardo",
+        "forbiddenWords": [
+          "cachaça",
+          "Leandro",
+          "sertanejo",
+          "morte",
+          "cantor"
+        ]
+      }
+    ]
+  },
+  "en-us": {
+    "animals": [
+      {
+        "mainWord": "cat",
+        "forbiddenWords": [
+          "feline",
+          "whiskers",
+          "meow",
+          "mouse",
+          "animal"
+        ]
+      },
+      {
+        "mainWord": "dog",
+        "forbiddenWords": [
+          "bark",
+          "bone",
+          "pet",
+          "hound",
+          "collar"
+        ]
+      },
+      {
+        "mainWord": "elephant",
+        "forbiddenWords": [
+          "trunk",
+          "big",
+          "gray",
+          "tusk",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "shark",
+        "forbiddenWords": [
+          "sea",
+          "fin",
+          "tooth",
+          "fish",
+          "ocean"
+        ]
+      },
+      {
+        "mainWord": "owl",
+        "forbiddenWords": [
+          "nocturnal",
+          "bird",
+          "eyes",
+          "fly",
+          "wise"
+        ]
+      },
+      {
+        "mainWord": "horse",
+        "forbiddenWords": [
+          "ride",
+          "saddle",
+          "stable",
+          "gallop",
+          "equine"
+        ]
+      },
+      {
+        "mainWord": "giraffe",
+        "forbiddenWords": [
+          "neck",
+          "tall",
+          "savanna",
+          "spots",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "panda",
+        "forbiddenWords": [
+          "black",
+          "white",
+          "bamboo",
+          "china",
+          "bear"
+        ]
+      },
+      {
+        "mainWord": "fox",
+        "forbiddenWords": [
+          "cunning",
+          "tail",
+          "orange",
+          "wild",
+          "den"
+        ]
+      },
+      {
+        "mainWord": "crocodile",
+        "forbiddenWords": [
+          "reptile",
+          "river",
+          "alligator",
+          "teeth",
+          "scales"
+        ]
+      },
+      {
+        "mainWord": "dolphin",
+        "forbiddenWords": [
+          "ocean",
+          "mammal",
+          "jump",
+          "smart",
+          "swim"
+        ]
+      },
+      {
+        "mainWord": "rabbit",
+        "forbiddenWords": [
+          "carrot",
+          "ear",
+          "hop",
+          "fluffy",
+          "burrow"
+        ]
+      },
+      {
+        "mainWord": "lion",
+        "forbiddenWords": [
+          "jungle",
+          "mane",
+          "king",
+          "roar",
+          "feline"
+        ]
+      },
+      {
+        "mainWord": "zebra",
+        "forbiddenWords": [
+          "stripes",
+          "black",
+          "white",
+          "savanna",
+          "equine"
+        ]
+      },
+      {
+        "mainWord": "bear",
+        "forbiddenWords": [
+          "forest",
+          "hibernate",
+          "big",
+          "paws",
+          "mammal"
+        ]
+      },
+      {
+        "mainWord": "monkey",
+        "forbiddenWords": [
+          "tree",
+          "banana",
+          "jungle",
+          "primate",
+          "tail"
+        ]
+      },
+      {
+        "mainWord": "wolf",
+        "forbiddenWords": [
+          "pack",
+          "howl",
+          "wild",
+          "forest",
+          "canine"
+        ]
+      },
+      {
+        "mainWord": "turtle",
+        "forbiddenWords": [
+          "shell",
+          "slow",
+          "sea",
+          "reptile",
+          "swim"
+        ]
+      },
+      {
+        "mainWord": "eagle",
+        "forbiddenWords": [
+          "bird",
+          "sky",
+          "talons",
+          "fly",
+          "raptor"
+        ]
+      },
+      {
+        "mainWord": "snake",
+        "forbiddenWords": [
+          "venom",
+          "reptile",
+          "slither",
+          "bite",
+          "scales"
+        ]
+      }
+    ],
+    "jobs": [
+      {
+        "mainWord": "doctor",
+        "forbiddenWords": [
+          "hospital",
+          "patient",
+          "appointment",
+          "health",
+          "physician"
+        ]
+      },
+      {
+        "mainWord": "teacher",
+        "forbiddenWords": [
+          "school",
+          "class",
+          "student",
+          "teach",
+          "board"
+        ]
+      },
+      {
+        "mainWord": "programmer",
+        "forbiddenWords": [
+          "code",
+          "software",
+          "computer",
+          "bug",
+          "app"
+        ]
+      },
+      {
+        "mainWord": "cook",
+        "forbiddenWords": [
+          "kitchen",
+          "recipe",
+          "restaurant",
+          "chef",
+          "pot"
+        ]
+      },
+      {
+        "mainWord": "pilot",
+        "forbiddenWords": [
+          "plane",
+          "flight",
+          "cockpit",
+          "airport",
+          "takeoff"
+        ]
+      },
+      {
+        "mainWord": "firefighter",
+        "forbiddenWords": [
+          "fire",
+          "blaze",
+          "hose",
+          "rescue",
+          "siren"
+        ]
+      },
+      {
+        "mainWord": "engineer",
+        "forbiddenWords": [
+          "construction",
+          "math",
+          "project",
+          "building",
+          "technical"
+        ]
+      },
+      {
+        "mainWord": "lawyer",
+        "forbiddenWords": [
+          "law",
+          "court",
+          "client",
+          "case",
+          "judge"
+        ]
+      },
+      {
+        "mainWord": "architect",
+        "forbiddenWords": [
+          "blueprint",
+          "building",
+          "design",
+          "project",
+          "urban"
+        ]
+      },
+      {
+        "mainWord": "journalist",
+        "forbiddenWords": [
+          "news",
+          "report",
+          "interview",
+          "press",
+          "camera"
+        ]
+      },
+      {
+        "mainWord": "dentist",
+        "forbiddenWords": [
+          "tooth",
+          "office",
+          "smile",
+          "canal",
+          "mouth"
+        ]
+      },
+      {
+        "mainWord": "driver",
+        "forbiddenWords": [
+          "car",
+          "wheel",
+          "traffic",
+          "race",
+          "passenger"
+        ]
+      },
+      {
+        "mainWord": "salesperson",
+        "forbiddenWords": [
+          "store",
+          "client",
+          "product",
+          "sale",
+          "target"
+        ]
+      },
+      {
+        "mainWord": "nurse",
+        "forbiddenWords": [
+          "hospital",
+          "patient",
+          "care",
+          "shift",
+          "medication"
+        ]
+      },
+      {
+        "mainWord": "accountant",
+        "forbiddenWords": [
+          "tax",
+          "company",
+          "spreadsheet",
+          "finance",
+          "balance"
+        ]
+      },
+      {
+        "mainWord": "police officer",
+        "forbiddenWords": [
+          "station",
+          "uniform",
+          "security",
+          "prison",
+          "patrol car"
+        ]
+      },
+      {
+        "mainWord": "designer",
+        "forbiddenWords": [
+          "creative",
+          "layout",
+          "art",
+          "typography",
+          "interface"
+        ]
+      },
+      {
+        "mainWord": "scientist",
+        "forbiddenWords": [
+          "laboratory",
+          "research",
+          "experiment",
+          "theory",
+          "discovery"
+        ]
+      },
+      {
+        "mainWord": "photographer",
+        "forbiddenWords": [
+          "camera",
+          "lens",
+          "shoot",
+          "flash",
+          "image"
+        ]
+      },
+      {
+        "mainWord": "actor",
+        "forbiddenWords": [
+          "movie",
+          "theater",
+          "character",
+          "scene",
+          "role"
+        ]
+      }
+    ],
+    "objects": [
+      {
+        "mainWord": "chair",
+        "forbiddenWords": [
+          "sit",
+          "backrest",
+          "table",
+          "four",
+          "leg"
+        ]
+      },
+      {
+        "mainWord": "umbrella",
+        "forbiddenWords": [
+          "rain",
+          "wet",
+          "open",
+          "handle",
+          "storm"
+        ]
+      },
+      {
+        "mainWord": "scissors",
+        "forbiddenWords": [
+          "cut",
+          "paper",
+          "two",
+          "blade",
+          "office"
+        ]
+      },
+      {
+        "mainWord": "watch",
+        "forbiddenWords": [
+          "hour",
+          "wrist",
+          "hand",
+          "time",
+          "alarm"
+        ]
+      },
+      {
+        "mainWord": "mirror",
+        "forbiddenWords": [
+          "reflection",
+          "glass",
+          "face",
+          "image",
+          "bathroom"
+        ]
+      },
+      {
+        "mainWord": "charger",
+        "forbiddenWords": [
+          "phone",
+          "power",
+          "cable",
+          "battery",
+          "outlet"
+        ]
+      },
+      {
+        "mainWord": "backpack",
+        "forbiddenWords": [
+          "back",
+          "zipper",
+          "school",
+          "pocket",
+          "strap"
+        ]
+      },
+      {
+        "mainWord": "light bulb",
+        "forbiddenWords": [
+          "light",
+          "power",
+          "ceiling",
+          "illuminate",
+          "break"
+        ]
+      },
+      {
+        "mainWord": "pot",
+        "forbiddenWords": [
+          "cook",
+          "stove",
+          "lid",
+          "food",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "hammer",
+        "forbiddenWords": [
+          "nail",
+          "hit",
+          "tool",
+          "construction",
+          "wood"
+        ]
+      },
+      {
+        "mainWord": "glasses",
+        "forbiddenWords": [
+          "vision",
+          "lens",
+          "frame",
+          "prescription",
+          "see"
+        ]
+      },
+      {
+        "mainWord": "bottle",
+        "forbiddenWords": [
+          "water",
+          "drink",
+          "plastic",
+          "cap",
+          "liquid"
+        ]
+      },
+      {
+        "mainWord": "notebook",
+        "forbiddenWords": [
+          "page",
+          "write",
+          "school",
+          "notes",
+          "spiral"
+        ]
+      },
+      {
+        "mainWord": "pen",
+        "forbiddenWords": [
+          "ink",
+          "write",
+          "paper",
+          "blue",
+          "cap"
+        ]
+      },
+      {
+        "mainWord": "key",
+        "forbiddenWords": [
+          "door",
+          "lock",
+          "open",
+          "metal",
+          "house"
+        ]
+      },
+      {
+        "mainWord": "keyboard",
+        "forbiddenWords": [
+          "computer",
+          "type",
+          "keys",
+          "mouse",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "mouse",
+        "forbiddenWords": [
+          "cursor",
+          "computer",
+          "click",
+          "keyboard",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "towel",
+        "forbiddenWords": [
+          "bath",
+          "dry",
+          "fabric",
+          "body",
+          "rack"
+        ]
+      },
+      {
+        "mainWord": "cup",
+        "forbiddenWords": [
+          "drink",
+          "glass",
+          "water",
+          "liquid",
+          "kitchen"
+        ]
+      },
+      {
+        "mainWord": "pillow",
+        "forbiddenWords": [
+          "bed",
+          "sleep",
+          "head",
+          "rest",
+          "soft"
+        ]
+      },
+      {
+        "mainWord": "fridge",
+        "forbiddenWords": [
+          "cold",
+          "kitchen",
+          "food",
+          "door",
+          "freezer"
+        ]
+      },
+      {
+        "mainWord": "sofa",
+        "forbiddenWords": [
+          "living room",
+          "sit",
+          "cushion",
+          "comfort",
+          "upholstery"
+        ]
+      },
+      {
+        "mainWord": "fan",
+        "forbiddenWords": [
+          "wind",
+          "heat",
+          "blade",
+          "turn on",
+          "air"
+        ]
+      },
+      {
+        "mainWord": "television",
+        "forbiddenWords": [
+          "channel",
+          "remote",
+          "movie",
+          "screen",
+          "watch"
+        ]
+      },
+      {
+        "mainWord": "remote control",
+        "forbiddenWords": [
+          "television",
+          "button",
+          "battery",
+          "channel",
+          "distance"
+        ]
+      },
+      {
+        "mainWord": "stove",
+        "forbiddenWords": [
+          "cook",
+          "gas",
+          "burner",
+          "pot",
+          "fire"
+        ]
+      },
+      {
+        "mainWord": "microwave",
+        "forbiddenWords": [
+          "heat",
+          "food",
+          "kitchen",
+          "plate",
+          "timer"
+        ]
+      },
+      {
+        "mainWord": "vacuum cleaner",
+        "forbiddenWords": [
+          "dust",
+          "cleaning",
+          "suction",
+          "house",
+          "floor"
+        ]
+      },
+      {
+        "mainWord": "broom",
+        "forbiddenWords": [
+          "sweep",
+          "floor",
+          "cleaning",
+          "handle",
+          "dirt"
+        ]
+      },
+      {
+        "mainWord": "squeegee",
+        "forbiddenWords": [
+          "water",
+          "cleaning",
+          "push",
+          "floor",
+          "dry"
+        ]
+      },
+      {
+        "mainWord": "brush",
+        "forbiddenWords": [
+          "hair",
+          "comb",
+          "bristles",
+          "bathroom",
+          "detangle"
+        ]
+      },
+      {
+        "mainWord": "comb",
+        "forbiddenWords": [
+          "hair",
+          "teeth",
+          "style",
+          "beauty",
+          "strand"
+        ]
+      },
+      {
+        "mainWord": "soap",
+        "forbiddenWords": [
+          "bath",
+          "clean",
+          "foam",
+          "scent",
+          "wash"
+        ]
+      },
+      {
+        "mainWord": "shampoo",
+        "forbiddenWords": [
+          "hair",
+          "shower",
+          "wash",
+          "bottle",
+          "lather"
+        ]
+      },
+      {
+        "mainWord": "toothbrush",
+        "forbiddenWords": [
+          "tooth",
+          "toothpaste",
+          "bathroom",
+          "hygiene",
+          "brush"
+        ]
+      },
+      {
+        "mainWord": "toothpaste",
+        "forbiddenWords": [
+          "brush",
+          "hygiene",
+          "mint",
+          "tooth",
+          "tube"
+        ]
+      },
+      {
+        "mainWord": "bicycle",
+        "forbiddenWords": [
+          "pedal",
+          "wheel",
+          "cyclist",
+          "handlebar",
+          "chain"
+        ]
+      },
+      {
+        "mainWord": "helmet",
+        "forbiddenWords": [
+          "head",
+          "safety",
+          "motorcycle",
+          "protection",
+          "wear"
+        ]
+      },
+      {
+        "mainWord": "suitcase",
+        "forbiddenWords": [
+          "trip",
+          "clothes",
+          "wheels",
+          "luggage",
+          "airport"
+        ]
+      },
+      {
+        "mainWord": "elevator",
+        "forbiddenWords": [
+          "floor",
+          "building",
+          "up",
+          "down",
+          "door"
+        ]
+      },
+      {
+        "mainWord": "stairs",
+        "forbiddenWords": [
+          "step",
+          "up",
+          "down",
+          "floor",
+          "height"
+        ]
+      },
+      {
+        "mainWord": "window",
+        "forbiddenWords": [
+          "glass",
+          "open",
+          "house",
+          "curtain",
+          "view"
+        ]
+      },
+      {
+        "mainWord": "curtain",
+        "forbiddenWords": [
+          "window",
+          "fabric",
+          "close",
+          "room",
+          "light"
+        ]
+      },
+      {
+        "mainWord": "rug",
+        "forbiddenWords": [
+          "floor",
+          "living room",
+          "fabric",
+          "step",
+          "decor"
+        ]
+      },
+      {
+        "mainWord": "painting",
+        "forbiddenWords": [
+          "wall",
+          "image",
+          "art",
+          "frame",
+          "decor"
+        ]
+      },
+      {
+        "mainWord": "book",
+        "forbiddenWords": [
+          "read",
+          "page",
+          "story",
+          "author",
+          "library"
+        ]
+      },
+      {
+        "mainWord": "eraser",
+        "forbiddenWords": [
+          "erase",
+          "pencil",
+          "school",
+          "mistake",
+          "paper"
+        ]
+      },
+      {
+        "mainWord": "pencil",
+        "forbiddenWords": [
+          "write",
+          "graphite",
+          "sharpen",
+          "paper",
+          "drawing"
+        ]
+      },
+      {
+        "mainWord": "pencil sharpener",
+        "forbiddenWords": [
+          "pencil",
+          "graphite",
+          "sharpen",
+          "school",
+          "wood"
+        ]
+      },
+      {
+        "mainWord": "calculator",
+        "forbiddenWords": [
+          "math",
+          "number",
+          "add",
+          "button",
+          "result"
+        ]
+      },
+      {
+        "mainWord": "printer",
+        "forbiddenWords": [
+          "paper",
+          "ink",
+          "document",
+          "computer",
+          "print"
+        ]
+      },
+      {
+        "mainWord": "monitor",
+        "forbiddenWords": [
+          "screen",
+          "computer",
+          "image",
+          "video",
+          "display"
+        ]
+      },
+      {
+        "mainWord": "flash drive",
+        "forbiddenWords": [
+          "usb",
+          "file",
+          "storage",
+          "computer",
+          "data"
+        ]
+      },
+      {
+        "mainWord": "headphones",
+        "forbiddenWords": [
+          "music",
+          "ear",
+          "sound",
+          "listen",
+          "cable"
+        ]
+      },
+      {
+        "mainWord": "speaker",
+        "forbiddenWords": [
+          "music",
+          "audio",
+          "loud",
+          "sound",
+          "volume"
+        ]
+      },
+      {
+        "mainWord": "guitar",
+        "forbiddenWords": [
+          "string",
+          "music",
+          "play",
+          "instrument",
+          "chord"
+        ]
+      },
+      {
+        "mainWord": "microphone",
+        "forbiddenWords": [
+          "voice",
+          "sound",
+          "sing",
+          "audio",
+          "record"
+        ]
+      },
+      {
+        "mainWord": "camera",
+        "forbiddenWords": [
+          "photo",
+          "image",
+          "lens",
+          "record",
+          "flash"
+        ]
+      },
+      {
+        "mainWord": "flashlight",
+        "forbiddenWords": [
+          "light",
+          "dark",
+          "battery",
+          "illuminate",
+          "hand"
+        ]
+      },
+      {
+        "mainWord": "candle",
+        "forbiddenWords": [
+          "fire",
+          "wax",
+          "light",
+          "illuminate",
+          "melt"
+        ]
+      },
+      {
+        "mainWord": "lighter",
+        "forbiddenWords": [
+          "fire",
+          "ignite",
+          "gas",
+          "flame",
+          "cigarette"
+        ]
+      },
+      {
+        "mainWord": "safe",
+        "forbiddenWords": [
+          "money",
+          "password",
+          "security",
+          "store",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "wallet",
+        "forbiddenWords": [
+          "money",
+          "document",
+          "pocket",
+          "card",
+          "keep"
+        ]
+      },
+      {
+        "mainWord": "ring",
+        "forbiddenWords": [
+          "finger",
+          "jewel",
+          "wedding",
+          "gold",
+          "wear"
+        ]
+      },
+      {
+        "mainWord": "necklace",
+        "forbiddenWords": [
+          "neck",
+          "jewel",
+          "chain",
+          "wear",
+          "accessory"
+        ]
+      },
+      {
+        "mainWord": "wardrobe",
+        "forbiddenWords": [
+          "clothes",
+          "door",
+          "bedroom",
+          "hanger",
+          "closet"
+        ]
+      },
+      {
+        "mainWord": "hanger",
+        "forbiddenWords": [
+          "clothes",
+          "closet",
+          "hang",
+          "hook",
+          "bedroom"
+        ]
+      },
+      {
+        "mainWord": "lamp shade",
+        "forbiddenWords": [
+          "light",
+          "bedroom",
+          "table",
+          "bulb",
+          "illuminate"
+        ]
+      },
+      {
+        "mainWord": "alarm clock",
+        "forbiddenWords": [
+          "wake up",
+          "alarm",
+          "time",
+          "sleep",
+          "morning"
+        ]
+      },
+      {
+        "mainWord": "thermometer",
+        "forbiddenWords": [
+          "temperature",
+          "fever",
+          "measure",
+          "heat",
+          "degree"
+        ]
+      }
+    ],
+    "general": [
+      {
+        "mainWord": "fried pastry",
+        "forbiddenWords": [
+          "food",
+          "fair",
+          "fried",
+          "dough",
+          "filling"
+        ]
+      },
+      {
+        "mainWord": "beach",
+        "forbiddenWords": [
+          "sand",
+          "sea",
+          "sun",
+          "wave",
+          "summer"
+        ]
+      },
+      {
+        "mainWord": "friendship",
+        "forbiddenWords": [
+          "friend",
+          "bond",
+          "trust",
+          "companion",
+          "loyalty"
+        ]
+      },
+      {
+        "mainWord": "birthday",
+        "forbiddenWords": [
+          "party",
+          "cake",
+          "candle",
+          "gift",
+          "celebration"
+        ]
+      },
+      {
+        "mainWord": "kitchen",
+        "forbiddenWords": [
+          "stove",
+          "pot",
+          "food",
+          "recipe",
+          "house"
+        ]
+      },
+      {
+        "mainWord": "internet",
+        "forbiddenWords": [
+          "website",
+          "network",
+          "online",
+          "wifi",
+          "browse"
+        ]
+      },
+      {
+        "mainWord": "grocery store",
+        "forbiddenWords": [
+          "shopping",
+          "cart",
+          "checkout",
+          "supermarket",
+          "product"
+        ]
+      },
+      {
+        "mainWord": "school",
+        "forbiddenWords": [
+          "student",
+          "teacher",
+          "class",
+          "test",
+          "uniform"
+        ]
+      },
+      {
+        "mainWord": "hospital",
+        "forbiddenWords": [
+          "doctor",
+          "emergency",
+          "nurse",
+          "illness",
+          "bed"
+        ]
+      },
+      {
+        "mainWord": "future",
+        "forbiddenWords": [
+          "tomorrow",
+          "time",
+          "plan",
+          "destiny",
+          "goal"
+        ]
+      },
+      {
+        "mainWord": "music",
+        "forbiddenWords": [
+          "sound",
+          "rhythm",
+          "singer",
+          "instrument",
+          "melody"
+        ]
+      },
+      {
+        "mainWord": "trip",
+        "forbiddenWords": [
+          "suitcase",
+          "destination",
+          "tour",
+          "plane",
+          "tourism"
+        ]
+      },
+      {
+        "mainWord": "family",
+        "forbiddenWords": [
+          "father",
+          "mother",
+          "children",
+          "home",
+          "relatives"
+        ]
+      },
+      {
+        "mainWord": "time",
+        "forbiddenWords": [
+          "hours",
+          "lightning",
+          "pass",
+          "clock",
+          "minute"
+        ]
+      },
+      {
+        "mainWord": "rain",
+        "forbiddenWords": [
+          "water",
+          "cloud",
+          "wet",
+          "storm",
+          "drizzle"
+        ]
+      },
+      {
+        "mainWord": "garden",
+        "forbiddenWords": [
+          "flowers",
+          "plants",
+          "grass",
+          "backyard",
+          "watering"
+        ]
+      },
+      {
+        "mainWord": "city",
+        "forbiddenWords": [
+          "street",
+          "building",
+          "traffic",
+          "urban",
+          "neighborhood"
+        ]
+      },
+      {
+        "mainWord": "park",
+        "forbiddenWords": [
+          "trees",
+          "leisure",
+          "play",
+          "grass",
+          "bench"
+        ]
+      },
+      {
+        "mainWord": "window",
+        "forbiddenWords": [
+          "glass",
+          "house",
+          "open",
+          "curtain",
+          "view"
+        ]
+      },
+      {
+        "mainWord": "door",
+        "forbiddenWords": [
+          "entrance",
+          "close",
+          "key",
+          "house",
+          "frame"
+        ]
+      },
+      {
+        "mainWord": "longing",
+        "forbiddenWords": [
+          "distance",
+          "far",
+          "missing",
+          "memory",
+          "feel"
+        ]
+      },
+      {
+        "mainWord": "fear",
+        "forbiddenWords": [
+          "fright",
+          "dark",
+          "panic",
+          "terror",
+          "courage"
+        ]
+      },
+      {
+        "mainWord": "dream",
+        "forbiddenWords": [
+          "sleep",
+          "night",
+          "nightmare",
+          "wish",
+          "imagination"
+        ]
+      },
+      {
+        "mainWord": "anger",
+        "forbiddenWords": [
+          "mad",
+          "shout",
+          "nervous",
+          "irritated",
+          "emotion"
+        ]
+      },
+      {
+        "mainWord": "jealousy",
+        "forbiddenWords": [
+          "envy",
+          "suspicion",
+          "possessive",
+          "relationship",
+          "love"
+        ]
+      },
+      {
+        "mainWord": "joy",
+        "forbiddenWords": [
+          "happy",
+          "smile",
+          "excited",
+          "party",
+          "mood"
+        ]
+      },
+      {
+        "mainWord": "sadness",
+        "forbiddenWords": [
+          "cry",
+          "sad",
+          "pain",
+          "suffering",
+          "tear"
+        ]
+      },
+      {
+        "mainWord": "shame",
+        "forbiddenWords": [
+          "embarrassed",
+          "situation",
+          "awkward",
+          "shy",
+          "blush"
+        ]
+      },
+      {
+        "mainWord": "pride",
+        "forbiddenWords": [
+          "achievement",
+          "child",
+          "vanity",
+          "deserve",
+          "arrogance"
+        ]
+      },
+      {
+        "mainWord": "hope",
+        "forbiddenWords": [
+          "future",
+          "faith",
+          "optimism",
+          "believe",
+          "await"
+        ]
+      },
+      {
+        "mainWord": "loneliness",
+        "forbiddenWords": [
+          "alone",
+          "isolation",
+          "silence",
+          "abandon",
+          "empty"
+        ]
+      },
+      {
+        "mainWord": "anxiety",
+        "forbiddenWords": [
+          "nervous",
+          "worry",
+          "tightness",
+          "suffocating",
+          "tension"
+        ]
+      },
+      {
+        "mainWord": "love",
+        "forbiddenWords": [
+          "couple",
+          "feeling",
+          "affection",
+          "in love",
+          "heart"
+        ]
+      },
+      {
+        "mainWord": "hatred",
+        "forbiddenWords": [
+          "grudge",
+          "anger",
+          "feeling",
+          "enemy",
+          "aversion"
+        ]
+      },
+      {
+        "mainWord": "peace",
+        "forbiddenWords": [
+          "calm",
+          "quiet",
+          "war",
+          "silence",
+          "harmony"
+        ]
+      },
+      {
+        "mainWord": "freedom",
+        "forbiddenWords": [
+          "free",
+          "prisoner",
+          "choice",
+          "independence",
+          "wings"
+        ]
+      },
+      {
+        "mainWord": "lie",
+        "forbiddenWords": [
+          "deceive",
+          "truth",
+          "false",
+          "pretend",
+          "mislead"
+        ]
+      },
+      {
+        "mainWord": "secret",
+        "forbiddenWords": [
+          "keep",
+          "reveal",
+          "hide",
+          "silence",
+          "tell"
+        ]
+      },
+      {
+        "mainWord": "betrayal",
+        "forbiddenWords": [
+          "betray",
+          "disloyalty",
+          "trust",
+          "couple",
+          "friend"
+        ]
+      },
+      {
+        "mainWord": "forgiveness",
+        "forbiddenWords": [
+          "sorry",
+          "mistake",
+          "reconciliation",
+          "hurt",
+          "overcome"
+        ]
+      },
+      {
+        "mainWord": "christmas",
+        "forbiddenWords": [
+          "december",
+          "family",
+          "gift",
+          "tree",
+          "santa claus"
+        ]
+      },
+      {
+        "mainWord": "carnival",
+        "forbiddenWords": [
+          "celebration",
+          "costume",
+          "parade",
+          "samba",
+          "confetti"
+        ]
+      },
+      {
+        "mainWord": "holiday",
+        "forbiddenWords": [
+          "rest",
+          "day off",
+          "day",
+          "work",
+          "calendar"
+        ]
+      },
+      {
+        "mainWord": "vacation",
+        "forbiddenWords": [
+          "rest",
+          "trip",
+          "time off",
+          "summer",
+          "school"
+        ]
+      },
+      {
+        "mainWord": "wedding",
+        "forbiddenWords": [
+          "bride",
+          "altar",
+          "union",
+          "party",
+          "ring"
+        ]
+      },
+      {
+        "mainWord": "divorce",
+        "forbiddenWords": [
+          "separation",
+          "couple",
+          "breakup",
+          "lawyer",
+          "split"
+        ]
+      },
+      {
+        "mainWord": "pregnancy",
+        "forbiddenWords": [
+          "baby",
+          "belly",
+          "mother",
+          "gestation",
+          "labor"
+        ]
+      },
+      {
+        "mainWord": "retirement",
+        "forbiddenWords": [
+          "rest",
+          "old age",
+          "pension",
+          "work",
+          "social security"
+        ]
+      },
+      {
+        "mainWord": "graduation",
+        "forbiddenWords": [
+          "diploma",
+          "gown",
+          "college",
+          "completion",
+          "party"
+        ]
+      },
+      {
+        "mainWord": "college entrance exam",
+        "forbiddenWords": [
+          "test",
+          "university",
+          "competition",
+          "study",
+          "grade"
+        ]
+      },
+      {
+        "mainWord": "election",
+        "forbiddenWords": [
+          "vote",
+          "candidate",
+          "ballot box",
+          "party",
+          "politics"
+        ]
+      },
+      {
+        "mainWord": "strike",
+        "forbiddenWords": [
+          "worker",
+          "stoppage",
+          "protest",
+          "salary",
+          "union"
+        ]
+      },
+      {
+        "mainWord": "pandemic",
+        "forbiddenWords": [
+          "virus",
+          "disease",
+          "isolation",
+          "vaccine",
+          "mask"
+        ]
+      },
+      {
+        "mainWord": "war",
+        "forbiddenWords": [
+          "conflict",
+          "country",
+          "death",
+          "army",
+          "bombs"
+        ]
+      },
+      {
+        "mainWord": "crisis",
+        "forbiddenWords": [
+          "economy",
+          "difficulty",
+          "problem",
+          "unemployment",
+          "solution"
+        ]
+      },
+      {
+        "mainWord": "inflation",
+        "forbiddenWords": [
+          "price",
+          "money",
+          "economy",
+          "expensive",
+          "market"
+        ]
+      },
+      {
+        "mainWord": "unemployment",
+        "forbiddenWords": [
+          "work",
+          "dismissal",
+          "vacancy",
+          "salary",
+          "crisis"
+        ]
+      },
+      {
+        "mainWord": "meeting",
+        "forbiddenWords": [
+          "work",
+          "agenda",
+          "company",
+          "discussion",
+          "presentation"
+        ]
+      },
+      {
+        "mainWord": "queue",
+        "forbiddenWords": [
+          "wait",
+          "bank",
+          "delay",
+          "turn",
+          "service"
+        ]
+      },
+      {
+        "mainWord": "traffic jam",
+        "forbiddenWords": [
+          "congestion",
+          "car",
+          "hour",
+          "city",
+          "honk"
+        ]
+      },
+      {
+        "mainWord": "gym",
+        "forbiddenWords": [
+          "workout",
+          "exercise",
+          "muscle",
+          "sweat",
+          "discipline"
+        ]
+      },
+      {
+        "mainWord": "diet",
+        "forbiddenWords": [
+          "lose weight",
+          "food",
+          "restriction",
+          "weight",
+          "health"
+        ]
+      },
+      {
+        "mainWord": "hangover",
+        "forbiddenWords": [
+          "drink",
+          "alcohol",
+          "pain",
+          "head",
+          "party"
+        ]
+      },
+      {
+        "mainWord": "laziness",
+        "forbiddenWords": [
+          "rest",
+          "bed",
+          "work",
+          "sluggish",
+          "lazy"
+        ]
+      },
+      {
+        "mainWord": "habit",
+        "forbiddenWords": [
+          "routine",
+          "custom",
+          "repetition",
+          "behavior",
+          "daily"
+        ]
+      },
+      {
+        "mainWord": "childhood",
+        "forbiddenWords": [
+          "child",
+          "play",
+          "school",
+          "innocence",
+          "past"
+        ]
+      },
+      {
+        "mainWord": "adolescence",
+        "forbiddenWords": [
+          "young",
+          "puberty",
+          "rebel",
+          "identity",
+          "school"
+        ]
+      },
+      {
+        "mainWord": "old age",
+        "forbiddenWords": [
+          "elderly",
+          "wrinkles",
+          "experience",
+          "retirement",
+          "age"
+        ]
+      },
+      {
+        "mainWord": "success",
+        "forbiddenWords": [
+          "achievement",
+          "fame",
+          "money",
+          "effort",
+          "victory"
+        ]
+      },
+      {
+        "mainWord": "failure",
+        "forbiddenWords": [
+          "defeat",
+          "mistake",
+          "disappointment",
+          "try",
+          "lose"
+        ]
+      }
+    ],
+    "movies": [
+      {
+        "mainWord": "the matrix",
+        "forbiddenWords": [
+          "neo",
+          "simulation",
+          "pill",
+          "machine",
+          "action"
+        ]
+      },
+      {
+        "mainWord": "titanic",
+        "forbiddenWords": [
+          "ship",
+          "iceberg",
+          "romance",
+          "sink",
+          "jack"
+        ]
+      },
+      {
+        "mainWord": "shrek",
+        "forbiddenWords": [
+          "ogre",
+          "donkey",
+          "princess",
+          "swamp",
+          "green"
+        ]
+      },
+      {
+        "mainWord": "frozen",
+        "forbiddenWords": [
+          "ice",
+          "elsa",
+          "anna",
+          "snow",
+          "disney"
+        ]
+      },
+      {
+        "mainWord": "jurassic park",
+        "forbiddenWords": [
+          "dinosaur",
+          "island",
+          "park",
+          "scientist",
+          "adventure"
+        ]
+      },
+      {
+        "mainWord": "avatar",
+        "forbiddenWords": [
+          "pandora",
+          "blue",
+          "navi",
+          "forest",
+          "sci-fi"
+        ]
+      },
+      {
+        "mainWord": "interstellar",
+        "forbiddenWords": [
+          "space",
+          "nasa",
+          "black hole",
+          "time",
+          "planet"
+        ]
+      },
+      {
+        "mainWord": "toy story",
+        "forbiddenWords": [
+          "toy",
+          "woody",
+          "buzz",
+          "animation",
+          "andy"
+        ]
+      },
+      {
+        "mainWord": "batman",
+        "forbiddenWords": [
+          "gotham",
+          "bat",
+          "hero",
+          "joker",
+          "wayne"
+        ]
+      },
+      {
+        "mainWord": "rocky",
+        "forbiddenWords": [
+          "boxing",
+          "fight",
+          "training",
+          "champion",
+          "ring"
+        ]
+      },
+      {
+        "mainWord": "coco",
+        "forbiddenWords": [
+          "pixar",
+          "music",
+          "family",
+          "mexico",
+          "guitar"
+        ]
+      },
+      {
+        "mainWord": "godzilla",
+        "forbiddenWords": [
+          "monster",
+          "giant",
+          "city",
+          "destroy",
+          "japan"
+        ]
+      },
+      {
+        "mainWord": "inception",
+        "forbiddenWords": [
+          "dream",
+          "mind",
+          "layers",
+          "heist",
+          "nolan"
+        ]
+      },
+      {
+        "mainWord": "gladiator",
+        "forbiddenWords": [
+          "rome",
+          "arena",
+          "empire",
+          "fight",
+          "sword"
+        ]
+      },
+      {
+        "mainWord": "alien",
+        "forbiddenWords": [
+          "space",
+          "ship",
+          "xenomorph",
+          "horror",
+          "ripley"
+        ]
+      },
+      {
+        "mainWord": "predator",
+        "forbiddenWords": [
+          "hunter",
+          "jungle",
+          "invisible",
+          "extraterrestrial",
+          "action"
+        ]
+      },
+      {
+        "mainWord": "dune",
+        "forbiddenWords": [
+          "desert",
+          "arrakis",
+          "spice",
+          "fremen",
+          "sci-fi"
+        ]
+      },
+      {
+        "mainWord": "inside out",
+        "forbiddenWords": [
+          "emotion",
+          "pixar",
+          "mind",
+          "joy",
+          "sadness"
+        ]
+      },
+      {
+        "mainWord": "moana",
+        "forbiddenWords": [
+          "ocean",
+          "island",
+          "disney",
+          "sail",
+          "adventure"
+        ]
+      },
+      {
+        "mainWord": "mad max",
+        "forbiddenWords": [
+          "desert",
+          "cars",
+          "post-apocalypse",
+          "furiosa",
+          "action"
+        ]
+      }
+    ],
+    "celebrities": [
+      {
+        "mainWord": "Neymar",
+        "forbiddenWords": [
+          "soccer",
+          "psg",
+          "Santos",
+          "dive",
+          "goal"
+        ]
+      },
+      {
+        "mainWord": "Faustão",
+        "forbiddenWords": [
+          "Globo",
+          "sunday",
+          "audience",
+          "host",
+          "chubby"
+        ]
+      },
+      {
+        "mainWord": "Ana Maria Braga",
+        "forbiddenWords": [
+          "cooking",
+          "Louro",
+          "parrot",
+          "recipe",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Xuxa",
+        "forbiddenWords": [
+          "blonde",
+          "children",
+          "Paquita",
+          "dance",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Silvio Santos",
+        "forbiddenWords": [
+          "SBT",
+          "sunday",
+          "show",
+          "host",
+          "microphone"
+        ]
+      },
+      {
+        "mainWord": "Pelé",
+        "forbiddenWords": [
+          "king",
+          "goal",
+          "world cup",
+          "Santos",
+          "soccer"
+        ]
+      },
+      {
+        "mainWord": "Hebe Camargo",
+        "forbiddenWords": [
+          "host",
+          "SBT",
+          "talk show",
+          "jewels",
+          "blonde"
+        ]
+      },
+      {
+        "mainWord": "Senna",
+        "forbiddenWords": [
+          "Formula 1",
+          "McLaren",
+          "helmet",
+          "driver",
+          "accident"
+        ]
+      },
+      {
+        "mainWord": "Cazuza",
+        "forbiddenWords": [
+          "rock",
+          "Barão",
+          "AIDS",
+          "poet",
+          "music"
+        ]
+      },
+      {
+        "mainWord": "Roberto Carlos",
+        "forbiddenWords": [
+          "singer",
+          "King",
+          "yacht",
+          "Jovem Guarda",
+          "country"
+        ]
+      },
+      {
+        "mainWord": "Xororó",
+        "forbiddenWords": [
+          "duo",
+          "country music",
+          "cowboy",
+          "stage",
+          "rural"
+        ]
+      },
+      {
+        "mainWord": "Elis Regina",
+        "forbiddenWords": [
+          "singer",
+          "voice",
+          "MPB",
+          "Falso Brilhante",
+          "70s"
+        ]
+      },
+      {
+        "mainWord": "Ronaldo Fenômeno",
+        "forbiddenWords": [
+          "Nazário",
+          "tooth",
+          "goal",
+          "World Cup",
+          "chubby"
+        ]
+      },
+      {
+        "mainWord": "Ivete Sangalo",
+        "forbiddenWords": [
+          "axé",
+          "Bahia",
+          "carnival",
+          "singer",
+          "Claudinha"
+        ]
+      },
+      {
+        "mainWord": "Ratinho",
+        "forbiddenWords": [
+          "SBT",
+          "rural",
+          "show",
+          "studio audience",
+          "mustache"
+        ]
+      },
+      {
+        "mainWord": "Gugu Liberato",
+        "forbiddenWords": [
+          "Record",
+          "sunday",
+          "host",
+          "pool",
+          "games"
+        ]
+      },
+      {
+        "mainWord": "Adriane Galisteu",
+        "forbiddenWords": [
+          "Senna",
+          "model",
+          "girlfriend",
+          "blonde",
+          "host"
+        ]
+      },
+      {
+        "mainWord": "Zeca Pagodinho",
+        "forbiddenWords": [
+          "pagode",
+          "samba",
+          "beer",
+          "Rio",
+          "singer"
+        ]
+      },
+      {
+        "mainWord": "Marilia Mendonça",
+        "forbiddenWords": [
+          "country music",
+          "queen",
+          "love",
+          "feminejo",
+          "sadness"
+        ]
+      },
+      {
+        "mainWord": "Chitãozinho",
+        "forbiddenWords": [
+          "duo",
+          "country music",
+          "Xororó",
+          "cowboy",
+          "rural"
+        ]
+      },
+      {
+        "mainWord": "Luan Santana",
+        "forbiddenWords": [
+          "country music",
+          "singer",
+          "fan",
+          "young",
+          "guitar"
+        ]
+      },
+      {
+        "mainWord": "Anitta",
+        "forbiddenWords": [
+          "funk",
+          "Rio",
+          "hit",
+          "dancer",
+          "international"
+        ]
+      },
+      {
+        "mainWord": "Caetano Veloso",
+        "forbiddenWords": [
+          "tropicália",
+          "bahian",
+          "MPB",
+          "singer",
+          "poetry"
+        ]
+      },
+      {
+        "mainWord": "Glória Maria",
+        "forbiddenWords": [
+          "journalist",
+          "Globo",
+          "reporter",
+          "travel",
+          "black"
+        ]
+      },
+      {
+        "mainWord": "Romário",
+        "forbiddenWords": [
+          "goal",
+          "soccer",
+          "Vasco",
+          "World Cup",
+          "Shorty"
+        ]
+      },
+      {
+        "mainWord": "Angélica",
+        "forbiddenWords": [
+          "blonde",
+          "host",
+          "Huck",
+          "Globo",
+          "children"
+        ]
+      },
+      {
+        "mainWord": "Luciano Huck",
+        "forbiddenWords": [
+          "Caldeirão",
+          "Globo",
+          "host",
+          "Angélica",
+          "millionaire"
+        ]
+      },
+      {
+        "mainWord": "Fernanda Montenegro",
+        "forbiddenWords": [
+          "actress",
+          "Oscar",
+          "Central Station",
+          "theater",
+          "veteran"
+        ]
+      },
+      {
+        "mainWord": "Michel Teló",
+        "forbiddenWords": [
+          "Ai Se Eu Te Pego",
+          "country music",
+          "singer",
+          "Thais Fersoza",
+          "viola"
+        ]
+      },
+      {
+        "mainWord": "Claudia Leitte",
+        "forbiddenWords": [
+          "axé",
+          "carnival",
+          "singer",
+          "Bahia",
+          "blonde"
+        ]
+      },
+      {
+        "mainWord": "Galvão Bueno",
+        "forbiddenWords": [
+          "commentator",
+          "Globo",
+          "sports",
+          "controversial",
+          "narrator"
+        ]
+      },
+      {
+        "mainWord": "Larissa Manoela",
+        "forbiddenWords": [
+          "actress",
+          "soap opera",
+          "young",
+          "SBT",
+          "Instagram"
+        ]
+      },
+      {
+        "mainWord": "Thiaguinho",
+        "forbiddenWords": [
+          "pagode",
+          "Exaltasamba",
+          "singer",
+          "smile",
+          "Fernanda"
+        ]
+      },
+      {
+        "mainWord": "Whindersson Nunes",
+        "forbiddenWords": [
+          "youtuber",
+          "comedian",
+          "northeastern",
+          "from Piauí",
+          "viral"
+        ]
+      },
+      {
+        "mainWord": "Bebeto",
+        "forbiddenWords": [
+          "soccer",
+          "94 World Cup",
+          "goal",
+          "Romário",
+          "baby"
+        ]
+      },
+      {
+        "mainWord": "Sandy",
+        "forbiddenWords": [
+          "duo",
+          "Junior",
+          "singer",
+          "childhood",
+          "family"
+        ]
+      },
+      {
+        "mainWord": "Leandro",
+        "forbiddenWords": [
+          "duo",
+          "Leonardo",
+          "country music",
+          "death",
+          "singer"
+        ]
+      },
+      {
+        "mainWord": "Fausto Silva",
+        "forbiddenWords": [
+          "Faustão",
+          "Globo",
+          "sunday",
+          "host",
+          "heart"
+        ]
+      },
+      {
+        "mainWord": "Zico",
+        "forbiddenWords": [
+          "Flamengo",
+          "soccer",
+          "little rooster",
+          "star",
+          "Japan"
+        ]
+      },
+      {
+        "mainWord": "Elza Soares",
+        "forbiddenWords": [
+          "samba",
+          "singer",
+          "voice",
+          "queen",
+          "Garrincha"
+        ]
+      },
+      {
+        "mainWord": "Leonardo",
+        "forbiddenWords": [
+          "cachaça",
+          "Leandro",
+          "country music",
+          "death",
+          "singer"
+        ]
+      }
+    ]
+  },
+  "es-es": {
+    "animales": [
+      {
+        "mainWord": "gato",
+        "forbiddenWords": [
+          "felino",
+          "bigotes",
+          "maullar",
+          "ratón",
+          "animal"
+        ]
+      },
+      {
+        "mainWord": "perro",
+        "forbiddenWords": [
+          "ladrar",
+          "hueso",
+          "mascota",
+          "can",
+          "collar"
+        ]
+      },
+      {
+        "mainWord": "elefante",
+        "forbiddenWords": [
+          "trompa",
+          "grande",
+          "gris",
+          "colmillo",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "tiburón",
+        "forbiddenWords": [
+          "mar",
+          "aleta",
+          "diente",
+          "pez",
+          "océano"
+        ]
+      },
+      {
+        "mainWord": "búho",
+        "forbiddenWords": [
+          "nocturno",
+          "ave",
+          "ojos",
+          "volar",
+          "sabio"
+        ]
+      },
+      {
+        "mainWord": "caballo",
+        "forbiddenWords": [
+          "montar",
+          "silla",
+          "establo",
+          "galopar",
+          "equino"
+        ]
+      },
+      {
+        "mainWord": "jirafa",
+        "forbiddenWords": [
+          "cuello",
+          "alta",
+          "sabana",
+          "manchas",
+          "africa"
+        ]
+      },
+      {
+        "mainWord": "panda",
+        "forbiddenWords": [
+          "negro",
+          "blanco",
+          "bambú",
+          "china",
+          "oso"
+        ]
+      },
+      {
+        "mainWord": "zorro",
+        "forbiddenWords": [
+          "astuto",
+          "cola",
+          "naranja",
+          "salvaje",
+          "madriguera"
+        ]
+      },
+      {
+        "mainWord": "cocodrilo",
+        "forbiddenWords": [
+          "reptil",
+          "río",
+          "caimán",
+          "dientes",
+          "escamas"
+        ]
+      },
+      {
+        "mainWord": "delfín",
+        "forbiddenWords": [
+          "océano",
+          "mamífero",
+          "saltar",
+          "inteligente",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "conejo",
+        "forbiddenWords": [
+          "zanahoria",
+          "oreja",
+          "saltar",
+          "suave",
+          "madriguera"
+        ]
+      },
+      {
+        "mainWord": "león",
+        "forbiddenWords": [
+          "selva",
+          "melena",
+          "rey",
+          "rugido",
+          "felino"
+        ]
+      },
+      {
+        "mainWord": "cebra",
+        "forbiddenWords": [
+          "rayas",
+          "negro",
+          "blanco",
+          "sabana",
+          "equino"
+        ]
+      },
+      {
+        "mainWord": "oso",
+        "forbiddenWords": [
+          "bosque",
+          "hibernar",
+          "grande",
+          "patas",
+          "mamífero"
+        ]
+      },
+      {
+        "mainWord": "mono",
+        "forbiddenWords": [
+          "árbol",
+          "banana",
+          "selva",
+          "primate",
+          "cola"
+        ]
+      },
+      {
+        "mainWord": "lobo",
+        "forbiddenWords": [
+          "manada",
+          "aullar",
+          "salvaje",
+          "bosque",
+          "canino"
+        ]
+      },
+      {
+        "mainWord": "tortuga",
+        "forbiddenWords": [
+          "caparazón",
+          "lenta",
+          "mar",
+          "reptil",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "águila",
+        "forbiddenWords": [
+          "ave",
+          "cielo",
+          "garras",
+          "volar",
+          "rapaz"
+        ]
+      },
+      {
+        "mainWord": "serpiente",
+        "forbiddenWords": [
+          "veneno",
+          "reptil",
+          "arrastrarse",
+          "morder",
+          "escamas"
+        ]
+      }
+    ],
+    "profesiones": [
+      {
+        "mainWord": "médico",
+        "forbiddenWords": [
+          "hospital",
+          "paciente",
+          "consulta",
+          "salud",
+          "doctor"
+        ]
+      },
+      {
+        "mainWord": "profesor",
+        "forbiddenWords": [
+          "escuela",
+          "clase",
+          "alumno",
+          "enseñar",
+          "pizarra"
+        ]
+      },
+      {
+        "mainWord": "programador",
+        "forbiddenWords": [
+          "código",
+          "software",
+          "computadora",
+          "error",
+          "aplicación"
+        ]
+      },
+      {
+        "mainWord": "cocinero",
+        "forbiddenWords": [
+          "cocina",
+          "receta",
+          "restaurante",
+          "chef",
+          "olla"
+        ]
+      },
+      {
+        "mainWord": "piloto",
+        "forbiddenWords": [
+          "avión",
+          "vuelo",
+          "cabina",
+          "aeropuerto",
+          "despegar"
+        ]
+      },
+      {
+        "mainWord": "bombero",
+        "forbiddenWords": [
+          "fuego",
+          "incendio",
+          "manguera",
+          "rescate",
+          "sirena"
+        ]
+      },
+      {
+        "mainWord": "ingeniero",
+        "forbiddenWords": [
+          "obra",
+          "cálculo",
+          "proyecto",
+          "construcción",
+          "técnico"
+        ]
+      },
+      {
+        "mainWord": "abogado",
+        "forbiddenWords": [
+          "ley",
+          "tribunal",
+          "cliente",
+          "caso",
+          "juez"
+        ]
+      },
+      {
+        "mainWord": "arquitecto",
+        "forbiddenWords": [
+          "plano",
+          "edificio",
+          "diseño",
+          "proyecto",
+          "urbanismo"
+        ]
+      },
+      {
+        "mainWord": "periodista",
+        "forbiddenWords": [
+          "noticia",
+          "reportaje",
+          "entrevista",
+          "prensa",
+          "cámara"
+        ]
+      },
+      {
+        "mainWord": "dentista",
+        "forbiddenWords": [
+          "diente",
+          "consultorio",
+          "sonrisa",
+          "canal",
+          "boca"
+        ]
+      },
+      {
+        "mainWord": "conductor",
+        "forbiddenWords": [
+          "coche",
+          "volante",
+          "tráfico",
+          "carrera",
+          "pasajero"
+        ]
+      },
+      {
+        "mainWord": "vendedor",
+        "forbiddenWords": [
+          "tienda",
+          "cliente",
+          "producto",
+          "venta",
+          "meta"
+        ]
+      },
+      {
+        "mainWord": "enfermero",
+        "forbiddenWords": [
+          "hospital",
+          "paciente",
+          "cuidado",
+          "turno",
+          "medicación"
+        ]
+      },
+      {
+        "mainWord": "contable",
+        "forbiddenWords": [
+          "impuesto",
+          "empresa",
+          "hoja de cálculo",
+          "finanzas",
+          "balance"
+        ]
+      },
+      {
+        "mainWord": "policía",
+        "forbiddenWords": [
+          "comisaría",
+          "uniforme",
+          "seguridad",
+          "prisión",
+          "patrulla"
+        ]
+      },
+      {
+        "mainWord": "diseñador",
+        "forbiddenWords": [
+          "creativo",
+          "diseño",
+          "arte",
+          "tipografía",
+          "interfaz"
+        ]
+      },
+      {
+        "mainWord": "científico",
+        "forbiddenWords": [
+          "laboratorio",
+          "investigación",
+          "experimento",
+          "teoría",
+          "descubrimiento"
+        ]
+      },
+      {
+        "mainWord": "fotógrafo",
+        "forbiddenWords": [
+          "cámara",
+          "lente",
+          "sesión",
+          "flash",
+          "imagen"
+        ]
+      },
+      {
+        "mainWord": "actor",
+        "forbiddenWords": [
+          "película",
+          "teatro",
+          "personaje",
+          "escena",
+          "papel"
+        ]
+      }
+    ],
+    "objetos": [
+      {
+        "mainWord": "silla",
+        "forbiddenWords": [
+          "sentar",
+          "respaldo",
+          "mesa",
+          "cuatro",
+          "pata"
+        ]
+      },
+      {
+        "mainWord": "paraguas",
+        "forbiddenWords": [
+          "lluvia",
+          "mojarse",
+          "abrir",
+          "mango",
+          "tormenta"
+        ]
+      },
+      {
+        "mainWord": "tijeras",
+        "forbiddenWords": [
+          "cortar",
+          "papel",
+          "dos",
+          "hoja",
+          "oficina"
+        ]
+      },
+      {
+        "mainWord": "reloj",
+        "forbiddenWords": [
+          "hora",
+          "muñeca",
+          "manecilla",
+          "tiempo",
+          "alarma"
+        ]
+      },
+      {
+        "mainWord": "espejo",
+        "forbiddenWords": [
+          "reflejo",
+          "vidrio",
+          "cara",
+          "imagen",
+          "baño"
+        ]
+      },
+      {
+        "mainWord": "cargador",
+        "forbiddenWords": [
+          "teléfono",
+          "energía",
+          "cable",
+          "batería",
+          "enchufe"
+        ]
+      },
+      {
+        "mainWord": "mochila",
+        "forbiddenWords": [
+          "espalda",
+          "cremallera",
+          "escuela",
+          "bolsillo",
+          "correa"
+        ]
+      },
+      {
+        "mainWord": "bombilla",
+        "forbiddenWords": [
+          "luz",
+          "energía",
+          "techo",
+          "iluminar",
+          "romper"
+        ]
+      },
+      {
+        "mainWord": "olla",
+        "forbiddenWords": [
+          "cocinar",
+          "fogón",
+          "tapa",
+          "comida",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "martillo",
+        "forbiddenWords": [
+          "clavo",
+          "golpear",
+          "herramienta",
+          "obra",
+          "madera"
+        ]
+      },
+      {
+        "mainWord": "gafas",
+        "forbiddenWords": [
+          "visión",
+          "lente",
+          "montura",
+          "graduación",
+          "ver"
+        ]
+      },
+      {
+        "mainWord": "botella",
+        "forbiddenWords": [
+          "agua",
+          "beber",
+          "plástico",
+          "tapón",
+          "líquido"
+        ]
+      },
+      {
+        "mainWord": "cuaderno",
+        "forbiddenWords": [
+          "hoja",
+          "escribir",
+          "escuela",
+          "apunte",
+          "espiral"
+        ]
+      },
+      {
+        "mainWord": "bolígrafo",
+        "forbiddenWords": [
+          "tinta",
+          "escribir",
+          "papel",
+          "azul",
+          "capuchón"
+        ]
+      },
+      {
+        "mainWord": "llave",
+        "forbiddenWords": [
+          "puerta",
+          "cerradura",
+          "abrir",
+          "metal",
+          "casa"
+        ]
+      },
+      {
+        "mainWord": "teclado",
+        "forbiddenWords": [
+          "computadora",
+          "escribir",
+          "teclas",
+          "ratón",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "ratón",
+        "forbiddenWords": [
+          "cursor",
+          "computadora",
+          "clic",
+          "teclado",
+          "usb"
+        ]
+      },
+      {
+        "mainWord": "toalla",
+        "forbiddenWords": [
+          "baño",
+          "secar",
+          "tela",
+          "cuerpo",
+          "toallero"
+        ]
+      },
+      {
+        "mainWord": "vaso",
+        "forbiddenWords": [
+          "beber",
+          "vidrio",
+          "agua",
+          "líquido",
+          "cocina"
+        ]
+      },
+      {
+        "mainWord": "almohada",
+        "forbiddenWords": [
+          "cama",
+          "sueño",
+          "cabeza",
+          "dormir",
+          "suave"
+        ]
+      },
+      {
+        "mainWord": "nevera",
+        "forbiddenWords": [
+          "frío",
+          "cocina",
+          "comida",
+          "puerta",
+          "congelador"
+        ]
+      },
+      {
+        "mainWord": "sofá",
+        "forbiddenWords": [
+          "sala",
+          "sentar",
+          "cojín",
+          "confort",
+          "tapizar"
+        ]
+      },
+      {
+        "mainWord": "ventilador",
+        "forbiddenWords": [
+          "viento",
+          "calor",
+          "hélice",
+          "encender",
+          "aire"
+        ]
+      },
+      {
+        "mainWord": "televisor",
+        "forbiddenWords": [
+          "canal",
+          "mando",
+          "película",
+          "pantalla",
+          "ver"
+        ]
+      },
+      {
+        "mainWord": "mando a distancia",
+        "forbiddenWords": [
+          "televisor",
+          "botón",
+          "pila",
+          "canal",
+          "distancia"
+        ]
+      },
+      {
+        "mainWord": "cocina",
+        "forbiddenWords": [
+          "cocinar",
+          "gas",
+          "fuego",
+          "olla",
+          "hornillo"
+        ]
+      },
+      {
+        "mainWord": "microondas",
+        "forbiddenWords": [
+          "calentar",
+          "comida",
+          "cocina",
+          "plato",
+          "temporizador"
+        ]
+      },
+      {
+        "mainWord": "aspiradora",
+        "forbiddenWords": [
+          "polvo",
+          "limpieza",
+          "succionar",
+          "casa",
+          "suelo"
+        ]
+      },
+      {
+        "mainWord": "escoba",
+        "forbiddenWords": [
+          "barrer",
+          "suelo",
+          "limpieza",
+          "palo",
+          "suciedad"
+        ]
+      },
+      {
+        "mainWord": "fregona",
+        "forbiddenWords": [
+          "agua",
+          "limpieza",
+          "arrastrar",
+          "suelo",
+          "secar"
+        ]
+      },
+      {
+        "mainWord": "cepillo",
+        "forbiddenWords": [
+          "pelo",
+          "peinar",
+          "cerdas",
+          "baño",
+          "desenredar"
+        ]
+      },
+      {
+        "mainWord": "peine",
+        "forbiddenWords": [
+          "pelo",
+          "dientes",
+          "peinar",
+          "belleza",
+          "hebra"
+        ]
+      },
+      {
+        "mainWord": "jabón",
+        "forbiddenWords": [
+          "baño",
+          "limpieza",
+          "espuma",
+          "perfume",
+          "lavar"
+        ]
+      },
+      {
+        "mainWord": "champú",
+        "forbiddenWords": [
+          "pelo",
+          "ducha",
+          "lavar",
+          "frasco",
+          "espuma"
+        ]
+      },
+      {
+        "mainWord": "cepillo de dientes",
+        "forbiddenWords": [
+          "diente",
+          "pasta",
+          "baño",
+          "higiene",
+          "cepillar"
+        ]
+      },
+      {
+        "mainWord": "pasta de dientes",
+        "forbiddenWords": [
+          "cepillo",
+          "higiene",
+          "menta",
+          "diente",
+          "tubo"
+        ]
+      },
+      {
+        "mainWord": "bicicleta",
+        "forbiddenWords": [
+          "pedal",
+          "rueda",
+          "ciclista",
+          "manillar",
+          "cadena"
+        ]
+      },
+      {
+        "mainWord": "casco",
+        "forbiddenWords": [
+          "cabeza",
+          "seguridad",
+          "moto",
+          "protección",
+          "usar"
+        ]
+      },
+      {
+        "mainWord": "maleta",
+        "forbiddenWords": [
+          "viaje",
+          "ropa",
+          "ruedas",
+          "equipaje",
+          "aeropuerto"
+        ]
+      },
+      {
+        "mainWord": "ascensor",
+        "forbiddenWords": [
+          "planta",
+          "edificio",
+          "subir",
+          "bajar",
+          "puerta"
+        ]
+      },
+      {
+        "mainWord": "escalera",
+        "forbiddenWords": [
+          "escalón",
+          "subir",
+          "bajar",
+          "planta",
+          "altura"
+        ]
+      },
+      {
+        "mainWord": "ventana",
+        "forbiddenWords": [
+          "vidrio",
+          "abrir",
+          "casa",
+          "cortina",
+          "vista"
+        ]
+      },
+      {
+        "mainWord": "cortina",
+        "forbiddenWords": [
+          "ventana",
+          "tela",
+          "cerrar",
+          "sala",
+          "luz"
+        ]
+      },
+      {
+        "mainWord": "alfombra",
+        "forbiddenWords": [
+          "suelo",
+          "sala",
+          "tela",
+          "pisar",
+          "decoración"
+        ]
+      },
+      {
+        "mainWord": "cuadro",
+        "forbiddenWords": [
+          "pared",
+          "imagen",
+          "arte",
+          "marco",
+          "decoración"
+        ]
+      },
+      {
+        "mainWord": "libro",
+        "forbiddenWords": [
+          "leer",
+          "página",
+          "historia",
+          "autor",
+          "biblioteca"
+        ]
+      },
+      {
+        "mainWord": "goma de borrar",
+        "forbiddenWords": [
+          "borrar",
+          "lápiz",
+          "escuela",
+          "error",
+          "papel"
+        ]
+      },
+      {
+        "mainWord": "lápiz",
+        "forbiddenWords": [
+          "escribir",
+          "grafito",
+          "afilar",
+          "papel",
+          "dibujo"
+        ]
+      },
+      {
+        "mainWord": "sacapuntas",
+        "forbiddenWords": [
+          "lápiz",
+          "grafito",
+          "afilar",
+          "escuela",
+          "madera"
+        ]
+      },
+      {
+        "mainWord": "calculadora",
+        "forbiddenWords": [
+          "cuenta",
+          "número",
+          "sumar",
+          "tecla",
+          "resultado"
+        ]
+      },
+      {
+        "mainWord": "impresora",
+        "forbiddenWords": [
+          "papel",
+          "tinta",
+          "documento",
+          "computadora",
+          "imprimir"
+        ]
+      },
+      {
+        "mainWord": "monitor",
+        "forbiddenWords": [
+          "pantalla",
+          "computadora",
+          "imagen",
+          "video",
+          "display"
+        ]
+      },
+      {
+        "mainWord": "memoria USB",
+        "forbiddenWords": [
+          "usb",
+          "archivo",
+          "almacenamiento",
+          "computadora",
+          "datos"
+        ]
+      },
+      {
+        "mainWord": "auriculares",
+        "forbiddenWords": [
+          "música",
+          "oído",
+          "sonido",
+          "escuchar",
+          "cable"
+        ]
+      },
+      {
+        "mainWord": "altavoz",
+        "forbiddenWords": [
+          "música",
+          "audio",
+          "alto",
+          "sonido",
+          "volumen"
+        ]
+      },
+      {
+        "mainWord": "guitarra",
+        "forbiddenWords": [
+          "cuerda",
+          "música",
+          "tocar",
+          "instrumento",
+          "acorde"
+        ]
+      },
+      {
+        "mainWord": "micrófono",
+        "forbiddenWords": [
+          "voz",
+          "sonido",
+          "cantar",
+          "audio",
+          "grabar"
+        ]
+      },
+      {
+        "mainWord": "cámara",
+        "forbiddenWords": [
+          "foto",
+          "imagen",
+          "lente",
+          "grabar",
+          "flash"
+        ]
+      },
+      {
+        "mainWord": "linterna",
+        "forbiddenWords": [
+          "luz",
+          "oscuro",
+          "pila",
+          "iluminar",
+          "mano"
+        ]
+      },
+      {
+        "mainWord": "vela",
+        "forbiddenWords": [
+          "fuego",
+          "cera",
+          "encender",
+          "luz",
+          "derretir"
+        ]
+      },
+      {
+        "mainWord": "mechero",
+        "forbiddenWords": [
+          "fuego",
+          "encender",
+          "gas",
+          "llama",
+          "cigarrillo"
+        ]
+      },
+      {
+        "mainWord": "caja fuerte",
+        "forbiddenWords": [
+          "dinero",
+          "contraseña",
+          "seguridad",
+          "guardar",
+          "metal"
+        ]
+      },
+      {
+        "mainWord": "cartera",
+        "forbiddenWords": [
+          "dinero",
+          "documento",
+          "bolsillo",
+          "tarjeta",
+          "guardar"
+        ]
+      },
+      {
+        "mainWord": "anillo",
+        "forbiddenWords": [
+          "dedo",
+          "joya",
+          "boda",
+          "oro",
+          "usar"
+        ]
+      },
+      {
+        "mainWord": "collar",
+        "forbiddenWords": [
+          "cuello",
+          "joya",
+          "cadena",
+          "usar",
+          "accesorio"
+        ]
+      },
+      {
+        "mainWord": "armario",
+        "forbiddenWords": [
+          "ropa",
+          "puerta",
+          "dormitorio",
+          "percha",
+          "closet"
+        ]
+      },
+      {
+        "mainWord": "percha",
+        "forbiddenWords": [
+          "ropa",
+          "armario",
+          "colgar",
+          "gancho",
+          "dormitorio"
+        ]
+      },
+      {
+        "mainWord": "lámpara de mesa",
+        "forbiddenWords": [
+          "luz",
+          "dormitorio",
+          "mesa",
+          "bombilla",
+          "iluminar"
+        ]
+      },
+      {
+        "mainWord": "despertador",
+        "forbiddenWords": [
+          "despertar",
+          "alarma",
+          "hora",
+          "sueño",
+          "mañana"
+        ]
+      },
+      {
+        "mainWord": "termómetro",
+        "forbiddenWords": [
+          "temperatura",
+          "fiebre",
+          "medir",
+          "calor",
+          "grado"
+        ]
+      }
+    ],
+    "general": [
+      {
+        "mainWord": "empanada",
+        "forbiddenWords": [
+          "comida",
+          "feria",
+          "frito",
+          "masa",
+          "relleno"
+        ]
+      },
+      {
+        "mainWord": "playa",
+        "forbiddenWords": [
+          "arena",
+          "mar",
+          "sol",
+          "ola",
+          "verano"
+        ]
+      },
+      {
+        "mainWord": "amistad",
+        "forbiddenWords": [
+          "amigo",
+          "vínculo",
+          "confianza",
+          "compañero",
+          "lealtad"
+        ]
+      },
+      {
+        "mainWord": "cumpleaños",
+        "forbiddenWords": [
+          "fiesta",
+          "pastel",
+          "vela",
+          "regalo",
+          "felicitación"
+        ]
+      },
+      {
+        "mainWord": "cocina",
+        "forbiddenWords": [
+          "fogón",
+          "olla",
+          "comida",
+          "receta",
+          "casa"
+        ]
+      },
+      {
+        "mainWord": "internet",
+        "forbiddenWords": [
+          "web",
+          "red",
+          "online",
+          "wifi",
+          "navegar"
+        ]
+      },
+      {
+        "mainWord": "supermercado",
+        "forbiddenWords": [
+          "compras",
+          "carrito",
+          "caja",
+          "tienda",
+          "producto"
+        ]
+      },
+      {
+        "mainWord": "escuela",
+        "forbiddenWords": [
+          "alumno",
+          "profesor",
+          "clase",
+          "examen",
+          "uniforme"
+        ]
+      },
+      {
+        "mainWord": "hospital",
+        "forbiddenWords": [
+          "médico",
+          "urgencias",
+          "enfermero",
+          "enfermedad",
+          "cama"
+        ]
+      },
+      {
+        "mainWord": "futuro",
+        "forbiddenWords": [
+          "mañana",
+          "tiempo",
+          "plan",
+          "destino",
+          "objetivo"
+        ]
+      },
+      {
+        "mainWord": "música",
+        "forbiddenWords": [
+          "sonido",
+          "ritmo",
+          "cantante",
+          "instrumento",
+          "melodía"
+        ]
+      },
+      {
+        "mainWord": "viaje",
+        "forbiddenWords": [
+          "maleta",
+          "destino",
+          "paseo",
+          "avión",
+          "turismo"
+        ]
+      },
+      {
+        "mainWord": "familia",
+        "forbiddenWords": [
+          "padre",
+          "madre",
+          "hijos",
+          "casa",
+          "parientes"
+        ]
+      },
+      {
+        "mainWord": "tiempo",
+        "forbiddenWords": [
+          "horas",
+          "relámpago",
+          "pasar",
+          "reloj",
+          "minuto"
+        ]
+      },
+      {
+        "mainWord": "lluvia",
+        "forbiddenWords": [
+          "agua",
+          "nube",
+          "mojar",
+          "tormenta",
+          "llovizna"
+        ]
+      },
+      {
+        "mainWord": "jardín",
+        "forbiddenWords": [
+          "flores",
+          "plantas",
+          "césped",
+          "patio",
+          "regar"
+        ]
+      },
+      {
+        "mainWord": "ciudad",
+        "forbiddenWords": [
+          "calle",
+          "edificio",
+          "tráfico",
+          "urbano",
+          "barrio"
+        ]
+      },
+      {
+        "mainWord": "parque",
+        "forbiddenWords": [
+          "árboles",
+          "ocio",
+          "jugar",
+          "césped",
+          "banco"
+        ]
+      },
+      {
+        "mainWord": "ventana",
+        "forbiddenWords": [
+          "vidrio",
+          "casa",
+          "abrir",
+          "cortina",
+          "vista"
+        ]
+      },
+      {
+        "mainWord": "puerta",
+        "forbiddenWords": [
+          "entrada",
+          "cerrar",
+          "llave",
+          "casa",
+          "marco"
+        ]
+      },
+      {
+        "mainWord": "morriña",
+        "forbiddenWords": [
+          "distancia",
+          "lejos",
+          "ausencia",
+          "memoria",
+          "sentir"
+        ]
+      },
+      {
+        "mainWord": "miedo",
+        "forbiddenWords": [
+          "susto",
+          "oscuro",
+          "pánico",
+          "terror",
+          "valentía"
+        ]
+      },
+      {
+        "mainWord": "sueño",
+        "forbiddenWords": [
+          "dormir",
+          "noche",
+          "pesadilla",
+          "deseo",
+          "imaginación"
+        ]
+      },
+      {
+        "mainWord": "rabia",
+        "forbiddenWords": [
+          "enfadado",
+          "gritar",
+          "nervioso",
+          "irritado",
+          "emoción"
+        ]
+      },
+      {
+        "mainWord": "celos",
+        "forbiddenWords": [
+          "envidia",
+          "desconfianza",
+          "posesivo",
+          "relación",
+          "amor"
+        ]
+      },
+      {
+        "mainWord": "alegría",
+        "forbiddenWords": [
+          "feliz",
+          "sonrisa",
+          "animado",
+          "fiesta",
+          "humor"
+        ]
+      },
+      {
+        "mainWord": "tristeza",
+        "forbiddenWords": [
+          "llorar",
+          "triste",
+          "dolor",
+          "sufrimiento",
+          "lágrima"
+        ]
+      },
+      {
+        "mainWord": "vergüenza",
+        "forbiddenWords": [
+          "avergonzado",
+          "situación",
+          "apuro",
+          "tímido",
+          "rubor"
+        ]
+      },
+      {
+        "mainWord": "orgullo",
+        "forbiddenWords": [
+          "logro",
+          "hijo",
+          "vanidad",
+          "mérito",
+          "arrogancia"
+        ]
+      },
+      {
+        "mainWord": "esperanza",
+        "forbiddenWords": [
+          "futuro",
+          "fe",
+          "optimismo",
+          "creer",
+          "aguardar"
+        ]
+      },
+      {
+        "mainWord": "soledad",
+        "forbiddenWords": [
+          "solo",
+          "aislamiento",
+          "silencio",
+          "abandono",
+          "vacío"
+        ]
+      },
+      {
+        "mainWord": "ansiedad",
+        "forbiddenWords": [
+          "nervioso",
+          "preocupación",
+          "angustia",
+          "asfixia",
+          "tensión"
+        ]
+      },
+      {
+        "mainWord": "amor",
+        "forbiddenWords": [
+          "pareja",
+          "sentimiento",
+          "cariño",
+          "enamorado",
+          "corazón"
+        ]
+      },
+      {
+        "mainWord": "odio",
+        "forbiddenWords": [
+          "rencor",
+          "rabia",
+          "sentimiento",
+          "enemigo",
+          "aversión"
+        ]
+      },
+      {
+        "mainWord": "paz",
+        "forbiddenWords": [
+          "tranquilo",
+          "calma",
+          "guerra",
+          "silencio",
+          "armonía"
+        ]
+      },
+      {
+        "mainWord": "libertad",
+        "forbiddenWords": [
+          "libre",
+          "preso",
+          "elección",
+          "independencia",
+          "alas"
+        ]
+      },
+      {
+        "mainWord": "mentira",
+        "forbiddenWords": [
+          "engañar",
+          "verdad",
+          "falso",
+          "fingir",
+          "ilusión"
+        ]
+      },
+      {
+        "mainWord": "secreto",
+        "forbiddenWords": [
+          "guardar",
+          "revelar",
+          "esconder",
+          "silencio",
+          "contar"
+        ]
+      },
+      {
+        "mainWord": "traición",
+        "forbiddenWords": [
+          "traicionar",
+          "deslealtad",
+          "confiar",
+          "pareja",
+          "amigo"
+        ]
+      },
+      {
+        "mainWord": "perdón",
+        "forbiddenWords": [
+          "disculpa",
+          "error",
+          "reconciliación",
+          "herida",
+          "superar"
+        ]
+      },
+      {
+        "mainWord": "navidad",
+        "forbiddenWords": [
+          "diciembre",
+          "familia",
+          "regalo",
+          "árbol",
+          "papa noel"
+        ]
+      },
+      {
+        "mainWord": "carnaval",
+        "forbiddenWords": [
+          "fiesta",
+          "disfraz",
+          "desfile",
+          "samba",
+          "confeti"
+        ]
+      },
+      {
+        "mainWord": "festivo",
+        "forbiddenWords": [
+          "descanso",
+          "día libre",
+          "día",
+          "trabajo",
+          "calendario"
+        ]
+      },
+      {
+        "mainWord": "vacaciones",
+        "forbiddenWords": [
+          "descanso",
+          "viaje",
+          "tiempo libre",
+          "verano",
+          "escuela"
+        ]
+      },
+      {
+        "mainWord": "boda",
+        "forbiddenWords": [
+          "novia",
+          "altar",
+          "unión",
+          "fiesta",
+          "anillo"
+        ]
+      },
+      {
+        "mainWord": "divorcio",
+        "forbiddenWords": [
+          "separación",
+          "pareja",
+          "ruptura",
+          "abogado",
+          "reparto"
+        ]
+      },
+      {
+        "mainWord": "embarazo",
+        "forbiddenWords": [
+          "bebé",
+          "barriga",
+          "madre",
+          "gestación",
+          "parto"
+        ]
+      },
+      {
+        "mainWord": "jubilación",
+        "forbiddenWords": [
+          "descanso",
+          "vejez",
+          "pensión",
+          "trabajo",
+          "seguridad social"
+        ]
+      },
+      {
+        "mainWord": "graduación",
+        "forbiddenWords": [
+          "diploma",
+          "toga",
+          "universidad",
+          "finalización",
+          "fiesta"
+        ]
+      },
+      {
+        "mainWord": "selectividad",
+        "forbiddenWords": [
+          "examen",
+          "universidad",
+          "competencia",
+          "estudiar",
+          "nota"
+        ]
+      },
+      {
+        "mainWord": "elección",
+        "forbiddenWords": [
+          "voto",
+          "candidato",
+          "urna",
+          "partido",
+          "política"
+        ]
+      },
+      {
+        "mainWord": "huelga",
+        "forbiddenWords": [
+          "trabajador",
+          "paro",
+          "protesta",
+          "salario",
+          "sindicato"
+        ]
+      },
+      {
+        "mainWord": "pandemia",
+        "forbiddenWords": [
+          "virus",
+          "enfermedad",
+          "aislamiento",
+          "vacuna",
+          "mascarilla"
+        ]
+      },
+      {
+        "mainWord": "guerra",
+        "forbiddenWords": [
+          "conflicto",
+          "país",
+          "muerte",
+          "ejército",
+          "bombas"
+        ]
+      },
+      {
+        "mainWord": "crisis",
+        "forbiddenWords": [
+          "economía",
+          "dificultad",
+          "problema",
+          "desempleo",
+          "solución"
+        ]
+      },
+      {
+        "mainWord": "inflación",
+        "forbiddenWords": [
+          "precio",
+          "dinero",
+          "economía",
+          "caro",
+          "mercado"
+        ]
+      },
+      {
+        "mainWord": "desempleo",
+        "forbiddenWords": [
+          "trabajo",
+          "despido",
+          "vacante",
+          "salario",
+          "crisis"
+        ]
+      },
+      {
+        "mainWord": "reunión",
+        "forbiddenWords": [
+          "trabajo",
+          "agenda",
+          "empresa",
+          "debate",
+          "presentación"
+        ]
+      },
+      {
+        "mainWord": "cola",
+        "forbiddenWords": [
+          "esperar",
+          "banco",
+          "demora",
+          "turno",
+          "atención"
+        ]
+      },
+      {
+        "mainWord": "atasco",
+        "forbiddenWords": [
+          "embotellamiento",
+          "coche",
+          "hora",
+          "ciudad",
+          "bocina"
+        ]
+      },
+      {
+        "mainWord": "gimnasio",
+        "forbiddenWords": [
+          "entrenamiento",
+          "ejercicio",
+          "músculo",
+          "sudor",
+          "disciplina"
+        ]
+      },
+      {
+        "mainWord": "dieta",
+        "forbiddenWords": [
+          "adelgazar",
+          "comida",
+          "restricción",
+          "peso",
+          "salud"
+        ]
+      },
+      {
+        "mainWord": "resaca",
+        "forbiddenWords": [
+          "bebida",
+          "alcohol",
+          "dolor",
+          "cabeza",
+          "fiesta"
+        ]
+      },
+      {
+        "mainWord": "pereza",
+        "forbiddenWords": [
+          "descanso",
+          "cama",
+          "trabajo",
+          "holgazán",
+          "vago"
+        ]
+      },
+      {
+        "mainWord": "hábito",
+        "forbiddenWords": [
+          "rutina",
+          "costumbre",
+          "repetición",
+          "comportamiento",
+          "diario"
+        ]
+      },
+      {
+        "mainWord": "infancia",
+        "forbiddenWords": [
+          "niño",
+          "jugar",
+          "escuela",
+          "inocencia",
+          "pasado"
+        ]
+      },
+      {
+        "mainWord": "adolescencia",
+        "forbiddenWords": [
+          "joven",
+          "pubertad",
+          "rebelde",
+          "identidad",
+          "escuela"
+        ]
+      },
+      {
+        "mainWord": "vejez",
+        "forbiddenWords": [
+          "anciano",
+          "arrugas",
+          "experiencia",
+          "jubilación",
+          "edad"
+        ]
+      },
+      {
+        "mainWord": "éxito",
+        "forbiddenWords": [
+          "logro",
+          "fama",
+          "dinero",
+          "esfuerzo",
+          "victoria"
+        ]
+      },
+      {
+        "mainWord": "fracaso",
+        "forbiddenWords": [
+          "derrota",
+          "error",
+          "decepción",
+          "intentar",
+          "perder"
+        ]
+      }
+    ],
+    "películas": [
+      {
+        "mainWord": "matrix",
+        "forbiddenWords": [
+          "neo",
+          "simulación",
+          "píldora",
+          "máquina",
+          "acción"
+        ]
+      },
+      {
+        "mainWord": "titanic",
+        "forbiddenWords": [
+          "barco",
+          "iceberg",
+          "romance",
+          "hundir",
+          "jack"
+        ]
+      },
+      {
+        "mainWord": "shrek",
+        "forbiddenWords": [
+          "ogro",
+          "burro",
+          "princesa",
+          "pantano",
+          "verde"
+        ]
+      },
+      {
+        "mainWord": "frozen",
+        "forbiddenWords": [
+          "hielo",
+          "elsa",
+          "anna",
+          "nieve",
+          "disney"
+        ]
+      },
+      {
+        "mainWord": "jurassic park",
+        "forbiddenWords": [
+          "dinosaurio",
+          "isla",
+          "parque",
+          "científico",
+          "aventura"
+        ]
+      },
+      {
+        "mainWord": "avatar",
+        "forbiddenWords": [
+          "pandora",
+          "azul",
+          "navi",
+          "bosque",
+          "ciencia ficción"
+        ]
+      },
+      {
+        "mainWord": "interestelar",
+        "forbiddenWords": [
+          "espacio",
+          "nasa",
+          "agujero negro",
+          "tiempo",
+          "planeta"
+        ]
+      },
+      {
+        "mainWord": "toy story",
+        "forbiddenWords": [
+          "juguete",
+          "woody",
+          "buzz",
+          "animación",
+          "andy"
+        ]
+      },
+      {
+        "mainWord": "batman",
+        "forbiddenWords": [
+          "gotham",
+          "murciélago",
+          "héroe",
+          "joker",
+          "wayne"
+        ]
+      },
+      {
+        "mainWord": "rocky",
+        "forbiddenWords": [
+          "boxeo",
+          "lucha",
+          "entrenamiento",
+          "campeón",
+          "ring"
+        ]
+      },
+      {
+        "mainWord": "coco",
+        "forbiddenWords": [
+          "pixar",
+          "música",
+          "familia",
+          "méxico",
+          "guitarra"
+        ]
+      },
+      {
+        "mainWord": "godzilla",
+        "forbiddenWords": [
+          "monstruo",
+          "gigante",
+          "ciudad",
+          "destruir",
+          "japón"
+        ]
+      },
+      {
+        "mainWord": "inception",
+        "forbiddenWords": [
+          "sueño",
+          "mente",
+          "capas",
+          "atraco",
+          "nolan"
+        ]
+      },
+      {
+        "mainWord": "gladiador",
+        "forbiddenWords": [
+          "roma",
+          "arena",
+          "imperio",
+          "lucha",
+          "espada"
+        ]
+      },
+      {
+        "mainWord": "alien",
+        "forbiddenWords": [
+          "espacio",
+          "nave",
+          "xenomorfo",
+          "terror",
+          "ripley"
+        ]
+      },
+      {
+        "mainWord": "depredador",
+        "forbiddenWords": [
+          "cazador",
+          "selva",
+          "invisible",
+          "extraterrestre",
+          "acción"
+        ]
+      },
+      {
+        "mainWord": "dune",
+        "forbiddenWords": [
+          "desierto",
+          "arrakis",
+          "especia",
+          "fremen",
+          "ciencia ficción"
+        ]
+      },
+      {
+        "mainWord": "inside out",
+        "forbiddenWords": [
+          "emoción",
+          "pixar",
+          "mente",
+          "alegría",
+          "tristeza"
+        ]
+      },
+      {
+        "mainWord": "moana",
+        "forbiddenWords": [
+          "océano",
+          "isla",
+          "disney",
+          "navegar",
+          "aventura"
+        ]
+      },
+      {
+        "mainWord": "mad max",
+        "forbiddenWords": [
+          "desierto",
+          "coches",
+          "post-apocalipsis",
+          "furiosa",
+          "acción"
+        ]
+      }
+    ],
+    "celebridades": [
+      {
+        "mainWord": "Neymar",
+        "forbiddenWords": [
+          "fútbol",
+          "psg",
+          "Santos",
+          "clavarse",
+          "gol"
+        ]
+      },
+      {
+        "mainWord": "Faustão",
+        "forbiddenWords": [
+          "Globo",
+          "domingo",
+          "público",
+          "presentador",
+          "gordo"
+        ]
+      },
+      {
+        "mainWord": "Ana Maria Braga",
+        "forbiddenWords": [
+          "cocina",
+          "Louro",
+          "loro",
+          "receta",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Xuxa",
+        "forbiddenWords": [
+          "rubia",
+          "niños",
+          "Paquita",
+          "baile",
+          "Globo"
+        ]
+      },
+      {
+        "mainWord": "Silvio Santos",
+        "forbiddenWords": [
+          "SBT",
+          "domingo",
+          "show",
+          "presentador",
+          "micrófono"
+        ]
+      },
+      {
+        "mainWord": "Pelé",
+        "forbiddenWords": [
+          "rey",
+          "gol",
+          "copa",
+          "Santos",
+          "fútbol"
+        ]
+      },
+      {
+        "mainWord": "Hebe Camargo",
+        "forbiddenWords": [
+          "presentadora",
+          "SBT",
+          "talk show",
+          "joyas",
+          "rubia"
+        ]
+      },
+      {
+        "mainWord": "Senna",
+        "forbiddenWords": [
+          "Fórmula 1",
+          "McLaren",
+          "casco",
+          "piloto",
+          "accidente"
+        ]
+      },
+      {
+        "mainWord": "Cazuza",
+        "forbiddenWords": [
+          "rock",
+          "Barão",
+          "SIDA",
+          "poeta",
+          "música"
+        ]
+      },
+      {
+        "mainWord": "Roberto Carlos",
+        "forbiddenWords": [
+          "cantante",
+          "Rey",
+          "yate",
+          "Jovem Guarda",
+          "música"
+        ]
+      },
+      {
+        "mainWord": "Xororó",
+        "forbiddenWords": [
+          "dúo",
+          "música sertaneja",
+          "vaquero",
+          "escenario",
+          "campesino"
+        ]
+      },
+      {
+        "mainWord": "Elis Regina",
+        "forbiddenWords": [
+          "cantante",
+          "voz",
+          "MPB",
+          "Falso Brilhante",
+          "años 70"
+        ]
+      },
+      {
+        "mainWord": "Ronaldo Fenômeno",
+        "forbiddenWords": [
+          "Nazário",
+          "diente",
+          "gol",
+          "Copa",
+          "gordo"
+        ]
+      },
+      {
+        "mainWord": "Ivete Sangalo",
+        "forbiddenWords": [
+          "axé",
+          "Bahia",
+          "carnaval",
+          "cantante",
+          "Claudinha"
+        ]
+      },
+      {
+        "mainWord": "Ratinho",
+        "forbiddenWords": [
+          "SBT",
+          "rural",
+          "programa",
+          "audiencia",
+          "bigote"
+        ]
+      },
+      {
+        "mainWord": "Gugu Liberato",
+        "forbiddenWords": [
+          "Record",
+          "domingo",
+          "presentador",
+          "piscina",
+          "juego"
+        ]
+      },
+      {
+        "mainWord": "Adriane Galisteu",
+        "forbiddenWords": [
+          "Senna",
+          "modelo",
+          "novia",
+          "rubia",
+          "presentadora"
+        ]
+      },
+      {
+        "mainWord": "Zeca Pagodinho",
+        "forbiddenWords": [
+          "pagode",
+          "samba",
+          "cerveza",
+          "Río",
+          "cantante"
+        ]
+      },
+      {
+        "mainWord": "Marilia Mendonça",
+        "forbiddenWords": [
+          "sertanejo",
+          "reina",
+          "amor",
+          "feminejo",
+          "tristeza"
+        ]
+      },
+      {
+        "mainWord": "Chitãozinho",
+        "forbiddenWords": [
+          "dúo",
+          "sertanejo",
+          "Xororó",
+          "vaquero",
+          "campesino"
+        ]
+      },
+      {
+        "mainWord": "Luan Santana",
+        "forbiddenWords": [
+          "sertanejo",
+          "cantante",
+          "fan",
+          "joven",
+          "guitarra"
+        ]
+      },
+      {
+        "mainWord": "Anitta",
+        "forbiddenWords": [
+          "funk",
+          "Río",
+          "hit",
+          "bailarina",
+          "internacional"
+        ]
+      },
+      {
+        "mainWord": "Caetano Veloso",
+        "forbiddenWords": [
+          "tropicália",
+          "bahiano",
+          "MPB",
+          "cantante",
+          "poesía"
+        ]
+      },
+      {
+        "mainWord": "Glória Maria",
+        "forbiddenWords": [
+          "periodista",
+          "Globo",
+          "reportera",
+          "viaje",
+          "negra"
+        ]
+      },
+      {
+        "mainWord": "Romário",
+        "forbiddenWords": [
+          "gol",
+          "fútbol",
+          "Vasco",
+          "Copa",
+          "bajito"
+        ]
+      },
+      {
+        "mainWord": "Angélica",
+        "forbiddenWords": [
+          "rubia",
+          "presentadora",
+          "Huck",
+          "Globo",
+          "infantil"
+        ]
+      },
+      {
+        "mainWord": "Luciano Huck",
+        "forbiddenWords": [
+          "Caldeirão",
+          "Globo",
+          "presentador",
+          "Angélica",
+          "millonario"
+        ]
+      },
+      {
+        "mainWord": "Fernanda Montenegro",
+        "forbiddenWords": [
+          "actriz",
+          "Oscar",
+          "Central do Brasil",
+          "teatro",
+          "veterana"
+        ]
+      },
+      {
+        "mainWord": "Michel Teló",
+        "forbiddenWords": [
+          "Ai Se Eu Te Pego",
+          "sertanejo",
+          "cantante",
+          "Thais Fersoza",
+          "viola"
+        ]
+      },
+      {
+        "mainWord": "Claudia Leitte",
+        "forbiddenWords": [
+          "axé",
+          "carnaval",
+          "cantante",
+          "Bahia",
+          "rubia"
+        ]
+      },
+      {
+        "mainWord": "Galvão Bueno",
+        "forbiddenWords": [
+          "narrador",
+          "Globo",
+          "deporte",
+          "polémico",
+          "comentarista"
+        ]
+      },
+      {
+        "mainWord": "Larissa Manoela",
+        "forbiddenWords": [
+          "actriz",
+          "telenovela",
+          "joven",
+          "SBT",
+          "Instagram"
+        ]
+      },
+      {
+        "mainWord": "Thiaguinho",
+        "forbiddenWords": [
+          "pagode",
+          "Exaltasamba",
+          "cantante",
+          "sonrisa",
+          "Fernanda"
+        ]
+      },
+      {
+        "mainWord": "Whindersson Nunes",
+        "forbiddenWords": [
+          "youtuber",
+          "humorista",
+          "nordestino",
+          "de Piauí",
+          "viral"
+        ]
+      },
+      {
+        "mainWord": "Bebeto",
+        "forbiddenWords": [
+          "fútbol",
+          "Copa 94",
+          "gol",
+          "Romário",
+          "bebé"
+        ]
+      },
+      {
+        "mainWord": "Sandy",
+        "forbiddenWords": [
+          "dúo",
+          "Junior",
+          "cantante",
+          "infancia",
+          "familia"
+        ]
+      },
+      {
+        "mainWord": "Leandro",
+        "forbiddenWords": [
+          "dúo",
+          "Leonardo",
+          "sertanejo",
+          "muerte",
+          "cantante"
+        ]
+      },
+      {
+        "mainWord": "Fausto Silva",
+        "forbiddenWords": [
+          "Faustão",
+          "Globo",
+          "domingo",
+          "presentador",
+          "corazón"
+        ]
+      },
+      {
+        "mainWord": "Zico",
+        "forbiddenWords": [
+          "Flamengo",
+          "fútbol",
+          "gallinito",
+          "crack",
+          "Japón"
+        ]
+      },
+      {
+        "mainWord": "Elza Soares",
+        "forbiddenWords": [
+          "samba",
+          "cantante",
+          "voz",
+          "reina",
+          "Garrincha"
+        ]
+      },
+      {
+        "mainWord": "Leonardo",
+        "forbiddenWords": [
+          "aguardiente",
+          "Leandro",
+          "sertanejo",
+          "muerte",
+          "cantante"
+        ]
+      }
+    ]
+  }
+}

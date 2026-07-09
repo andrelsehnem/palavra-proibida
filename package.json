@@ -1,22 +1,37 @@
 {
   "name": "palavra-proibida",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "main": "index.ts",
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.19.4",
+    "@react-native-async-storage/async-storage": "^3.1.1",
     "expo": "~56.0.8",
+    "expo-audio": "~56.0.11",
+    "expo-splash-screen": "~56.0.10",
     "expo-status-bar": "~56.0.4",
+    "lottie-react-native": "~7.3.4",
     "react": "19.2.3",
-    "react-native": "0.85.3"
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~56.0.4",
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "expo lint",
+    "build": "expo export --platform web",
+    "android:version:bump": "node scripts/update-android-version.js",
+    "build:android:store": "cd android && gradlew.bat bundleRelease",
+    "playStore": "call \"Build Android.bat\""
   },
   "private": true
 }
