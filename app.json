@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "palavra-proibida",
+    "name": "Palavra Proibida",
     "slug": "palavra-proibida",
     "version": "1.0.7",
     "orientation": "portrait",
@@ -10,7 +10,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
@@ -19,7 +19,7 @@
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundImage": "./assets/splash-icon.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
