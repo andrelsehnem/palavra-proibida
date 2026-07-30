@@ -42,16 +42,67 @@ const updateBuildGradle = (buildGradleContent, versionCode, versionName) => {
   return withCode.replace(/versionName\s+"[^"]+"/, `versionName "${versionName}"`);
 };
 
+const compareVersions = (v1, v2) => {
+  const parts1 = v1.split('.').map(Number);
+  const parts2 = v2.split('.').map(Number);
+
+  for (let i = 0; i < 3; i++) {
+    if (parts1[i] > parts2[i]) return 1;
+    if (parts1[i] < parts2[i]) return -1;
+  }
+  return 0;
+};
+
 const run = () => {
   const buildGradleContent = fs.readFileSync(buildGradlePath, 'utf8');
   const packageJson = readJson(packageJsonPath);
   const appJson = readJson(appJsonPath);
   const current = readBuildVersions(buildGradleContent);
 
-  const nextVersionCode = current.versionCode + 1;
-  const nextVersionName = incrementPatchVersion(current.versionName);
+  // Verificar sincronização entre os 3 arquivos
+  const buildVersion = current.versionName;
+  const appVersion = appJson.expo?.version || packageJson.version;
+  const pkgVersion = packageJson.version;
 
-  fs.writeFileSync(buildGradlePath, updateBuildGradle(buildGradleContent, nextVersionCode, nextVersionName), 'utf8');
+  const versionsMatch = buildVersion === appVersion && appVersion === pkgVersion;
+
+  if (!versionsMatch) {
+    // Se desincronizadas, usar a versão MENOR como base para sincronização
+    const versions = [buildVersion, appVersion, pkgVersion];
+    const sortedVersions = versions.sort(compareVersions);
+    const syncVersion = sortedVersions[0];
+
+    console.log(`⚠️  Versões desincronizadas detectadas:`);
+    console.log(`   build.gradle:  ${buildVersion}`);
+    console.log(`   app.json:      ${appVersion}`);
+    console.log(`   package.json:  ${pkgVersion}`);
+    console.log(`   Sincronizando com a versão MENOR: ${syncVersion}`);
+
+    // Sincronizar build.gradle
+    const syncedBuildGradle = updateBuildGradle(buildGradleContent, current.versionCode, syncVersion);
+    fs.writeFileSync(buildGradlePath, syncedBuildGradle, 'utf8');
+
+    // Sincronizar app.json
+    if (!appJson.expo) {
+      appJson.expo = {};
+    }
+    appJson.expo.version = syncVersion;
+    writeJson(appJsonPath, appJson);
+
+    // Sincronizar package.json
+    packageJson.version = syncVersion;
+    writeJson(packageJsonPath, packageJson);
+
+    console.log(`✓ Sincronização concluída para versão ${syncVersion}\n`);
+  }
+
+  // Agora incrementar a versão sincronizada
+  const syncedBuildGradleContent = fs.readFileSync(buildGradlePath, 'utf8');
+  const syncedCurrent = readBuildVersions(syncedBuildGradleContent);
+  const nextVersionCode = syncedCurrent.versionCode + 1;
+  const nextVersionName = incrementPatchVersion(syncedCurrent.versionName);
+
+  fs.writeFileSync(buildGradlePath, updateBuildGradle(syncedBuildGradleContent, nextVersionCode, nextVersionName), 'utf8');
 
   packageJson.version = nextVersionName;
   writeJson(packageJsonPath, packageJson);
@@ -63,8 +114,8 @@ const run = () => {
   appJson.expo.version = nextVersionName;
   writeJson(appJsonPath, appJson);
 
-  console.log(`versionName: ${current.versionName} -> ${nextVersionName}`);
-  console.log(`versionCode: ${current.versionCode} -> ${nextVersionCode}`);
+  console.log(`versionName: ${syncedCurrent.versionName} -> ${nextVersionName}`);
+  console.log(`versionCode: ${syncedCurrent.versionCode} -> ${nextVersionCode}`);
 };
 
 try {

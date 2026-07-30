@@ -1,5 +1,3 @@
-@AGENTS.md
-
 ## Regras (obrigatórias)
 - NUNCA rodar git (commit, push, etc.).
 - Responder sempre em pt-br.

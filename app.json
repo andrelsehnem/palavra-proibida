@@ -2,7 +2,7 @@
   "expo": {
     "name": "Palavra Proibida",
     "slug": "palavra-proibida",
-    "version": "1.0.7",
+    "version": "1.0.13",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
