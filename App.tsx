@@ -4,6 +4,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { WORD_REPOSITORY_SOURCE } from './src/data/repositoryConfig';
+import { AdMobBootstrap } from './src/components/ads/AdMobBootstrap';
 import { buildThemeOptions } from './src/data/themes';
 import { createWordRepository } from './src/data/wordRepository';
 import type { TeamGameSettings, WordCard } from './src/domain/types';
@@ -12,6 +13,7 @@ import { useGameRound } from './src/hooks/useGameRound';
 import { useLanguagePreference } from './src/hooks/useLanguagePreference';
 import { useTeamGameRound } from './src/hooks/useTeamGameRound';
 import { useThemePreference } from './src/hooks/useThemePreference';
+import { useAdInterstitialAction } from './src/hooks/useAdInterstitialAction';
 import { GameScreen } from './src/screens/GameScreen';
 import { MenuScreen } from './src/screens/MenuScreen';
 import { TeamGameScreen } from './src/screens/TeamGameScreen';
@@ -34,6 +36,7 @@ export default function App() {
   const { language, setLanguage, isHydrated: isLanguageHydrated } = useLanguagePreference();
   const tokens = TOKENS[mode];
   const scene = useMemo(() => getScenePalette(mode), [mode]);
+  const { runWithInterstitial } = useAdInterstitialAction();
   const [isAnimatedSplashVisible, setIsAnimatedSplashVisible] = useState(true);
 
   const {
@@ -181,6 +184,12 @@ export default function App() {
     goToGame();
   };
 
+  const handleExitToMenu = () => {
+    void runWithInterstitial(() => {
+      goToMenu();
+    });
+  };
+
   if (isAnimatedSplashVisible) {
     return (
       <View style={styles.splashContainer}>
@@ -195,6 +204,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
+      <AdMobBootstrap />
       <AtmosphereScreen mode={mode} scene={scene}>
       {isMenuScreen ? (
         <MenuScreen
@@ -246,7 +256,7 @@ export default function App() {
           correctCount={correctCount}
           skippedCount={skippedCount}
           scoreRate={scoreRate}
-          onExit={goToMenu}
+          onExit={handleExitToMenu}
           onSkip={() => nextWord(false)}
           onCorrect={() => nextWord(true)}
         />
@@ -267,7 +277,7 @@ export default function App() {
           roundStatus={roundStatus}
           hasNextTeam={hasNextTeam}
           nextTeamName={nextTeamName}
-          onExit={goToMenu}
+          onExit={handleExitToMenu}
           onStartTurn={startTurn}
           onStartNextTeam={advanceToNextTeam}
           onFinishGame={() => {

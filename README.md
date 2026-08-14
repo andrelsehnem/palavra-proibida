@@ -46,6 +46,38 @@ npm run web
 
 Use `.env.example` como referencia.
 
+## AdMob intersticial (Android)
+
+Integracao feita com `react-native-google-mobile-ads` (SDK nativo, Android only neste momento).
+
+- App ID Android configurado no `app.json`.
+- Intersticial exibido ao sair da rodada para o menu (modo classico e equipes).
+- Em desenvolvimento, o app usa sempre `TestIds.INTERSTITIAL` (anuncio de teste oficial do Google).
+- Em release Android, o app usa `EXPO_PUBLIC_ADMOB_INTERSTITIAL_ANDROID`.
+- Cooldown de 8 minutos entre exibicoes de intersticial.
+
+### Variaveis
+
+No `.env`:
+
+```bash
+EXPO_PUBLIC_ADMOB_INTERSTITIAL_ANDROID=ca-app-pub-7478664676745892/7217948330
+EXPO_PUBLIC_ADS_ENABLED=true
+```
+
+### Como validar o anuncio de teste
+
+1. Rode um build de desenvolvimento Android (nao funciona no Expo Go).
+2. Inicie uma rodada.
+3. Toque em sair.
+4. O intersticial de teste deve abrir; ao fechar, o app volta ao menu.
+
+### Observacoes
+
+- Se o anuncio nao estiver carregado a tempo, o app segue para o menu normalmente (fallback sem travar UX).
+- No Expo Go os anuncios sao desativados automaticamente para evitar erro de modulo nativo ausente.
+- Para publicar na Play Store, marque que o app contem anuncios no App Content.
+
 ## Comportamento de repeticao
 
 Cada novo jogo cria um embaralhamento novo (Fisher-Yates) do conjunto filtrado pelos temas selecionados. Durante a rodada, nenhuma frase se repete.

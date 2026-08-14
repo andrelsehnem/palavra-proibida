@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
 import { LanguageDropdown } from '../components/cards/LanguageDropdown';
@@ -102,7 +102,15 @@ export function MenuScreen({
           style={styles.heroCta}
         />
 
-        <Text style={[styles.footerHint, { color: tokens.mutedText }]}>{Consts.UI_TRANSLATIONS[language].FOOTER_HOME}</Text>
+        <Text style={[styles.footerHint, { color: tokens.mutedText }]}>
+          {Consts.UI_TRANSLATIONS[language].FOOTER_HOME}{' '}
+          <Text
+            style={[styles.footerLink, { color: tokens.primary }]}
+            onPress={() => Linking.openURL('https://andre100.dev')}
+          >
+            andre100.dev
+          </Text>
+        </Text>
       </View>
     </View>
   );
@@ -183,6 +191,11 @@ const styles = StyleSheet.create({
   footerHint: {
     fontSize: 13,
     fontFamily: BODY_FONT,
+  },
+  footerLink: {
+    fontFamily: BODY_FONT,
+    fontWeight: '700',
+    textDecorationLine: 'underline',
   },
   controlsContainer: {
     flexDirection: 'row',
