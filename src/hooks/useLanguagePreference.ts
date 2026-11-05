@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Sentry from '@sentry/react-native';
 import { useEffect, useState } from 'react';
 
 import { Consts, type LanguageCode } from '../data/Consts';
@@ -26,7 +27,12 @@ export const useLanguagePreference = () => {
         ) {
           setLanguageState(savedLanguage as LanguageCode);
         }
-      } catch {
+      } catch (error) {
+        Sentry.captureException(error, {
+          tags: {
+            area: 'language-preference-load',
+          },
+        });
         // Use default language on storage read errors.
       } finally {
         if (isMounted) {
@@ -47,7 +53,12 @@ export const useLanguagePreference = () => {
 
     try {
       await AsyncStorage.setItem(STORAGE_KEY, newLanguage);
-    } catch {
+    } catch (error) {
+      Sentry.captureException(error, {
+        tags: {
+          area: 'language-preference-save',
+        },
+      });
       // Ignore persistence failures and keep app usable.
     }
   };

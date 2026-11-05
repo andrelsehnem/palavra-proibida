@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
+import * as Sentry from '@sentry/react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -113,10 +114,20 @@ export default function App() {
 
         setAllWords(cards);
         setLoadError(null);
-      } catch {
+      } catch (error) {
         if (!isMounted) {
           return;
         }
+
+        Sentry.captureException(error, {
+          tags: {
+            area: 'word-loading',
+          },
+          extra: {
+            language,
+            repositorySource: WORD_REPOSITORY_SOURCE,
+          },
+        });
 
         setAllWords([]);
         setLoadError('Nao foi possivel carregar as palavras.');

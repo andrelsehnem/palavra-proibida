@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Sentry from '@sentry/react-native';
 import { useEffect, useState } from 'react';
 import { Appearance } from 'react-native';
 
@@ -24,7 +25,12 @@ export const useThemePreference = () => {
         if (isMounted && (savedMode === 'light' || savedMode === 'dark')) {
           setMode(savedMode);
         }
-      } catch {
+      } catch (error) {
+        Sentry.captureException(error, {
+          tags: {
+            area: 'theme-preference-load',
+          },
+        });
         // Use default system mode on storage read errors.
       } finally {
         if (isMounted) {
@@ -46,7 +52,12 @@ export const useThemePreference = () => {
 
     try {
       await AsyncStorage.setItem(STORAGE_KEY, nextMode);
-    } catch {
+    } catch (error) {
+      Sentry.captureException(error, {
+        tags: {
+          area: 'theme-preference-save',
+        },
+      });
       // Ignore persistence failures and keep app usable.
     }
   };

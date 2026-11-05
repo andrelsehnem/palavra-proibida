@@ -78,6 +78,37 @@ EXPO_PUBLIC_ADS_ENABLED=true
 - No Expo Go os anuncios sao desativados automaticamente para evitar erro de modulo nativo ausente.
 - Para publicar na Play Store, marque que o app contem anuncios no App Content.
 
+## Sentry (monitoramento de erros)
+
+Integracao feita com `@sentry/react-native` para Android/iOS/Web.
+
+### Variaveis
+
+No `.env`:
+
+```bash
+EXPO_PUBLIC_SENTRY_DSN=https://<publicKey>@oXXXXXXX.ingest.us.sentry.io/<projectId>
+EXPO_PUBLIC_SENTRY_ENVIRONMENT=development
+```
+
+Para upload de sourcemaps em build release:
+
+```bash
+SENTRY_AUTH_TOKEN=sntrys_xxx
+```
+
+Observacoes importantes:
+
+- Nao commitar token real do Sentry no repositorio.
+- Em CI/EAS, configure `SENTRY_AUTH_TOKEN` como secret.
+- O plugin do Sentry em `app.json` esta configurado para `organization=andre100` e `project=palavra-proibida`.
+
+### Teste rapido
+
+1. Defina `EXPO_PUBLIC_SENTRY_DSN`.
+2. Rode o app (`npm run web` ou `npm run android`).
+3. Gere um erro de teste em runtime e confirme o evento no painel do Sentry.
+
 ## Comportamento de repeticao
 
 Cada novo jogo cria um embaralhamento novo (Fisher-Yates) do conjunto filtrado pelos temas selecionados. Durante a rodada, nenhuma frase se repete.

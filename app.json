@@ -2,7 +2,7 @@
   "expo": {
     "name": "Palavra Proibida",
     "slug": "palavra-proibida",
-    "version": "1.0.16",
+    "version": "1.0.18",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -16,6 +16,9 @@
     },
     "android": {
       "package": "dev.andre100.palavraproibida",
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -26,13 +29,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "react-native-google-mobile-ads": {
-      "android_app_id": "ca-app-pub-7478664676745892~8203726946",
-      "ios_app_id": "ca-app-pub-3940256099942544~1458002511"
-    },
     "plugins": [
       "expo-audio",
       "expo-splash-screen",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "organization": "andre100",
+          "project": "palavra-proibida"
+        }
+      ],
       [
         "react-native-google-mobile-ads",
         {
@@ -41,5 +48,9 @@
         }
       ]
     ]
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-7478664676745892~8203726946",
+    "ios_app_id": "ca-app-pub-3940256099942544~1458002511"
   }
 }
