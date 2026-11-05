@@ -65,7 +65,7 @@ export class Consts {
       LABEL_CARTA_OCULTA_ATE_O_INICIO: 'Carta oculta até o início',
       LABEL_CARTA_OCULTA_ATE_A_PROXIMA_EQUIPE: 'Carta oculta até a próxima equipe',
       LABEL_EQUIPE: 'Equipe {team}',
-      WORDS: 'Palavras',
+      WORDS: 'Palavra',
       WORDFORBIDDEN: 'Proibida',
       MENU_SUBTITLE: 'Uma rodada rápida, caótica e sem repetição para jogar em grupo.',
       LABEL_RODADA_NUMERO: 'Rodada {round}',
