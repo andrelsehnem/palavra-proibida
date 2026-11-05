@@ -27,6 +27,22 @@ export interface TeamScore {
   id: string;
   name: string;
   score: number;
+  roundScore: number;
 }
 
-export type TeamRoundStatus = 'idle' | 'playing' | 'time-up' | 'finished';
+export type TeamRoundStatus = 'idle' | 'playing' | 'time-up' | 'round-ended' | 'finished';
+
+export type CardOutcome = 'correct' | 'skipped';
+
+export interface MatchDeck {
+  pool: WordCard[];
+  queue: WordCard[];
+  skipped: WordCard[];
+  resolvedCount: number;
+}
+
+export interface ClassicRoundResult {
+  round: number;
+  correct: number;
+  skipped: number;
+}

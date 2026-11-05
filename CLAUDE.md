@@ -25,8 +25,9 @@ Fluxo de telas: Menu → Themes → (Game | TeamGame → TeamResults).
 - `theme/` — tokens.ts, fonts.ts, scenePalette.ts.
 
 ### Modos de jogo
-- Clássico: acerto/pulo sobre deck embaralhado dos temas selecionados.
-- Equipes: N times, timer por turno, placar, tela de resultados com vencedor/empate.
+- Clássico: acerto/pulo sobre deck embaralhado dos temas selecionados; botão encerra a rodada e abre o ranking das rodadas com total acumulado.
+- Equipes: N times, timer por turno, placar acumulado, ranking ao fim de cada rodada e resultado final com vencedor/empate.
+- Partida: várias rodadas até "finalizar partida". Baralho (`MatchDeck`) vale para a partida toda: inéditas → puladas → reembaralha tudo.
 
 ### i18n
 Idioma persistido; troca recarrega as palavras (repo é criado por idioma).

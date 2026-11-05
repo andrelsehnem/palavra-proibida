@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
+import { Consts, type LanguageCode } from '../data/Consts';
 import type { TeamScore } from '../domain/types';
 import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
@@ -12,6 +14,11 @@ interface TeamResultsScreenProps {
   teamScores: TeamScore[];
   winningTeamIds: string[];
   isTie: boolean;
+  language: LanguageCode;
+  roundNumber: number;
+  isMatchFinished: boolean;
+  onNextRound: () => void;
+  onFinishMatch: () => void;
   onBackToMenu: () => void;
 }
 
@@ -21,9 +28,29 @@ export function TeamResultsScreen({
   teamScores,
   winningTeamIds,
   isTie,
+  language,
+  roundNumber,
+  isMatchFinished,
+  onNextRound,
+  onFinishMatch,
   onBackToMenu,
 }: TeamResultsScreenProps) {
-  const sortedScores = [...teamScores].sort((left, right) => right.score - left.score);
+  const t = Consts.UI_TRANSLATIONS[language];
+  const [activeTab, setActiveTab] = useState<'overall' | 'round'>('overall');
+  const isRoundTab = activeTab === 'round';
+  const roundLabel = t.LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`);
+  const getTabScore = (team: TeamScore) => (isRoundTab ? team.roundScore : team.score);
+  const sortedScores = [...teamScores].sort((left, right) => getTabScore(right) - getTabScore(left));
+  const topRoundScore = Math.max(0, ...teamScores.map((team) => team.roundScore));
+  const roundLeaderIds = teamScores
+    .filter((team) => team.roundScore === topRoundScore)
+    .map((team) => team.id);
+  const highlightedIds = isRoundTab ? roundLeaderIds : winningTeamIds;
+  const isTabTie = isRoundTab ? roundLeaderIds.length > 1 : isTie;
+  const tabs = [
+    { id: 'overall' as const, label: t.LABEL_ABA_GERAL },
+    { id: 'round' as const, label: roundLabel },
+  ];
 
   return (
     <View style={styles.screenContent}>
@@ -37,17 +64,44 @@ export function TeamResultsScreen({
           },
         ]}
       >
-        <Text style={[styles.eyebrow, { color: scene.topTag }]}>placar final</Text>
-        <Text style={[styles.title, { color: tokens.text }]}>Resultado da rodada</Text>
-        <Text style={[styles.subtitle, { color: tokens.mutedText }]}>
-          {isTie
-            ? 'Empate no topo. Todas as equipes lideres foram destacadas.'
-            : 'A equipe com mais acertos fica destacada no topo.'}
+        <Text style={[styles.eyebrow, { color: scene.topTag }]}>
+          {isMatchFinished ? t.LABEL_PLACAR_FINAL : t.LABEL_RANKING}
         </Text>
+        <Text style={[styles.title, { color: tokens.text }]}>
+          {isMatchFinished ? t.LABEL_RESULTADO_FINAL : roundLabel}
+        </Text>
+        <Text style={[styles.subtitle, { color: tokens.mutedText }]}>
+          {isTabTie ? t.LABEL_RESULTADO_EMPATE : t.LABEL_RESULTADO_LIDER}
+        </Text>
+
+        <View style={[styles.tabRow, { borderColor: scene.rail }]} accessibilityRole="tablist">
+          {tabs.map((tab) => {
+            const isActive = tab.id === activeTab;
+
+            return (
+              <Pressable
+                key={tab.id}
+                accessibilityRole="tab"
+                accessibilityState={{ selected: isActive }}
+                onPress={() => setActiveTab(tab.id)}
+                style={[styles.tab, isActive ? { backgroundColor: tokens.primary } : null]}
+              >
+                <Text style={[styles.tabLabel, { color: isActive ? tokens.primaryText : tokens.mutedText }]}>
+                  {tab.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
 
         <View style={styles.listColumn}>
           {sortedScores.map((team, index) => {
-            const isWinner = winningTeamIds.includes(team.id);
+            const isWinner = highlightedIds.includes(team.id);
+            const leaderLabel = isRoundTab
+              ? t.LABEL_MELHOR_DA_RODADA
+              : isMatchFinished
+                ? t.LABEL_VENCEDORA
+                : t.LABEL_LIDER;
 
             return (
               <View
@@ -67,24 +121,49 @@ export function TeamResultsScreen({
                   <View style={styles.scoreTextColumn}>
                     <Text style={[styles.teamName, { color: tokens.text }]}>{team.name}</Text>
                     <Text style={[styles.teamMeta, { color: isWinner ? tokens.success : tokens.mutedText }]}>
-                      {isWinner ? 'vencedora' : 'placar da rodada'}
+                      {isWinner
+                        ? leaderLabel
+                        : isRoundTab
+                          ? t.LABEL_PONTOS_DA_RODADA
+                          : t.LABEL_PONTOS_ACUMULADOS}
                     </Text>
                   </View>
                 </View>
                 <Text style={[styles.scoreValue, { color: isWinner ? tokens.success : tokens.text }]}>
-                  {team.score}
+                  {getTabScore(team)}
                 </Text>
               </View>
             );
           })}
         </View>
 
-        <ActionButton
-          label="voltar ao menu"
-          onPress={onBackToMenu}
-          backgroundColor={tokens.primary}
-          textColor={tokens.primaryText}
-        />
+        {isMatchFinished ? (
+          <ActionButton
+            label={t.LABEL_VOLTAR_AO_MENU}
+            onPress={onBackToMenu}
+            backgroundColor={tokens.primary}
+            textColor={tokens.primaryText}
+          />
+        ) : (
+          <>
+            <ActionButton
+              label={t.LABEL_PROXIMA_RODADA}
+              onPress={onNextRound}
+              backgroundColor={tokens.primary}
+              textColor={tokens.primaryText}
+            />
+            <ActionButton
+              label={t.LABEL_FINALIZAR_PARTIDA}
+              onPress={() => {
+                setActiveTab('overall');
+                onFinishMatch();
+              }}
+              backgroundColor={scene.chipPanel}
+              borderColor={tokens.warning}
+              textColor={tokens.warning}
+            />
+          </>
+        )}
       </View>
     </View>
   );
@@ -123,6 +202,28 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
     fontFamily: BODY_FONT,
+  },
+  tabRow: {
+    flexDirection: 'row',
+    borderWidth: 1,
+    borderRadius: 14,
+    padding: 4,
+    gap: 4,
+  },
+  tab: {
+    flex: 1,
+    minHeight: 44,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 8,
+  },
+  tabLabel: {
+    fontSize: 13,
+    fontWeight: '700',
+    fontFamily: BODY_FONT,
+    textTransform: 'uppercase',
+    letterSpacing: 0.7,
   },
   listColumn: {
     gap: 10,

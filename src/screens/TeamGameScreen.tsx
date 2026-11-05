@@ -24,12 +24,13 @@ interface TeamGameScreenProps {
   currentTeamScore: number;
   remainingSeconds: number;
   roundStatus: TeamRoundStatus;
+  roundNumber: number;
   hasNextTeam: boolean;
   nextTeamName: string | null;
   onExit: () => void;
   onStartTurn: () => void;
   onStartNextTeam: () => void;
-  onFinishGame: () => void;
+  onEndRound: () => void;
   onSkip: () => void;
   onCorrect: () => void;
 }
@@ -46,12 +47,13 @@ export function TeamGameScreen({
   currentTeamScore,
   remainingSeconds,
   roundStatus,
+  roundNumber,
   hasNextTeam,
   nextTeamName,
   onExit,
   onStartTurn,
   onStartNextTeam,
-  onFinishGame,
+  onEndRound,
   onSkip,
   onCorrect,
 }: TeamGameScreenProps) {
@@ -100,7 +102,7 @@ export function TeamGameScreen({
             },
           ]}
         >
-          <Text style={[styles.teamBannerEyebrow, { color: scene.topTag }]}> {Consts.UI_TRANSLATIONS[language].TEAM_MODE_TITLE}</Text>
+          <Text style={[styles.teamBannerEyebrow, { color: scene.topTag }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_TITLE} · {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}</Text>
           <Text style={[styles.teamBannerTitle, { color: tokens.text }]}>{currentTeamName}</Text>
           {//<Text style={[styles.teamBannerDescription, { color: tokens.mutedText }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_DESCRIPTION}</Text>-->
           }
@@ -230,8 +232,8 @@ export function TeamGameScreen({
               {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_TERMINOU.replace('{team}', currentTeamName.toLowerCase())}
             </Text>
             <ActionButton
-              label={hasNextTeam && nextTeamName ? `iniciar ${nextTeamName.toLowerCase()}` : Consts.UI_TRANSLATIONS[language].LABEL_VER_PLACAR_FINAL}
-              onPress={hasNextTeam ? onStartNextTeam : onFinishGame}
+              label={hasNextTeam && nextTeamName ? Consts.UI_TRANSLATIONS[language].LABEL_INICIAR_EQUIPE.replace('{team}', nextTeamName.toLowerCase()) : Consts.UI_TRANSLATIONS[language].LABEL_VER_RANKING}
+              onPress={hasNextTeam ? onStartNextTeam : onEndRound}
               backgroundColor={tokens.primary}
               textColor={tokens.primaryText}
             />

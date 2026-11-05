@@ -2,7 +2,6 @@ import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
 import { LanguageDropdown } from '../components/cards/LanguageDropdown';
-import { StatCard } from '../components/cards/StatCard';
 import { Consts, type LanguageCode } from '../data/Consts';
 import type { ThemeMode } from '../domain/types';
 import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
@@ -13,8 +12,6 @@ interface MenuScreenProps {
   mode: ThemeMode;
   tokens: ThemeTokens;
   scene: ScenePalette;
-  themesCount: number;
-  cardsCount: number;
   language: LanguageCode;
   onChangeLanguage: (language: LanguageCode) => void;
   onStart: () => void;
@@ -25,8 +22,6 @@ export function MenuScreen({
   mode,
   tokens,
   scene,
-  themesCount,
-  cardsCount,
   language,
   onChangeLanguage,
   onStart,
@@ -74,25 +69,6 @@ export function MenuScreen({
         <Text style={[styles.heroTitleOutline, { color: tokens.primary }]}>{Consts.UI_TRANSLATIONS[language].WORDFORBIDDEN}</Text>
         <Text style={[styles.heroSubtitle, { color: tokens.mutedText }]}>
           {Consts.UI_TRANSLATIONS[language].MENU_SUBTITLE}        </Text>
-
-        <View style={styles.kpiBand}>
-          <StatCard
-            value={themesCount}
-            label={Consts.UI_TRANSLATIONS[language].THEME_COUNT_LABEL}
-            borderColor={scene.rail}
-            backgroundColor={scene.chipPanel}
-            valueColor={tokens.text}
-            labelColor={tokens.mutedText}
-          />
-          <StatCard
-            value={cardsCount}
-            label={Consts.UI_TRANSLATIONS[language].CARD_COUNT_LABEL}
-            borderColor={scene.rail}
-            backgroundColor={scene.chipPanel}
-            valueColor={tokens.text}
-            labelColor={tokens.mutedText}
-          />
-        </View>
 
         <ActionButton
           label={Consts.UI_TRANSLATIONS[language].START_GAME}
@@ -180,13 +156,8 @@ const styles = StyleSheet.create({
     fontFamily: BODY_FONT,
     lineHeight: 20,
   },
-  kpiBand: {
-    flexDirection: 'row',
-    gap: 10,
-    marginTop: 50,
-  },
   heroCta: {
-    marginTop: 4,
+    marginTop: 32,
   },
   footerHint: {
     fontSize: 13,

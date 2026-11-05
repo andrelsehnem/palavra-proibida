@@ -1,10 +1,11 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
 import { StatCard } from '../components/cards/StatCard';
 import { WordGameCard } from '../components/cards/WordGameCard';
 import { Consts, type LanguageCode } from '../data/Consts';
 import type { WordCard } from '../domain/types';
+import { BODY_FONT } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
 import type { ThemeTokens } from '../theme/tokens';
 
@@ -18,6 +19,8 @@ interface GameScreenProps {
   correctCount: number;
   skippedCount: number;
   scoreRate: number;
+  roundNumber: number;
+  onEndRound: () => void;
   onExit: () => void;
   onSkip: () => void;
   onCorrect: () => void;
@@ -33,12 +36,17 @@ export function GameScreen({
   correctCount,
   skippedCount,
   scoreRate,
+  roundNumber,
+  onEndRound,
   onExit,
   onSkip,
   onCorrect,
 }: GameScreenProps) {
   return (
     <View style={styles.gameScreenContent}>
+      <Text style={[styles.roundLabel, { color: scene.topTag }]}>
+        {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}
+      </Text>
       <View style={styles.gameHead}>
         <StatCard
           value={correctCount}
@@ -82,6 +90,12 @@ export function GameScreen({
 
       <View style={styles.actionColumn}>
         <ActionButton
+          label={Consts.UI_TRANSLATIONS[language].LABEL_ENCERRAR_RODADA}
+          onPress={onEndRound}
+          backgroundColor={tokens.primary}
+          textColor={tokens.primaryText}
+        />
+        <ActionButton
           label={Consts.UI_TRANSLATIONS[language].LABEL_SAIR}
           onPress={onExit}
           backgroundColor={scene.chipPanel}
@@ -118,6 +132,13 @@ const styles = StyleSheet.create({
     paddingVertical: 22,
     justifyContent: 'space-between',
     gap: 14,
+  },
+  roundLabel: {
+    fontSize: 11,
+    textTransform: 'uppercase',
+    letterSpacing: 1.2,
+    fontFamily: BODY_FONT,
+    fontWeight: '700',
   },
   gameHead: {
     flexDirection: 'row',

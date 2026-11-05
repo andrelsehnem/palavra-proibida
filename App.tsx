@@ -15,6 +15,7 @@ import { useLanguagePreference } from './src/hooks/useLanguagePreference';
 import { useTeamGameRound } from './src/hooks/useTeamGameRound';
 import { useThemePreference } from './src/hooks/useThemePreference';
 import { useAdInterstitialAction } from './src/hooks/useAdInterstitialAction';
+import { ClassicResultsScreen } from './src/screens/ClassicResultsScreen';
 import { GameScreen } from './src/screens/GameScreen';
 import { MenuScreen } from './src/screens/MenuScreen';
 import { TeamGameScreen } from './src/screens/TeamGameScreen';
@@ -44,11 +45,13 @@ export default function App() {
     isMenuScreen,
     isThemesScreen,
     isGameScreen,
+    isClassicResultsScreen,
     isTeamGameScreen,
     isTeamResultsScreen,
     goToMenu,
     goToThemes,
     goToGame,
+    goToClassicResults,
     goToTeamGame,
     goToTeamResults,
   } = useAppScreenFlow();
@@ -64,26 +67,34 @@ export default function App() {
   const {
     selectedThemes,
     availablePool,
-    roundDeck,
+    totalCards,
     currentCard,
     currentIndex,
     correctCount,
     skippedCount,
     hasSelectableWords,
     scoreRate,
+    roundNumber,
+    roundResults,
+    totalCorrect,
+    isMatchFinished: isClassicMatchFinished,
     toggleTheme,
     prepareRound,
     nextWord,
+    endRound,
+    startNextRound,
+    finishMatch: finishClassicMatch,
   } = useGameRound(allWords);
 
   const {
     teamScores,
-    roundDeck: teamRoundDeck,
+    totalCards: totalTeamCards,
     currentCard: currentTeamCard,
     currentIndex: currentTeamIndex,
     currentTeam,
     remainingSeconds,
     roundStatus,
+    roundNumber: teamRoundNumber,
     hasValidSettings: hasValidTeamSettings,
     hasNextTeam,
     nextTeamName,
@@ -94,6 +105,8 @@ export default function App() {
     registerCorrectAnswer,
     registerSkip,
     advanceToNextTeam,
+    endRound: endTeamRound,
+    startNextRound: startNextTeamRound,
     finishMatch,
   } = useTeamGameRound(allWords, selectedThemes, teamSettings, language);
 
@@ -223,8 +236,6 @@ export default function App() {
           mode={mode}
           tokens={tokens}
           scene={scene}
-          themesCount={themeOptions.length}
-          cardsCount={allWords.length}
           language={language}
           onChangeLanguage={setLanguage}
           onStart={goToThemes}
@@ -263,13 +274,36 @@ export default function App() {
           language={language}
           currentCard={currentCard}
           currentIndex={currentIndex}
-          totalCards={roundDeck.length}
+          totalCards={totalCards}
           correctCount={correctCount}
           skippedCount={skippedCount}
           scoreRate={scoreRate}
+          roundNumber={roundNumber}
+          onEndRound={() => {
+            endRound();
+            goToClassicResults();
+          }}
           onExit={handleExitToMenu}
           onSkip={() => nextWord(false)}
           onCorrect={() => nextWord(true)}
+        />
+      ) : null}
+
+      {isClassicResultsScreen ? (
+        <ClassicResultsScreen
+          tokens={tokens}
+          scene={scene}
+          language={language}
+          roundNumber={roundNumber}
+          roundResults={roundResults}
+          totalCorrect={totalCorrect}
+          isMatchFinished={isClassicMatchFinished}
+          onNextRound={() => {
+            startNextRound();
+            goToGame();
+          }}
+          onFinishMatch={finishClassicMatch}
+          onBackToMenu={goToMenu}
         />
       ) : null}
 
@@ -281,18 +315,19 @@ export default function App() {
           teamScores={teamScores}
           currentCard={currentTeamCard}
           currentIndex={currentTeamIndex}
-          totalCards={teamRoundDeck.length}
+          totalCards={totalTeamCards}
           currentTeamName={currentTeam?.name ?? 'Equipe'}
           currentTeamScore={currentTeam?.score ?? 0}
           remainingSeconds={remainingSeconds}
           roundStatus={roundStatus}
+          roundNumber={teamRoundNumber}
           hasNextTeam={hasNextTeam}
           nextTeamName={nextTeamName}
           onExit={handleExitToMenu}
           onStartTurn={startTurn}
           onStartNextTeam={advanceToNextTeam}
-          onFinishGame={() => {
-            finishMatch();
+          onEndRound={() => {
+            endTeamRound();
             goToTeamResults();
           }}
           onSkip={registerSkip}
@@ -307,6 +342,14 @@ export default function App() {
           teamScores={teamScores}
           winningTeamIds={winningTeamIds}
           isTie={isTie}
+          language={language}
+          roundNumber={teamRoundNumber}
+          isMatchFinished={roundStatus === 'finished'}
+          onNextRound={() => {
+            startNextTeamRound();
+            goToTeamGame();
+          }}
+          onFinishMatch={finishMatch}
           onBackToMenu={goToMenu}
         />
       ) : null}

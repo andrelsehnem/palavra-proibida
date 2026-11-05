@@ -156,9 +156,10 @@ Ao trocar idioma, o repositório de palavras é recriado (novas palavras do idio
 - **Suporte**: pt-br (default), en-us, es-es
 
 ### Modo de Jogo
-- **Clássico**: Acerto/pulo sobre deck embaralhado (tema selecionado ou múltiplos temas)
-- **Equipes**: N times, timer configurável, placar persistido durante rodada, tela de resultados com vencedor
-- **Embaralhamento**: Fisher-Yates (sem repetição na mesma rodada)
+- **Clássico**: Acerto/pulo sobre deck embaralhado (tema selecionado ou múltiplos temas); botão encerra a rodada e abre o ranking das rodadas com total acumulado
+- **Equipes**: N times, timer configurável, placar acumulado entre rodadas, ranking ao fim de cada rodada e resultado final com vencedor
+- **Partida**: várias rodadas até "finalizar partida"
+- **Embaralhamento**: Fisher-Yates; o baralho (`MatchDeck`) vale para a partida toda: inéditas → puladas → reembaralha tudo
 
 ---
 

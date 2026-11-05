@@ -1,29 +1,40 @@
 import { useMemo, useState } from 'react';
 
-import { buildRoundDeck, filterWordsByThemes } from '../domain/roundDeck';
-import type { ThemeId, WordCard } from '../domain/types';
+import { advanceMatchDeck, createMatchDeck, filterWordsByThemes } from '../domain/roundDeck';
+import type { ClassicRoundResult, MatchDeck, ThemeId, WordCard } from '../domain/types';
 
 interface UseGameRoundResult {
   selectedThemes: ThemeId[];
   availablePool: WordCard[];
-  roundDeck: WordCard[];
+  totalCards: number;
   currentCard: WordCard | null;
   currentIndex: number;
   correctCount: number;
   skippedCount: number;
   hasSelectableWords: boolean;
   scoreRate: number;
+  roundNumber: number;
+  roundResults: ClassicRoundResult[];
+  totalCorrect: number;
+  isMatchFinished: boolean;
   toggleTheme: (themeId: ThemeId) => void;
   prepareRound: () => boolean;
   nextWord: (wasCorrect: boolean) => void;
+  endRound: () => void;
+  startNextRound: () => void;
+  finishMatch: () => void;
 }
+
+const EMPTY_DECK: MatchDeck = { pool: [], queue: [], skipped: [], resolvedCount: 0 };
 
 export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
   const [selectedThemeDraft, setSelectedThemeDraft] = useState<ThemeId[]>(['animais', 'geral']);
-  const [roundDeck, setRoundDeck] = useState<WordCard[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [deck, setDeck] = useState<MatchDeck>(EMPTY_DECK);
   const [correctCount, setCorrectCount] = useState(0);
   const [skippedCount, setSkippedCount] = useState(0);
+  const [roundNumber, setRoundNumber] = useState(1);
+  const [roundResults, setRoundResults] = useState<ClassicRoundResult[]>([]);
+  const [isMatchFinished, setIsMatchFinished] = useState(false);
 
   const selectedThemes = useMemo(() => {
     const availableThemes = new Set(allWords.map((word) => word.theme));
@@ -45,9 +56,12 @@ export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
     [allWords, selectedThemes],
   );
 
-  const currentCard = roundDeck[currentIndex] ?? null;
+  const totalCards = deck.pool.length;
+  const currentCard = deck.queue[0] ?? null;
+  const currentIndex = totalCards > 0 ? deck.resolvedCount % totalCards : 0;
   const hasSelectableWords = availablePool.length > 0;
-  const scoreRate = roundDeck.length > 0 ? Math.round((correctCount / roundDeck.length) * 100) : 0;
+  const scoreRate = totalCards > 0 ? Math.min(100, Math.round((correctCount / totalCards) * 100)) : 0;
+  const totalCorrect = roundResults.reduce((sum, result) => sum + result.correct, 0);
 
   const toggleTheme = (themeId: ThemeId) => {
     setSelectedThemeDraft((current) => {
@@ -64,17 +78,18 @@ export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
       return false;
     }
 
-    const deck = buildRoundDeck(allWords, selectedThemes);
-    setRoundDeck(deck);
-    setCurrentIndex(0);
+    setDeck(createMatchDeck(allWords, selectedThemes));
     setCorrectCount(0);
     setSkippedCount(0);
+    setRoundNumber(1);
+    setRoundResults([]);
+    setIsMatchFinished(false);
 
     return true;
   };
 
   const nextWord = (wasCorrect: boolean) => {
-    if (roundDeck.length === 0) {
+    if (!currentCard) {
       return;
     }
 
@@ -84,21 +99,47 @@ export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
       setSkippedCount((value) => value + 1);
     }
 
-    setCurrentIndex((value) => (value + 1) % roundDeck.length);
+    setDeck((current) => advanceMatchDeck(current, wasCorrect ? 'correct' : 'skipped'));
+  };
+
+  const endRound = () => {
+    setRoundResults((current) => [
+      ...current,
+      { round: roundNumber, correct: correctCount, skipped: skippedCount },
+    ]);
+    // A carta na tela não foi respondida: volta depois das inéditas.
+    setDeck((current) => advanceMatchDeck(current, 'skipped'));
+  };
+
+  const startNextRound = () => {
+    setCorrectCount(0);
+    setSkippedCount(0);
+    setRoundNumber((value) => value + 1);
+  };
+
+  const finishMatch = () => {
+    setIsMatchFinished(true);
   };
 
   return {
     selectedThemes,
     availablePool,
-    roundDeck,
+    totalCards,
     currentCard,
     currentIndex,
     correctCount,
     skippedCount,
     hasSelectableWords,
     scoreRate,
+    roundNumber,
+    roundResults,
+    totalCorrect,
+    isMatchFinished,
     toggleTheme,
     prepareRound,
     nextWord,
+    endRound,
+    startNextRound,
+    finishMatch,
   };
 }
