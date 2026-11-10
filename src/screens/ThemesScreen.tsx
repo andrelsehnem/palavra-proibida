@@ -1,9 +1,10 @@
-import { ActivityIndicator, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
+import { ActivityIndicator, Alert, Platform, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
 import { StatCard } from '../components/cards/StatCard';
 import { ThemeChip } from '../components/cards/ThemeChip';
 import { Consts, type LanguageCode } from '../data/Consts';
+import { isPremiumTheme } from '../data/themeAccess';
 import type { TeamGameSettings, ThemeId, ThemeOption } from '../domain/types';
 import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
@@ -23,6 +24,7 @@ interface ThemesScreenProps {
   isTeamConfigurationValid: boolean;
   language: LanguageCode;
   onToggleTheme: (themeId: ThemeId) => void;
+  isThemeLocked: (themeId: ThemeId) => boolean;
   onToggleTeamMode: (value: boolean) => void;
   onChangeTeamCount: (value: string) => void;
   onChangeRoundSeconds: (value: string) => void;
@@ -44,12 +46,38 @@ export function ThemesScreen({
   isTeamConfigurationValid,
   language,
   onToggleTheme,
+  isThemeLocked,
   onToggleTeamMode,
   onChangeTeamCount,
   onChangeRoundSeconds,
   onStart,
   onBack,
 }: ThemesScreenProps) {
+  const themeGroups = [
+    {
+      key: 'free',
+      title: Consts.UI_TRANSLATIONS[language].FREE_THEMES_TITLE,
+      themes: themeOptions.filter((theme) => !isPremiumTheme(theme.id)),
+    },
+    {
+      key: 'premium',
+      title: Consts.UI_TRANSLATIONS[language].PREMIUM_THEMES_TITLE,
+      themes: themeOptions.filter((theme) => isPremiumTheme(theme.id)),
+    },
+  ];
+
+  const showLockedThemeMessage = () => {
+    const { PREMIUM_LOCKED_TITLE, PREMIUM_LOCKED_MESSAGE } = Consts.UI_TRANSLATIONS[language];
+
+    // Alert.alert não funciona no react-native-web.
+    if (Platform.OS === 'web') {
+      window.alert(`${PREMIUM_LOCKED_TITLE}\n\n${PREMIUM_LOCKED_MESSAGE}`);
+      return;
+    }
+
+    Alert.alert(PREMIUM_LOCKED_TITLE, PREMIUM_LOCKED_MESSAGE);
+  };
+
   const isStartDisabled =
     isLoading || Boolean(loadError) || !hasSelectableWords || (teamSettings.isEnabled && !isTeamConfigurationValid);
 
@@ -157,25 +185,34 @@ export function ThemesScreen({
           ) : null}
         </View>
 
-        <View style={styles.chipWrap}>
-          {themeOptions.map((theme) => {
-            const selected = selectedThemes.includes(theme.id);
+        {themeGroups.map((group) =>
+          group.themes.length > 0 ? (
+            <View key={group.key} style={styles.themeGroup}>
+              <Text style={[styles.groupTitle, { color: tokens.mutedText }]}>{group.title}</Text>
+              <View style={styles.chipWrap}>
+                {group.themes.map((theme) => {
+                  const selected = selectedThemes.includes(theme.id);
+                  const locked = isThemeLocked(theme.id);
 
-            return (
-              <ThemeChip
-                key={theme.id}
-                label={theme.label}
-                accent={theme.accent}
-                selected={selected}
-                railColor={scene.rail}
-                defaultTextColor={tokens.text}
-                defaultDotColor={tokens.border}
-                chipPanelColor={scene.chipPanel}
-                onPress={() => onToggleTheme(theme.id)}
-              />
-            );
-          })}
-        </View>
+                  return (
+                    <ThemeChip
+                      key={theme.id}
+                      label={theme.label}
+                      accent={theme.accent}
+                      selected={selected}
+                      railColor={scene.rail}
+                      defaultTextColor={tokens.text}
+                      defaultDotColor={tokens.border}
+                      chipPanelColor={scene.chipPanel}
+                      locked={locked}
+                      onPress={() => (locked ? showLockedThemeMessage() : onToggleTheme(theme.id))}
+                    />
+                  );
+                })}
+              </View>
+            </View>
+          ) : null,
+        )}
 
         {isLoading || !isHydrated ? (
           <View style={styles.centeredBlock}>
@@ -356,6 +393,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 12,
     fontSize: 16,
+    fontFamily: BODY_FONT,
+  },
+  themeGroup: {
+    gap: 8,
+  },
+  groupTitle: {
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 1,
+    textTransform: 'uppercase',
     fontFamily: BODY_FONT,
   },
   chipWrap: {

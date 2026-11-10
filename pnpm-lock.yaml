@@ -23,6 +23,9 @@ importers:
       expo-audio:
         specifier: ~56.0.13
         version: 56.0.13(expo-asset@56.0.25(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)(typescript@6.0.3))(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
+      expo-iap:
+        specifier: ^6.4.3
+        version: 6.4.3(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
       expo-splash-screen:
         specifier: ~56.0.16
         version: 56.0.16(expo@56.0.24)(typescript@6.0.3)
@@ -1734,6 +1737,20 @@ packages:
       expo: '*'
       react: '*'
       react-native: '*'
+
+  expo-iap@6.4.3:
+    resolution: {integrity: sha512-KNQ4BkptFBuzIU0Ap7WvfJ2mKF9GdFOmQJ4NDWLchWL8qYtD7FQIroX4t/kCLs6TNv08fi77sQbWEDjBtWFhEg==}
+    peerDependencies:
+      '@amazon-devices/keplerscript-appstore-iap-lib': ~2.13.0
+      '@amazon-devices/package-manager-lib': ~1.0.1767254401
+      expo: '*'
+      react: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      '@amazon-devices/keplerscript-appstore-iap-lib':
+        optional: true
+      '@amazon-devices/package-manager-lib':
+        optional: true
 
   expo-keep-awake@56.0.3:
     resolution: {integrity: sha512-CLMJXtEiMKknD3Rpm8CRwE6ZJUzu2yCEmRk1sgfHAJ1zIbuEWY3dpPDubtsnuzWm+2k6Sru+yaFbYsvPWmTiBA==}
@@ -5579,6 +5596,12 @@ snapshots:
     dependencies:
       expo: 56.0.24(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       fontfaceobserver: 2.3.0
+      react: 19.2.3
+      react-native: 0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3)
+
+  expo-iap@6.4.3(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3):
+    dependencies:
+      expo: 56.0.24(@babel/core@7.29.7)(@expo/dom-webview@56.0.5)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3)
 

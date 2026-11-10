@@ -23,6 +23,17 @@ if "%NODE_ENV%"=="" (
   set "NODE_ENV=production"
 )
 
+rem Versao vem do app.json (versionado no git); o build.gradle le de la.
+rem Incrementa ANTES do prebuild para que um projeto regenerado ja nasca com a versao nova.
+echo Atualizando versao (app.json)...
+call node "%~dp0scripts\update-android-version.js"
+if errorlevel 1 (
+  echo.
+  echo Falha ao atualizar versoes Android.
+  exit /b 1
+)
+echo.
+
 if not exist "%~dp0android\gradlew.bat" (
   echo Pasta Android nao encontrada. Gerando projeto nativo com Expo prebuild...
   call npx expo prebuild --platform android
@@ -45,14 +56,6 @@ if not exist "%KEYSTORE_PROPS%" (
   )
   echo.
   echo O build de Play Store exige um keystore de release proprio.
-  exit /b 1
-)
-
-echo Atualizando versao Android...
-call node "%~dp0scripts\update-android-version.js"
-if errorlevel 1 (
-  echo.
-  echo Falha ao atualizar versoes Android.
   exit /b 1
 )
 

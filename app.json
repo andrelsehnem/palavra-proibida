@@ -2,7 +2,7 @@
   "expo": {
     "name": "Palavra Proibida",
     "slug": "palavra-proibida",
-    "version": "1.0.20",
+    "version": "1.0.22",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -16,8 +16,10 @@
     },
     "android": {
       "package": "dev.andre100.palavraproibida",
+      "versionCode": 22,
       "permissions": [
-        "com.google.android.gms.permission.AD_ID"
+        "com.google.android.gms.permission.AD_ID",
+        "com.android.vending.BILLING"
       ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -46,7 +48,8 @@
           "androidAppId": "ca-app-pub-7478664676745892~8203726946",
           "iosAppId": "ca-app-pub-3940256099942544~1458002511"
         }
-      ]
+      ],
+      "expo-iap"
     ]
   },
   "react-native-google-mobile-ads": {

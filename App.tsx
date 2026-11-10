@@ -12,6 +12,7 @@ import type { TeamGameSettings, WordCard } from './src/domain/types';
 import { useAppScreenFlow } from './src/hooks/useAppScreenFlow';
 import { useGameRound } from './src/hooks/useGameRound';
 import { useLanguagePreference } from './src/hooks/useLanguagePreference';
+import { useOwnedProducts } from './src/hooks/useOwnedProducts';
 import { useTeamGameRound } from './src/hooks/useTeamGameRound';
 import { useThemePreference } from './src/hooks/useThemePreference';
 import { useAdInterstitialAction } from './src/hooks/useAdInterstitialAction';
@@ -27,6 +28,9 @@ import { AtmosphereScreen } from './src/components/layout/AtmosphereScreen';
 
 void SplashScreen.preventAutoHideAsync();
 
+const SPLASH_MIN_DURATION_MS = 3200;
+const SPLASH_MAX_DURATION_MS = 8000;
+
 const DEFAULT_TEAM_SETTINGS: TeamGameSettings = {
   isEnabled: false,
   teamCount: 2,
@@ -40,6 +44,8 @@ export default function App() {
   const scene = useMemo(() => getScenePalette(mode), [mode]);
   const { runWithInterstitial } = useAdInterstitialAction();
   const [isAnimatedSplashVisible, setIsAnimatedSplashVisible] = useState(true);
+  const [isSplashMinTimeElapsed, setIsSplashMinTimeElapsed] = useState(false);
+  const { isThemeLocked, isHydrated: arePurchasesHydrated } = useOwnedProducts();
 
   const {
     isMenuScreen,
@@ -60,8 +66,8 @@ export default function App() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [teamSettings, setTeamSettings] = useState<TeamGameSettings>(DEFAULT_TEAM_SETTINGS);
   const themeOptions = useMemo(
-    () => buildThemeOptions(allWords.map((word) => word.theme)),
-    [allWords],
+    () => buildThemeOptions(allWords.map((word) => word.theme), language),
+    [allWords, language],
   );
 
   const {
@@ -84,7 +90,7 @@ export default function App() {
     endRound,
     startNextRound,
     finishMatch: finishClassicMatch,
-  } = useGameRound(allWords);
+  } = useGameRound(allWords, isThemeLocked);
 
   const {
     teamScores,
@@ -163,14 +169,24 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const minTimer = setTimeout(() => {
+      setIsSplashMinTimeElapsed(true);
+    }, SPLASH_MIN_DURATION_MS);
+    // Garante que o splash não trava se a consulta de compras demorar.
+    const maxTimer = setTimeout(() => {
       setIsAnimatedSplashVisible(false);
-    }, 3200);
+    }, SPLASH_MAX_DURATION_MS);
 
     return () => {
-      clearTimeout(timer);
+      clearTimeout(minTimer);
+      clearTimeout(maxTimer);
     };
   }, []);
+
+  // Splash só sai depois do tempo mínimo E das compras carregadas.
+  if (isAnimatedSplashVisible && isSplashMinTimeElapsed && arePurchasesHydrated) {
+    setIsAnimatedSplashVisible(false);
+  }
 
   const updateTeamSettings = (updates: Partial<TeamGameSettings>) => {
     setTeamSettings((current) => ({
@@ -259,6 +275,7 @@ export default function App() {
           isTeamConfigurationValid={hasValidTeamSettings}
           language={language}
           onToggleTheme={toggleTheme}
+          isThemeLocked={isThemeLocked}
           onToggleTeamMode={(value) => updateTeamSettings({ isEnabled: value })}
           onChangeTeamCount={(value) => updateNumericSetting('teamCount', value)}
           onChangeRoundSeconds={(value) => updateNumericSetting('roundSeconds', value)}

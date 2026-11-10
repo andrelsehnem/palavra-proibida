@@ -10,6 +10,7 @@ interface ThemeChipProps {
   defaultTextColor: string;
   defaultDotColor: string;
   chipPanelColor: string;
+  locked?: boolean;
   onPress: () => void;
 }
 
@@ -21,21 +22,26 @@ export function ThemeChip({
   defaultTextColor,
   defaultDotColor,
   chipPanelColor,
+  locked = false,
   onPress,
 }: ThemeChipProps) {
   return (
     <Pressable
       onPress={onPress}
+      accessibilityState={{ selected, disabled: locked }}
       style={[
         styles.chip,
         {
           borderColor: selected ? accent : railColor,
           backgroundColor: selected ? `${accent}24` : chipPanelColor,
+          borderStyle: locked ? 'dashed' : 'solid',
+          opacity: locked ? 0.6 : 1,
         },
       ]}
     >
       <View style={[styles.accent, { backgroundColor: selected ? accent : defaultDotColor }]} />
       <Text style={[styles.label, { color: selected ? accent : defaultTextColor }]}>{label}</Text>
+      {locked ? <Text style={styles.lock}>🔒</Text> : null}
     </Pressable>
   );
 }
@@ -59,5 +65,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 14,
     fontFamily: BODY_FONT,
+  },
+  lock: {
+    fontSize: 12,
   },
 });

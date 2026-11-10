@@ -202,6 +202,308 @@
         ]
       }
     ],
+    "animais_plus": [
+      {
+        "mainWord": "pinguim",
+        "forbiddenWords": [
+          "gelo",
+          "antartida",
+          "ave",
+          "smoking",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "canguru",
+        "forbiddenWords": [
+          "australia",
+          "pular",
+          "bolsa",
+          "filhote",
+          "marsupial"
+        ]
+      },
+      {
+        "mainWord": "camelo",
+        "forbiddenWords": [
+          "deserto",
+          "corcova",
+          "agua",
+          "areia",
+          "arabia"
+        ]
+      },
+      {
+        "mainWord": "polvo",
+        "forbiddenWords": [
+          "tentaculo",
+          "tinta",
+          "mar",
+          "oito",
+          "bracos"
+        ]
+      },
+      {
+        "mainWord": "jacare",
+        "forbiddenWords": [
+          "pantanal",
+          "rio",
+          "dentes",
+          "reptil",
+          "boca"
+        ]
+      },
+      {
+        "mainWord": "preguica",
+        "forbiddenWords": [
+          "lenta",
+          "arvore",
+          "dormir",
+          "garras",
+          "devagar"
+        ]
+      },
+      {
+        "mainWord": "tucano",
+        "forbiddenWords": [
+          "bico",
+          "colorido",
+          "ave",
+          "amazonia",
+          "laranja"
+        ]
+      },
+      {
+        "mainWord": "hipopotamo",
+        "forbiddenWords": [
+          "africa",
+          "rio",
+          "gordo",
+          "boca",
+          "pesado"
+        ]
+      },
+      {
+        "mainWord": "rinoceronte",
+        "forbiddenWords": [
+          "chifre",
+          "africa",
+          "pele",
+          "grosso",
+          "savana"
+        ]
+      },
+      {
+        "mainWord": "morcego",
+        "forbiddenWords": [
+          "noite",
+          "voar",
+          "vampiro",
+          "caverna",
+          "sangue"
+        ]
+      },
+      {
+        "mainWord": "borboleta",
+        "forbiddenWords": [
+          "asas",
+          "casulo",
+          "lagarta",
+          "flor",
+          "colorida"
+        ]
+      },
+      {
+        "mainWord": "abelha",
+        "forbiddenWords": [
+          "mel",
+          "colmeia",
+          "picada",
+          "zumbido",
+          "rainha"
+        ]
+      },
+      {
+        "mainWord": "formiga",
+        "forbiddenWords": [
+          "formigueiro",
+          "pequena",
+          "trabalhadora",
+          "acucar",
+          "fila"
+        ]
+      },
+      {
+        "mainWord": "camaleao",
+        "forbiddenWords": [
+          "cor",
+          "lingua",
+          "reptil",
+          "disfarce",
+          "mudar"
+        ]
+      },
+      {
+        "mainWord": "flamingo",
+        "forbiddenWords": [
+          "rosa",
+          "perna",
+          "ave",
+          "lago",
+          "pernalta"
+        ]
+      },
+      {
+        "mainWord": "papagaio",
+        "forbiddenWords": [
+          "falar",
+          "verde",
+          "ave",
+          "repetir",
+          "louro"
+        ]
+      },
+      {
+        "mainWord": "esquilo",
+        "forbiddenWords": [
+          "nozes",
+          "arvore",
+          "cauda",
+          "roedor",
+          "bolota"
+        ]
+      },
+      {
+        "mainWord": "ovelha",
+        "forbiddenWords": [
+          "la",
+          "fazenda",
+          "balir",
+          "tosquia",
+          "carneiro"
+        ]
+      },
+      {
+        "mainWord": "porco",
+        "forbiddenWords": [
+          "fazenda",
+          "lama",
+          "rosa",
+          "bacon",
+          "focinho"
+        ]
+      },
+      {
+        "mainWord": "vaca",
+        "forbiddenWords": [
+          "leite",
+          "mugir",
+          "fazenda",
+          "boi",
+          "chifre"
+        ]
+      },
+      {
+        "mainWord": "galinha",
+        "forbiddenWords": [
+          "ovo",
+          "pintinho",
+          "galo",
+          "penas",
+          "cacarejar"
+        ]
+      },
+      {
+        "mainWord": "sapo",
+        "forbiddenWords": [
+          "lagoa",
+          "pular",
+          "verde",
+          "coaxar",
+          "princesa"
+        ]
+      },
+      {
+        "mainWord": "baleia",
+        "forbiddenWords": [
+          "oceano",
+          "enorme",
+          "jubarte",
+          "mamifero",
+          "jato"
+        ]
+      },
+      {
+        "mainWord": "cavalo-marinho",
+        "forbiddenWords": [
+          "mar",
+          "pequeno",
+          "macho",
+          "gravidez",
+          "peixe"
+        ]
+      },
+      {
+        "mainWord": "lagosta",
+        "forbiddenWords": [
+          "mar",
+          "vermelha",
+          "garras",
+          "crustaceo",
+          "caro"
+        ]
+      },
+      {
+        "mainWord": "avestruz",
+        "forbiddenWords": [
+          "ave",
+          "correr",
+          "pescoco",
+          "areia",
+          "ovo"
+        ]
+      },
+      {
+        "mainWord": "tigre",
+        "forbiddenWords": [
+          "listras",
+          "laranja",
+          "felino",
+          "asia",
+          "bengala"
+        ]
+      },
+      {
+        "mainWord": "onca",
+        "forbiddenWords": [
+          "pintada",
+          "felino",
+          "brasil",
+          "pantanal",
+          "jaguar"
+        ]
+      },
+      {
+        "mainWord": "capivara",
+        "forbiddenWords": [
+          "roedor",
+          "rio",
+          "maior",
+          "brasil",
+          "calma"
+        ]
+      },
+      {
+        "mainWord": "tamandua",
+        "forbiddenWords": [
+          "formiga",
+          "lingua",
+          "bandeira",
+          "focinho",
+          "cerrado"
+        ]
+      }
+    ],
     "trabalho": [
       {
         "mainWord": "medico",
@@ -401,6 +703,308 @@
           "personagem",
           "cena",
           "papel"
+        ]
+      }
+    ],
+    "profissoes_plus": [
+      {
+        "mainWord": "veterinario",
+        "forbiddenWords": [
+          "animal",
+          "pet",
+          "cachorro",
+          "clinica",
+          "vacina"
+        ]
+      },
+      {
+        "mainWord": "padeiro",
+        "forbiddenWords": [
+          "pao",
+          "forno",
+          "padaria",
+          "farinha",
+          "madrugada"
+        ]
+      },
+      {
+        "mainWord": "carteiro",
+        "forbiddenWords": [
+          "carta",
+          "correio",
+          "entrega",
+          "encomenda",
+          "bicicleta"
+        ]
+      },
+      {
+        "mainWord": "eletricista",
+        "forbiddenWords": [
+          "fio",
+          "tomada",
+          "choque",
+          "energia",
+          "luz"
+        ]
+      },
+      {
+        "mainWord": "encanador",
+        "forbiddenWords": [
+          "cano",
+          "agua",
+          "vazamento",
+          "pia",
+          "banheiro"
+        ]
+      },
+      {
+        "mainWord": "pedreiro",
+        "forbiddenWords": [
+          "tijolo",
+          "obra",
+          "cimento",
+          "parede",
+          "construcao"
+        ]
+      },
+      {
+        "mainWord": "juiz",
+        "forbiddenWords": [
+          "tribunal",
+          "martelo",
+          "sentenca",
+          "lei",
+          "toga"
+        ]
+      },
+      {
+        "mainWord": "astronauta",
+        "forbiddenWords": [
+          "espaco",
+          "foguete",
+          "lua",
+          "nasa",
+          "capacete"
+        ]
+      },
+      {
+        "mainWord": "cabeleireiro",
+        "forbiddenWords": [
+          "cabelo",
+          "corte",
+          "tesoura",
+          "salao",
+          "escova"
+        ]
+      },
+      {
+        "mainWord": "garcom",
+        "forbiddenWords": [
+          "restaurante",
+          "bandeja",
+          "gorjeta",
+          "pedido",
+          "mesa"
+        ]
+      },
+      {
+        "mainWord": "agricultor",
+        "forbiddenWords": [
+          "fazenda",
+          "plantar",
+          "colheita",
+          "trator",
+          "campo"
+        ]
+      },
+      {
+        "mainWord": "pescador",
+        "forbiddenWords": [
+          "peixe",
+          "rede",
+          "barco",
+          "anzol",
+          "mar"
+        ]
+      },
+      {
+        "mainWord": "mecanico",
+        "forbiddenWords": [
+          "carro",
+          "oficina",
+          "motor",
+          "conserto",
+          "chave"
+        ]
+      },
+      {
+        "mainWord": "psicologo",
+        "forbiddenWords": [
+          "mente",
+          "terapia",
+          "consulta",
+          "sentimento",
+          "divan"
+        ]
+      },
+      {
+        "mainWord": "farmaceutico",
+        "forbiddenWords": [
+          "remedio",
+          "farmacia",
+          "receita",
+          "balcao",
+          "comprimido"
+        ]
+      },
+      {
+        "mainWord": "marceneiro",
+        "forbiddenWords": [
+          "madeira",
+          "movel",
+          "serra",
+          "plaina",
+          "mesa"
+        ]
+      },
+      {
+        "mainWord": "costureira",
+        "forbiddenWords": [
+          "linha",
+          "agulha",
+          "roupa",
+          "tecido",
+          "maquina"
+        ]
+      },
+      {
+        "mainWord": "bibliotecario",
+        "forbiddenWords": [
+          "livro",
+          "biblioteca",
+          "silencio",
+          "emprestimo",
+          "estante"
+        ]
+      },
+      {
+        "mainWord": "arqueologo",
+        "forbiddenWords": [
+          "fossil",
+          "escavar",
+          "ruina",
+          "antigo",
+          "dinossauro"
+        ]
+      },
+      {
+        "mainWord": "salva-vidas",
+        "forbiddenWords": [
+          "praia",
+          "piscina",
+          "afogar",
+          "apito",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "detetive",
+        "forbiddenWords": [
+          "misterio",
+          "pista",
+          "crime",
+          "investigar",
+          "lupa"
+        ]
+      },
+      {
+        "mainWord": "palhaco",
+        "forbiddenWords": [
+          "circo",
+          "nariz",
+          "rir",
+          "maquiagem",
+          "picadeiro"
+        ]
+      },
+      {
+        "mainWord": "chef",
+        "forbiddenWords": [
+          "cozinha",
+          "restaurante",
+          "prato",
+          "chapeu",
+          "receita"
+        ]
+      },
+      {
+        "mainWord": "jardineiro",
+        "forbiddenWords": [
+          "planta",
+          "flor",
+          "grama",
+          "regar",
+          "tesoura"
+        ]
+      },
+      {
+        "mainWord": "taxista",
+        "forbiddenWords": [
+          "carro",
+          "passageiro",
+          "corrida",
+          "amarelo",
+          "taximetro"
+        ]
+      },
+      {
+        "mainWord": "comissario de bordo",
+        "forbiddenWords": [
+          "aviao",
+          "voo",
+          "passageiro",
+          "aeromoca",
+          "cinto"
+        ]
+      },
+      {
+        "mainWord": "dublador",
+        "forbiddenWords": [
+          "voz",
+          "desenho",
+          "filme",
+          "estudio",
+          "traducao"
+        ]
+      },
+      {
+        "mainWord": "youtuber",
+        "forbiddenWords": [
+          "video",
+          "canal",
+          "inscrito",
+          "internet",
+          "like"
+        ]
+      },
+      {
+        "mainWord": "barbeiro",
+        "forbiddenWords": [
+          "barba",
+          "navalha",
+          "cabelo",
+          "corte",
+          "bigode"
+        ]
+      },
+      {
+        "mainWord": "guia turistico",
+        "forbiddenWords": [
+          "viagem",
+          "turista",
+          "passeio",
+          "roteiro",
+          "ponto"
         ]
       }
     ],
@@ -2424,7 +3028,7 @@
     ]
   },
   "en-us": {
-    "animals": [
+    "animais": [
       {
         "mainWord": "cat",
         "forbiddenWords": [
@@ -2626,7 +3230,309 @@
         ]
       }
     ],
-    "jobs": [
+    "animais_plus": [
+      {
+        "mainWord": "penguin",
+        "forbiddenWords": [
+          "ice",
+          "antarctica",
+          "bird",
+          "tuxedo",
+          "swim"
+        ]
+      },
+      {
+        "mainWord": "kangaroo",
+        "forbiddenWords": [
+          "australia",
+          "jump",
+          "pouch",
+          "joey",
+          "marsupial"
+        ]
+      },
+      {
+        "mainWord": "camel",
+        "forbiddenWords": [
+          "desert",
+          "hump",
+          "water",
+          "sand",
+          "arabia"
+        ]
+      },
+      {
+        "mainWord": "octopus",
+        "forbiddenWords": [
+          "tentacle",
+          "ink",
+          "sea",
+          "eight",
+          "arms"
+        ]
+      },
+      {
+        "mainWord": "alligator",
+        "forbiddenWords": [
+          "swamp",
+          "river",
+          "teeth",
+          "reptile",
+          "jaws"
+        ]
+      },
+      {
+        "mainWord": "sloth",
+        "forbiddenWords": [
+          "slow",
+          "tree",
+          "sleep",
+          "claws",
+          "lazy"
+        ]
+      },
+      {
+        "mainWord": "toucan",
+        "forbiddenWords": [
+          "beak",
+          "colorful",
+          "bird",
+          "amazon",
+          "orange"
+        ]
+      },
+      {
+        "mainWord": "hippopotamus",
+        "forbiddenWords": [
+          "africa",
+          "river",
+          "fat",
+          "mouth",
+          "heavy"
+        ]
+      },
+      {
+        "mainWord": "rhinoceros",
+        "forbiddenWords": [
+          "horn",
+          "africa",
+          "skin",
+          "thick",
+          "savanna"
+        ]
+      },
+      {
+        "mainWord": "bat",
+        "forbiddenWords": [
+          "night",
+          "fly",
+          "vampire",
+          "cave",
+          "blood"
+        ]
+      },
+      {
+        "mainWord": "butterfly",
+        "forbiddenWords": [
+          "wings",
+          "cocoon",
+          "caterpillar",
+          "flower",
+          "colorful"
+        ]
+      },
+      {
+        "mainWord": "bee",
+        "forbiddenWords": [
+          "honey",
+          "hive",
+          "sting",
+          "buzz",
+          "queen"
+        ]
+      },
+      {
+        "mainWord": "ant",
+        "forbiddenWords": [
+          "anthill",
+          "small",
+          "worker",
+          "sugar",
+          "line"
+        ]
+      },
+      {
+        "mainWord": "chameleon",
+        "forbiddenWords": [
+          "color",
+          "tongue",
+          "reptile",
+          "camouflage",
+          "change"
+        ]
+      },
+      {
+        "mainWord": "flamingo",
+        "forbiddenWords": [
+          "pink",
+          "leg",
+          "bird",
+          "lake",
+          "stand"
+        ]
+      },
+      {
+        "mainWord": "parrot",
+        "forbiddenWords": [
+          "talk",
+          "green",
+          "bird",
+          "repeat",
+          "pirate"
+        ]
+      },
+      {
+        "mainWord": "squirrel",
+        "forbiddenWords": [
+          "nuts",
+          "tree",
+          "tail",
+          "rodent",
+          "acorn"
+        ]
+      },
+      {
+        "mainWord": "sheep",
+        "forbiddenWords": [
+          "wool",
+          "farm",
+          "baa",
+          "shear",
+          "lamb"
+        ]
+      },
+      {
+        "mainWord": "pig",
+        "forbiddenWords": [
+          "farm",
+          "mud",
+          "pink",
+          "bacon",
+          "snout"
+        ]
+      },
+      {
+        "mainWord": "cow",
+        "forbiddenWords": [
+          "milk",
+          "moo",
+          "farm",
+          "bull",
+          "horns"
+        ]
+      },
+      {
+        "mainWord": "chicken",
+        "forbiddenWords": [
+          "egg",
+          "chick",
+          "rooster",
+          "feathers",
+          "cluck"
+        ]
+      },
+      {
+        "mainWord": "frog",
+        "forbiddenWords": [
+          "pond",
+          "jump",
+          "green",
+          "croak",
+          "prince"
+        ]
+      },
+      {
+        "mainWord": "whale",
+        "forbiddenWords": [
+          "ocean",
+          "huge",
+          "humpback",
+          "mammal",
+          "spout"
+        ]
+      },
+      {
+        "mainWord": "seahorse",
+        "forbiddenWords": [
+          "sea",
+          "small",
+          "male",
+          "pregnant",
+          "fish"
+        ]
+      },
+      {
+        "mainWord": "lobster",
+        "forbiddenWords": [
+          "sea",
+          "red",
+          "claws",
+          "crustacean",
+          "expensive"
+        ]
+      },
+      {
+        "mainWord": "ostrich",
+        "forbiddenWords": [
+          "bird",
+          "run",
+          "neck",
+          "sand",
+          "egg"
+        ]
+      },
+      {
+        "mainWord": "tiger",
+        "forbiddenWords": [
+          "stripes",
+          "orange",
+          "feline",
+          "asia",
+          "bengal"
+        ]
+      },
+      {
+        "mainWord": "jaguar",
+        "forbiddenWords": [
+          "spots",
+          "feline",
+          "brazil",
+          "jungle",
+          "cat"
+        ]
+      },
+      {
+        "mainWord": "capybara",
+        "forbiddenWords": [
+          "rodent",
+          "river",
+          "biggest",
+          "brazil",
+          "calm"
+        ]
+      },
+      {
+        "mainWord": "anteater",
+        "forbiddenWords": [
+          "ant",
+          "tongue",
+          "giant",
+          "snout",
+          "termite"
+        ]
+      }
+    ],
+    "trabalho": [
       {
         "mainWord": "doctor",
         "forbiddenWords": [
@@ -2828,7 +3734,309 @@
         ]
       }
     ],
-    "objects": [
+    "profissoes_plus": [
+      {
+        "mainWord": "veterinarian",
+        "forbiddenWords": [
+          "animal",
+          "pet",
+          "dog",
+          "clinic",
+          "vaccine"
+        ]
+      },
+      {
+        "mainWord": "baker",
+        "forbiddenWords": [
+          "bread",
+          "oven",
+          "bakery",
+          "flour",
+          "dough"
+        ]
+      },
+      {
+        "mainWord": "mail carrier",
+        "forbiddenWords": [
+          "letter",
+          "mail",
+          "delivery",
+          "package",
+          "mailbox"
+        ]
+      },
+      {
+        "mainWord": "electrician",
+        "forbiddenWords": [
+          "wire",
+          "outlet",
+          "shock",
+          "power",
+          "light"
+        ]
+      },
+      {
+        "mainWord": "plumber",
+        "forbiddenWords": [
+          "pipe",
+          "water",
+          "leak",
+          "sink",
+          "toilet"
+        ]
+      },
+      {
+        "mainWord": "bricklayer",
+        "forbiddenWords": [
+          "brick",
+          "construction",
+          "cement",
+          "wall",
+          "build"
+        ]
+      },
+      {
+        "mainWord": "judge",
+        "forbiddenWords": [
+          "court",
+          "gavel",
+          "sentence",
+          "law",
+          "robe"
+        ]
+      },
+      {
+        "mainWord": "astronaut",
+        "forbiddenWords": [
+          "space",
+          "rocket",
+          "moon",
+          "nasa",
+          "helmet"
+        ]
+      },
+      {
+        "mainWord": "hairdresser",
+        "forbiddenWords": [
+          "hair",
+          "haircut",
+          "scissors",
+          "salon",
+          "brush"
+        ]
+      },
+      {
+        "mainWord": "waiter",
+        "forbiddenWords": [
+          "restaurant",
+          "tray",
+          "tip",
+          "order",
+          "table"
+        ]
+      },
+      {
+        "mainWord": "farmer",
+        "forbiddenWords": [
+          "farm",
+          "plant",
+          "harvest",
+          "tractor",
+          "field"
+        ]
+      },
+      {
+        "mainWord": "fisherman",
+        "forbiddenWords": [
+          "fish",
+          "net",
+          "boat",
+          "hook",
+          "sea"
+        ]
+      },
+      {
+        "mainWord": "mechanic",
+        "forbiddenWords": [
+          "car",
+          "garage",
+          "engine",
+          "repair",
+          "wrench"
+        ]
+      },
+      {
+        "mainWord": "psychologist",
+        "forbiddenWords": [
+          "mind",
+          "therapy",
+          "session",
+          "feelings",
+          "couch"
+        ]
+      },
+      {
+        "mainWord": "pharmacist",
+        "forbiddenWords": [
+          "medicine",
+          "pharmacy",
+          "prescription",
+          "counter",
+          "pill"
+        ]
+      },
+      {
+        "mainWord": "carpenter",
+        "forbiddenWords": [
+          "wood",
+          "furniture",
+          "saw",
+          "hammer",
+          "table"
+        ]
+      },
+      {
+        "mainWord": "seamstress",
+        "forbiddenWords": [
+          "thread",
+          "needle",
+          "clothes",
+          "fabric",
+          "sewing"
+        ]
+      },
+      {
+        "mainWord": "librarian",
+        "forbiddenWords": [
+          "book",
+          "library",
+          "silence",
+          "loan",
+          "shelf"
+        ]
+      },
+      {
+        "mainWord": "archaeologist",
+        "forbiddenWords": [
+          "fossil",
+          "dig",
+          "ruins",
+          "ancient",
+          "dinosaur"
+        ]
+      },
+      {
+        "mainWord": "lifeguard",
+        "forbiddenWords": [
+          "beach",
+          "pool",
+          "drown",
+          "whistle",
+          "swim"
+        ]
+      },
+      {
+        "mainWord": "detective",
+        "forbiddenWords": [
+          "mystery",
+          "clue",
+          "crime",
+          "investigate",
+          "magnifying glass"
+        ]
+      },
+      {
+        "mainWord": "clown",
+        "forbiddenWords": [
+          "circus",
+          "nose",
+          "laugh",
+          "makeup",
+          "funny"
+        ]
+      },
+      {
+        "mainWord": "chef",
+        "forbiddenWords": [
+          "kitchen",
+          "restaurant",
+          "dish",
+          "hat",
+          "recipe"
+        ]
+      },
+      {
+        "mainWord": "gardener",
+        "forbiddenWords": [
+          "plant",
+          "flower",
+          "grass",
+          "water",
+          "shears"
+        ]
+      },
+      {
+        "mainWord": "taxi driver",
+        "forbiddenWords": [
+          "car",
+          "passenger",
+          "ride",
+          "yellow",
+          "meter"
+        ]
+      },
+      {
+        "mainWord": "flight attendant",
+        "forbiddenWords": [
+          "plane",
+          "flight",
+          "passenger",
+          "seatbelt",
+          "cabin"
+        ]
+      },
+      {
+        "mainWord": "voice actor",
+        "forbiddenWords": [
+          "voice",
+          "cartoon",
+          "movie",
+          "studio",
+          "dubbing"
+        ]
+      },
+      {
+        "mainWord": "youtuber",
+        "forbiddenWords": [
+          "video",
+          "channel",
+          "subscriber",
+          "internet",
+          "like"
+        ]
+      },
+      {
+        "mainWord": "barber",
+        "forbiddenWords": [
+          "beard",
+          "razor",
+          "hair",
+          "haircut",
+          "mustache"
+        ]
+      },
+      {
+        "mainWord": "tour guide",
+        "forbiddenWords": [
+          "travel",
+          "tourist",
+          "tour",
+          "itinerary",
+          "sightseeing"
+        ]
+      }
+    ],
+    "objetos": [
       {
         "mainWord": "chair",
         "forbiddenWords": [
@@ -3530,7 +4738,7 @@
         ]
       }
     ],
-    "general": [
+    "geral": [
       {
         "mainWord": "fried pastry",
         "forbiddenWords": [
@@ -4232,7 +5440,7 @@
         ]
       }
     ],
-    "movies": [
+    "filmes": [
       {
         "mainWord": "the matrix",
         "forbiddenWords": [
@@ -4434,7 +5642,7 @@
         ]
       }
     ],
-    "celebrities": [
+    "celebridades": [
       {
         "mainWord": "Neymar",
         "forbiddenWords": [
@@ -4848,7 +6056,7 @@
     ]
   },
   "es-es": {
-    "animales": [
+    "animais": [
       {
         "mainWord": "gato",
         "forbiddenWords": [
@@ -5050,7 +6258,309 @@
         ]
       }
     ],
-    "profesiones": [
+    "animais_plus": [
+      {
+        "mainWord": "pingüino",
+        "forbiddenWords": [
+          "hielo",
+          "antártida",
+          "ave",
+          "esmoquin",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "canguro",
+        "forbiddenWords": [
+          "australia",
+          "saltar",
+          "bolsa",
+          "cría",
+          "marsupial"
+        ]
+      },
+      {
+        "mainWord": "camello",
+        "forbiddenWords": [
+          "desierto",
+          "joroba",
+          "agua",
+          "arena",
+          "arabia"
+        ]
+      },
+      {
+        "mainWord": "pulpo",
+        "forbiddenWords": [
+          "tentáculo",
+          "tinta",
+          "mar",
+          "ocho",
+          "brazos"
+        ]
+      },
+      {
+        "mainWord": "caimán",
+        "forbiddenWords": [
+          "pantano",
+          "río",
+          "dientes",
+          "reptil",
+          "boca"
+        ]
+      },
+      {
+        "mainWord": "perezoso",
+        "forbiddenWords": [
+          "lento",
+          "árbol",
+          "dormir",
+          "garras",
+          "vago"
+        ]
+      },
+      {
+        "mainWord": "tucán",
+        "forbiddenWords": [
+          "pico",
+          "colorido",
+          "ave",
+          "amazonas",
+          "naranja"
+        ]
+      },
+      {
+        "mainWord": "hipopótamo",
+        "forbiddenWords": [
+          "áfrica",
+          "río",
+          "gordo",
+          "boca",
+          "pesado"
+        ]
+      },
+      {
+        "mainWord": "rinoceronte",
+        "forbiddenWords": [
+          "cuerno",
+          "áfrica",
+          "piel",
+          "gruesa",
+          "sabana"
+        ]
+      },
+      {
+        "mainWord": "murciélago",
+        "forbiddenWords": [
+          "noche",
+          "volar",
+          "vampiro",
+          "cueva",
+          "sangre"
+        ]
+      },
+      {
+        "mainWord": "mariposa",
+        "forbiddenWords": [
+          "alas",
+          "capullo",
+          "oruga",
+          "flor",
+          "colorida"
+        ]
+      },
+      {
+        "mainWord": "abeja",
+        "forbiddenWords": [
+          "miel",
+          "colmena",
+          "picadura",
+          "zumbido",
+          "reina"
+        ]
+      },
+      {
+        "mainWord": "hormiga",
+        "forbiddenWords": [
+          "hormiguero",
+          "pequeña",
+          "trabajadora",
+          "azúcar",
+          "fila"
+        ]
+      },
+      {
+        "mainWord": "camaleón",
+        "forbiddenWords": [
+          "color",
+          "lengua",
+          "reptil",
+          "camuflaje",
+          "cambiar"
+        ]
+      },
+      {
+        "mainWord": "flamenco",
+        "forbiddenWords": [
+          "rosa",
+          "pata",
+          "ave",
+          "lago",
+          "baile"
+        ]
+      },
+      {
+        "mainWord": "loro",
+        "forbiddenWords": [
+          "hablar",
+          "verde",
+          "ave",
+          "repetir",
+          "pirata"
+        ]
+      },
+      {
+        "mainWord": "ardilla",
+        "forbiddenWords": [
+          "nueces",
+          "árbol",
+          "cola",
+          "roedor",
+          "bellota"
+        ]
+      },
+      {
+        "mainWord": "oveja",
+        "forbiddenWords": [
+          "lana",
+          "granja",
+          "balar",
+          "esquilar",
+          "cordero"
+        ]
+      },
+      {
+        "mainWord": "cerdo",
+        "forbiddenWords": [
+          "granja",
+          "barro",
+          "rosa",
+          "jamón",
+          "hocico"
+        ]
+      },
+      {
+        "mainWord": "vaca",
+        "forbiddenWords": [
+          "leche",
+          "mugir",
+          "granja",
+          "toro",
+          "cuernos"
+        ]
+      },
+      {
+        "mainWord": "gallina",
+        "forbiddenWords": [
+          "huevo",
+          "pollito",
+          "gallo",
+          "plumas",
+          "cacarear"
+        ]
+      },
+      {
+        "mainWord": "rana",
+        "forbiddenWords": [
+          "charca",
+          "saltar",
+          "verde",
+          "croar",
+          "príncipe"
+        ]
+      },
+      {
+        "mainWord": "ballena",
+        "forbiddenWords": [
+          "océano",
+          "enorme",
+          "jorobada",
+          "mamífero",
+          "chorro"
+        ]
+      },
+      {
+        "mainWord": "caballito de mar",
+        "forbiddenWords": [
+          "mar",
+          "pequeño",
+          "macho",
+          "embarazo",
+          "pez"
+        ]
+      },
+      {
+        "mainWord": "langosta",
+        "forbiddenWords": [
+          "mar",
+          "roja",
+          "pinzas",
+          "crustáceo",
+          "cara"
+        ]
+      },
+      {
+        "mainWord": "avestruz",
+        "forbiddenWords": [
+          "ave",
+          "correr",
+          "cuello",
+          "arena",
+          "huevo"
+        ]
+      },
+      {
+        "mainWord": "tigre",
+        "forbiddenWords": [
+          "rayas",
+          "naranja",
+          "felino",
+          "asia",
+          "bengala"
+        ]
+      },
+      {
+        "mainWord": "jaguar",
+        "forbiddenWords": [
+          "manchas",
+          "felino",
+          "selva",
+          "américa",
+          "gato"
+        ]
+      },
+      {
+        "mainWord": "capibara",
+        "forbiddenWords": [
+          "roedor",
+          "río",
+          "grande",
+          "sudamérica",
+          "tranquilo"
+        ]
+      },
+      {
+        "mainWord": "oso hormiguero",
+        "forbiddenWords": [
+          "hormiga",
+          "lengua",
+          "hocico",
+          "termita",
+          "gigante"
+        ]
+      }
+    ],
+    "trabalho": [
       {
         "mainWord": "médico",
         "forbiddenWords": [
@@ -5249,6 +6759,308 @@
           "personaje",
           "escena",
           "papel"
+        ]
+      }
+    ],
+    "profissoes_plus": [
+      {
+        "mainWord": "veterinario",
+        "forbiddenWords": [
+          "animal",
+          "mascota",
+          "perro",
+          "clínica",
+          "vacuna"
+        ]
+      },
+      {
+        "mainWord": "panadero",
+        "forbiddenWords": [
+          "pan",
+          "horno",
+          "panadería",
+          "harina",
+          "madrugada"
+        ]
+      },
+      {
+        "mainWord": "cartero",
+        "forbiddenWords": [
+          "carta",
+          "correo",
+          "entrega",
+          "paquete",
+          "buzón"
+        ]
+      },
+      {
+        "mainWord": "electricista",
+        "forbiddenWords": [
+          "cable",
+          "enchufe",
+          "descarga",
+          "energía",
+          "luz"
+        ]
+      },
+      {
+        "mainWord": "fontanero",
+        "forbiddenWords": [
+          "tubería",
+          "agua",
+          "fuga",
+          "fregadero",
+          "baño"
+        ]
+      },
+      {
+        "mainWord": "albañil",
+        "forbiddenWords": [
+          "ladrillo",
+          "obra",
+          "cemento",
+          "pared",
+          "construcción"
+        ]
+      },
+      {
+        "mainWord": "juez",
+        "forbiddenWords": [
+          "tribunal",
+          "mazo",
+          "sentencia",
+          "ley",
+          "toga"
+        ]
+      },
+      {
+        "mainWord": "astronauta",
+        "forbiddenWords": [
+          "espacio",
+          "cohete",
+          "luna",
+          "nasa",
+          "casco"
+        ]
+      },
+      {
+        "mainWord": "peluquero",
+        "forbiddenWords": [
+          "pelo",
+          "corte",
+          "tijeras",
+          "salón",
+          "cepillo"
+        ]
+      },
+      {
+        "mainWord": "camarero",
+        "forbiddenWords": [
+          "restaurante",
+          "bandeja",
+          "propina",
+          "pedido",
+          "mesa"
+        ]
+      },
+      {
+        "mainWord": "agricultor",
+        "forbiddenWords": [
+          "granja",
+          "sembrar",
+          "cosecha",
+          "tractor",
+          "campo"
+        ]
+      },
+      {
+        "mainWord": "pescador",
+        "forbiddenWords": [
+          "pez",
+          "red",
+          "barco",
+          "anzuelo",
+          "mar"
+        ]
+      },
+      {
+        "mainWord": "mecánico",
+        "forbiddenWords": [
+          "coche",
+          "taller",
+          "motor",
+          "reparar",
+          "llave"
+        ]
+      },
+      {
+        "mainWord": "psicólogo",
+        "forbiddenWords": [
+          "mente",
+          "terapia",
+          "consulta",
+          "sentimientos",
+          "diván"
+        ]
+      },
+      {
+        "mainWord": "farmacéutico",
+        "forbiddenWords": [
+          "medicamento",
+          "farmacia",
+          "receta",
+          "mostrador",
+          "pastilla"
+        ]
+      },
+      {
+        "mainWord": "carpintero",
+        "forbiddenWords": [
+          "madera",
+          "mueble",
+          "sierra",
+          "martillo",
+          "mesa"
+        ]
+      },
+      {
+        "mainWord": "costurera",
+        "forbiddenWords": [
+          "hilo",
+          "aguja",
+          "ropa",
+          "tela",
+          "máquina"
+        ]
+      },
+      {
+        "mainWord": "bibliotecario",
+        "forbiddenWords": [
+          "libro",
+          "biblioteca",
+          "silencio",
+          "préstamo",
+          "estante"
+        ]
+      },
+      {
+        "mainWord": "arqueólogo",
+        "forbiddenWords": [
+          "fósil",
+          "excavar",
+          "ruinas",
+          "antiguo",
+          "dinosaurio"
+        ]
+      },
+      {
+        "mainWord": "socorrista",
+        "forbiddenWords": [
+          "playa",
+          "piscina",
+          "ahogarse",
+          "silbato",
+          "nadar"
+        ]
+      },
+      {
+        "mainWord": "detective",
+        "forbiddenWords": [
+          "misterio",
+          "pista",
+          "crimen",
+          "investigar",
+          "lupa"
+        ]
+      },
+      {
+        "mainWord": "payaso",
+        "forbiddenWords": [
+          "circo",
+          "nariz",
+          "reír",
+          "maquillaje",
+          "gracioso"
+        ]
+      },
+      {
+        "mainWord": "chef",
+        "forbiddenWords": [
+          "cocina",
+          "restaurante",
+          "plato",
+          "gorro",
+          "receta"
+        ]
+      },
+      {
+        "mainWord": "jardinero",
+        "forbiddenWords": [
+          "planta",
+          "flor",
+          "césped",
+          "regar",
+          "tijeras"
+        ]
+      },
+      {
+        "mainWord": "taxista",
+        "forbiddenWords": [
+          "coche",
+          "pasajero",
+          "carrera",
+          "taxímetro",
+          "calle"
+        ]
+      },
+      {
+        "mainWord": "azafata",
+        "forbiddenWords": [
+          "avión",
+          "vuelo",
+          "pasajero",
+          "cinturón",
+          "cabina"
+        ]
+      },
+      {
+        "mainWord": "actor de doblaje",
+        "forbiddenWords": [
+          "voz",
+          "dibujos",
+          "película",
+          "estudio",
+          "traducción"
+        ]
+      },
+      {
+        "mainWord": "youtuber",
+        "forbiddenWords": [
+          "vídeo",
+          "canal",
+          "suscriptor",
+          "internet",
+          "like"
+        ]
+      },
+      {
+        "mainWord": "barbero",
+        "forbiddenWords": [
+          "barba",
+          "navaja",
+          "pelo",
+          "corte",
+          "bigote"
+        ]
+      },
+      {
+        "mainWord": "guía turístico",
+        "forbiddenWords": [
+          "viaje",
+          "turista",
+          "paseo",
+          "ruta",
+          "monumento"
         ]
       }
     ],
@@ -5954,7 +7766,7 @@
         ]
       }
     ],
-    "general": [
+    "geral": [
       {
         "mainWord": "empanada",
         "forbiddenWords": [
@@ -6656,7 +8468,7 @@
         ]
       }
     ],
-    "películas": [
+    "filmes": [
       {
         "mainWord": "matrix",
         "forbiddenWords": [

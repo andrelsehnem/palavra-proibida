@@ -27,7 +27,12 @@ interface UseGameRoundResult {
 
 const EMPTY_DECK: MatchDeck = { pool: [], queue: [], skipped: [], resolvedCount: 0 };
 
-export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
+const NEVER_LOCKED = () => false;
+
+export function useGameRound(
+  allWords: WordCard[],
+  isThemeLocked: (themeId: ThemeId) => boolean = NEVER_LOCKED,
+): UseGameRoundResult {
   const [selectedThemeDraft, setSelectedThemeDraft] = useState<ThemeId[]>(['animais', 'geral']);
   const [deck, setDeck] = useState<MatchDeck>(EMPTY_DECK);
   const [correctCount, setCorrectCount] = useState(0);
@@ -37,19 +42,18 @@ export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
   const [isMatchFinished, setIsMatchFinished] = useState(false);
 
   const selectedThemes = useMemo(() => {
-    const availableThemes = new Set(allWords.map((word) => word.theme));
+    const availableThemes = new Set(
+      allWords.map((word) => word.theme).filter((theme) => !isThemeLocked(theme)),
+    );
     const validThemes = selectedThemeDraft.filter((theme) => availableThemes.has(theme));
 
     if (validThemes.length > 0) {
       return validThemes;
     }
 
-    if (allWords.length > 0) {
-      return [allWords[0].theme];
-    }
-
-    return [];
-  }, [allWords, selectedThemeDraft]);
+    const [firstUnlockedTheme] = availableThemes;
+    return firstUnlockedTheme ? [firstUnlockedTheme] : [];
+  }, [allWords, selectedThemeDraft, isThemeLocked]);
 
   const availablePool = useMemo(
     () => filterWordsByThemes(allWords, selectedThemes),
@@ -64,6 +68,10 @@ export function useGameRound(allWords: WordCard[]): UseGameRoundResult {
   const totalCorrect = roundResults.reduce((sum, result) => sum + result.correct, 0);
 
   const toggleTheme = (themeId: ThemeId) => {
+    if (isThemeLocked(themeId)) {
+      return;
+    }
+
     setSelectedThemeDraft((current) => {
       if (current.includes(themeId)) {
         return current.filter((item) => item !== themeId);
