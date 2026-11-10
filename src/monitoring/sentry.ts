@@ -16,7 +16,7 @@ export const initSentry = () => {
     dsn,
     environment:
       process.env.EXPO_PUBLIC_SENTRY_ENVIRONMENT ?? (__DEV__ ? 'development' : 'production'),
-    debug: __DEV__,
+    debug: false,
   });
 
   isSentryInitialized = true;
