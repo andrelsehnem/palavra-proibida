@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { setAudioModeAsync, useAudioPlayer } from 'expo-audio';
 
 import { ActionButton } from '../components/buttons/ActionButton';
@@ -8,7 +9,7 @@ import { WordGameCard } from '../components/cards/WordGameCard';
 import { Consts, type LanguageCode } from '../data/Consts';
 import { TIME_UP_SOUND_URI } from '../data/timeoutAlert';
 import type { TeamRoundStatus, TeamScore, WordCard } from '../domain/types';
-import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
+import { BRICOLAGE_800, INTER_400, INTER_700 } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
 import type { ThemeTokens } from '../theme/tokens';
 
@@ -102,10 +103,19 @@ export function TeamGameScreen({
             },
           ]}
         >
-          <Text style={[styles.teamBannerEyebrow, { color: scene.topTag }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_TITLE} · {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}</Text>
-          <Text style={[styles.teamBannerTitle, { color: tokens.text }]}>{currentTeamName}</Text>
-          {//<Text style={[styles.teamBannerDescription, { color: tokens.mutedText }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_DESCRIPTION}</Text>-->
-          }
+          <View style={styles.teamBannerTexts}>
+            <Text style={[styles.teamBannerEyebrow, { color: scene.topTag }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_TITLE} · {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}</Text>
+            <Text style={[styles.teamBannerTitle, { color: tokens.text }]} numberOfLines={1}>{currentTeamName}</Text>
+          </View>
+          <ActionButton
+            label={Consts.UI_TRANSLATIONS[language].LABEL_SAIR}
+            onPress={onExit}
+            icon="close"
+            size="compact"
+            backgroundColor="transparent"
+            borderColor={scene.rail}
+            textColor={tokens.mutedText}
+          />
         </View>
 
         <View style={styles.gameHead}>
@@ -154,7 +164,7 @@ export function TeamGameScreen({
                 <Text
                   style={[
                     styles.scoreBadgeValue,
-                    { color: isCurrentTeam ? tokens.primary : tokens.mutedText },
+                    { color: isCurrentTeam ? scene.topTag : tokens.mutedText },
                   ]}
                 >
                   {team.score}
@@ -190,34 +200,27 @@ export function TeamGameScreen({
             },
           ]}
         >
+          <Ionicons
+            name={isTimeUp ? 'alarm-outline' : 'eye-off-outline'}
+            size={36}
+            color={isTimeUp ? tokens.warning : tokens.mutedText}
+          />
           <Text style={[styles.hiddenCardTitle, { color: isTimeUp ? tokens.warning : tokens.text }]}>
             {isIdle ? Consts.UI_TRANSLATIONS[language].LABEL_CARTA_OCULTA_ATE_O_INICIO : Consts.UI_TRANSLATIONS[language].LABEL_CARTA_OCULTA_ATE_A_PROXIMA_EQUIPE}
-          </Text>
-          <Text style={[styles.hiddenCardBody, { color: tokens.mutedText }]}>
-            {isIdle
-              ? Consts.UI_TRANSLATIONS[language].LABEL_CARTA_OCULTA_ATE_O_INICIO.replace('{team}', currentTeamName.toLowerCase())
-              : Consts.UI_TRANSLATIONS[language].LABEL_CARTA_OCULTA_ATE_A_PROXIMA_EQUIPE}
           </Text>
         </View>
       )}
 
       <View style={styles.actionColumn}>
         {isIdle ? (
-          <View
-            style={[
-              styles.transitionCard,
-              { borderColor: scene.rail, backgroundColor: scene.chipPanel },
-            ]}
-          >
-            <Text style={[styles.transitionTitle, { color: tokens.text }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_TITLE}</Text>
-            <Text style={[styles.transitionBody, { color: tokens.mutedText }]}>{Consts.UI_TRANSLATIONS[language].TEAM_MODE_DESCRIPTION}</Text>
-            <ActionButton
-              label={`iniciar ${currentTeamName.toLowerCase()}`}
-              onPress={onStartTurn}
-              backgroundColor={tokens.primary}
-              textColor={tokens.primaryText}
-            />
-          </View>
+          <ActionButton
+            label={Consts.UI_TRANSLATIONS[language].LABEL_INICIAR_EQUIPE.replace('{team}', currentTeamName.toLowerCase())}
+            onPress={onStartTurn}
+            icon="play"
+            size="large"
+            backgroundColor={tokens.primary}
+            textColor={tokens.primaryText}
+          />
         ) : null}
 
         {isTimeUp ? (
@@ -234,37 +237,37 @@ export function TeamGameScreen({
             <ActionButton
               label={hasNextTeam && nextTeamName ? Consts.UI_TRANSLATIONS[language].LABEL_INICIAR_EQUIPE.replace('{team}', nextTeamName.toLowerCase()) : Consts.UI_TRANSLATIONS[language].LABEL_VER_RANKING}
               onPress={hasNextTeam ? onStartNextTeam : onEndRound}
+              icon={hasNextTeam ? 'play' : 'trophy'}
               backgroundColor={tokens.primary}
               textColor={tokens.primaryText}
             />
           </View>
         ) : null}
 
-        <ActionButton
-          label={Consts.UI_TRANSLATIONS[language].LABEL_SAIR}
-          onPress={onExit}
-          backgroundColor={scene.chipPanel}
-          borderColor={tokens.warning}
-          textColor={tokens.warning}
-        />
+        {isPlaying ? (
         <View style={styles.rowButtons}>
           <ActionButton
             label={Consts.UI_TRANSLATIONS[language].LABEL_PULAR}
             onPress={onSkip}
+            icon="play-skip-forward"
+            size="large"
             backgroundColor={tokens.warning}
-            textColor={tokens.primaryText}
+            textColor={tokens.mode === 'dark' ? '#0A0F1F' : '#FFFFFF'}
             disabled={!currentCard || !isPlaying}
             style={styles.halfButton}
           />
           <ActionButton
             label={Consts.UI_TRANSLATIONS[language].LABEL_ACERTOU}
             onPress={onCorrect}
+            icon="checkmark-circle"
+            size="large"
             backgroundColor={tokens.success}
             textColor="#ffffff"
             disabled={!currentCard || !isPlaying}
             style={styles.halfButton}
           />
         </View>
+        ) : null}
       </View>
     </View>
   );
@@ -285,28 +288,32 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 22,
     padding: 16,
-    gap: 4,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
     shadowOpacity: 0.18,
     shadowOffset: { width: 0, height: 10 },
     shadowRadius: 16,
     elevation: 5,
   },
+  teamBannerTexts: {
+    flex: 1,
+    gap: 4,
+  },
   teamBannerEyebrow: {
     fontSize: 11,
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    fontFamily: BODY_FONT,
-    fontWeight: '700',
+    fontFamily: INTER_700,
   },
   teamBannerTitle: {
     fontSize: 28,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   teamBannerDescription: {
     fontSize: 14,
     lineHeight: 20,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
   },
   gameHead: {
     flexDirection: 'row',
@@ -318,28 +325,30 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   hiddenCardState: {
-    minHeight: 260,
+    flex: 1,
+    minHeight: 110,
     borderWidth: 1,
     borderRadius: 24,
     paddingHorizontal: 22,
     paddingVertical: 24,
+    alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
+    gap: 12,
     shadowOpacity: 0.18,
     shadowOffset: { width: 0, height: 10 },
     shadowRadius: 16,
     elevation: 5,
   },
   hiddenCardTitle: {
-    fontSize: 28,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontSize: 24,
+    lineHeight: 28,
+    fontFamily: BRICOLAGE_800,
     textAlign: 'center',
   },
   hiddenCardBody: {
     fontSize: 14,
     lineHeight: 20,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
     textAlign: 'center',
   },
   scoreBadge: {
@@ -352,15 +361,13 @@ const styles = StyleSheet.create({
   },
   scoreBadgeName: {
     fontSize: 12,
-    fontWeight: '700',
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_700,
     textTransform: 'uppercase',
     letterSpacing: 0.7,
   },
   scoreBadgeValue: {
     fontSize: 22,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   actionColumn: {
     flexDirection: 'column',
@@ -374,13 +381,12 @@ const styles = StyleSheet.create({
   },
   transitionTitle: {
     fontSize: 22,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   transitionBody: {
     fontSize: 14,
     lineHeight: 20,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
   },
   rowButtons: {
     flexDirection: 'row',

@@ -6,7 +6,7 @@ import { ThemeChip } from '../components/cards/ThemeChip';
 import { Consts, type LanguageCode } from '../data/Consts';
 import { isPremiumTheme } from '../data/themeAccess';
 import type { TeamGameSettings, ThemeId, ThemeOption } from '../domain/types';
-import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
+import { BRICOLAGE_700, BRICOLAGE_800, INTER_400, INTER_600, INTER_700 } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
 import type { ThemeTokens } from '../theme/tokens';
 
@@ -331,13 +331,11 @@ const styles = StyleSheet.create({
     fontSize: 11,
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    fontFamily: BODY_FONT,
-    fontWeight: '700',
+    fontFamily: INTER_700,
   },
   sectionTitle: {
     fontSize: 30,
-    fontWeight: '700',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_700,
   },
   menuButton: {
     paddingVertical: 8,
@@ -345,7 +343,7 @@ const styles = StyleSheet.create({
   },
   sectionDescription: {
     fontSize: 14,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
     lineHeight: 20,
   },
   teamModePanel: {
@@ -366,13 +364,12 @@ const styles = StyleSheet.create({
   },
   teamModeTitle: {
     fontSize: 18,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   teamModeDescription: {
     fontSize: 13,
     lineHeight: 18,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
   },
   teamFieldsColumn: {
     gap: 10,
@@ -382,8 +379,7 @@ const styles = StyleSheet.create({
   },
   fieldLabel: {
     fontSize: 13,
-    fontWeight: '700',
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_700,
     textTransform: 'uppercase',
     letterSpacing: 0.7,
   },
@@ -393,17 +389,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 14,
     paddingVertical: 12,
     fontSize: 16,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
   },
   themeGroup: {
     gap: 8,
   },
   groupTitle: {
     fontSize: 12,
-    fontWeight: '700',
     letterSpacing: 1,
     textTransform: 'uppercase',
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_700,
   },
   chipWrap: {
     flexDirection: 'row',
@@ -418,13 +413,12 @@ const styles = StyleSheet.create({
   helperText: {
     textAlign: 'center',
     fontSize: 14,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
     lineHeight: 20,
   },
   warningText: {
     fontSize: 14,
-    fontWeight: '600',
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_600,
   },
   statColumn: {
     gap: 10,
@@ -442,14 +436,13 @@ const styles = StyleSheet.create({
   },
   tipsTitle: {
     fontSize: 14,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
     textTransform: 'uppercase',
     letterSpacing: 0.6,
   },
   tipItem: {
     fontSize: 13,
     lineHeight: 18,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_400,
   },
 });

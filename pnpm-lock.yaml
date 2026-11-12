@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@expo-google-fonts/bricolage-grotesque':
+        specifier: ^0.4.1
+        version: 0.4.1
+      '@expo-google-fonts/inter':
+        specifier: ^0.4.2
+        version: 0.4.2
+      '@expo/vector-icons':
+        specifier: ^15.1.1
+        version: 15.1.1(expo-font@56.0.7(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
       '@lottiefiles/dotlottie-react':
         specifier: ^0.19.4
         version: 0.19.4(react@19.2.3)
@@ -23,6 +32,9 @@ importers:
       expo-audio:
         specifier: ~56.0.13
         version: 56.0.13(expo-asset@56.0.25(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)(typescript@6.0.3))(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
+      expo-font:
+        specifier: ~56.0.7
+        version: 56.0.7(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
       expo-iap:
         specifier: ^6.4.3
         version: 6.4.3(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
@@ -465,6 +477,12 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@expo-google-fonts/bricolage-grotesque@0.4.1':
+    resolution: {integrity: sha512-uijLLg+thOrFgw+gXtYA3dQJTBqqqleabcNFpamaYXqUUcbFe0J18C+4nfL0CyGzSJUicxUBLY4Zv7jdHmTGMA==}
+
+  '@expo-google-fonts/inter@0.4.2':
+    resolution: {integrity: sha512-syfiImMaDmq7cFi0of+waE2M4uSCyd16zgyWxdPOY7fN2VBmSLKEzkfbZgeOjJq61kSqPBNNtXjggiQiSD6gMQ==}
+
   '@expo/cli@56.1.27':
     resolution: {integrity: sha512-uk1tWU9zEFVcZIjV4GR+uNrxxSyc16nB1lprGn/wL8qVQMMlhItsv8wzCgz+ldzSXcYlAYCsfrwJhhExE4FKbQ==}
     hasBin: true
@@ -615,6 +633,13 @@ packages:
 
   '@expo/sudo-prompt@9.3.2':
     resolution: {integrity: sha512-HHQigo3rQWKMDzYDLkubN5WQOYXJJE2eNqIQC2axC2iO3mHdwnIR7FgZVvHWtBwAdzBgAP0ECp8KqS8TiMKvgw==}
+
+  '@expo/vector-icons@15.1.1':
+    resolution: {integrity: sha512-Iu2VkcoI5vygbtYngm7jb4ifxElNVXQYdDrYkT7UCEIiKLeWnQY0wf2ZhHZ+Wro6Sc5TaumpKUOqDRpLi5rkvw==}
+    peerDependencies:
+      expo-font: '>=14.0.4'
+      react: '*'
+      react-native: '*'
 
   '@expo/ws-tunnel@2.0.1':
     resolution: {integrity: sha512-mljsRffbOHzmSimYQbQu9h9NR3alwCCwEEouRGFL4QRTt8dNvsNtKEPa/5jHmtDLDtsh4xXsWKwzjN9BTpeXHQ==}
@@ -3935,6 +3960,10 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
+  '@expo-google-fonts/bricolage-grotesque@0.4.1': {}
+
+  '@expo-google-fonts/inter@0.4.2': {}
+
   '@expo/cli@56.1.27(@expo/dom-webview@56.0.5)(expo-constants@56.0.27(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3)))(expo-font@56.0.7(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3))(expo@56.0.24)(react-dom@19.2.3(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)':
     dependencies:
       '@expo/code-signing-certificates': 0.0.6
@@ -4280,6 +4309,12 @@ snapshots:
       cross-spawn: 7.0.6
 
   '@expo/sudo-prompt@9.3.2': {}
+
+  '@expo/vector-icons@15.1.1(expo-font@56.0.7(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)':
+    dependencies:
+      expo-font: 56.0.7(expo@56.0.24)(react-native@0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3))(react@19.2.3)
+      react: 19.2.3
+      react-native: 0.85.3(@babel/core@7.29.7)(@types/react@19.2.16)(react@19.2.3)
 
   '@expo/ws-tunnel@2.0.1(ws@8.21.0)':
     dependencies:

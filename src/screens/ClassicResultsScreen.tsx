@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ActionButton } from '../components/buttons/ActionButton';
 import { Consts, type LanguageCode } from '../data/Consts';
 import type { ClassicRoundResult } from '../domain/types';
-import { BODY_FONT, DISPLAY_FONT } from '../theme/fonts';
+import { BRICOLAGE_800, INTER_700 } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
 import type { ThemeTokens } from '../theme/tokens';
 
@@ -148,13 +148,11 @@ const styles = StyleSheet.create({
     fontSize: 11,
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    fontFamily: BODY_FONT,
-    fontWeight: '700',
+    fontFamily: INTER_700,
   },
   title: {
     fontSize: 32,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   totalRow: {
     borderWidth: 1,
@@ -182,8 +180,7 @@ const styles = StyleSheet.create({
   position: {
     width: 24,
     fontSize: 18,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
     textAlign: 'center',
   },
   textColumn: {
@@ -192,19 +189,16 @@ const styles = StyleSheet.create({
   },
   roundName: {
     fontSize: 18,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
   meta: {
     fontSize: 12,
-    fontWeight: '700',
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_700,
     textTransform: 'uppercase',
     letterSpacing: 0.7,
   },
   scoreValue: {
     fontSize: 34,
-    fontWeight: '800',
-    fontFamily: DISPLAY_FONT,
+    fontFamily: BRICOLAGE_800,
   },
 });

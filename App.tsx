@@ -2,6 +2,16 @@ import { useEffect, useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import * as Sentry from '@sentry/react-native';
 import * as SplashScreen from 'expo-splash-screen';
+import { useFonts } from 'expo-font';
+import {
+  BricolageGrotesque_700Bold,
+  BricolageGrotesque_800ExtraBold,
+} from '@expo-google-fonts/bricolage-grotesque';
+import {
+  Inter_400Regular,
+  Inter_600SemiBold,
+  Inter_700Bold,
+} from '@expo-google-fonts/inter';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { WORD_REPOSITORY_SOURCE } from './src/data/repositoryConfig';
@@ -18,7 +28,7 @@ import { useThemePreference } from './src/hooks/useThemePreference';
 import { useAdInterstitialAction } from './src/hooks/useAdInterstitialAction';
 import { ClassicResultsScreen } from './src/screens/ClassicResultsScreen';
 import { GameScreen } from './src/screens/GameScreen';
-import { MenuScreen } from './src/screens/MenuScreen';
+import { MENU_COLORS, MenuScreen } from './src/screens/MenuScreen';
 import { TeamGameScreen } from './src/screens/TeamGameScreen';
 import { TeamResultsScreen } from './src/screens/TeamResultsScreen';
 import { ThemesScreen } from './src/screens/ThemesScreen';
@@ -46,6 +56,14 @@ export default function App() {
   const [isAnimatedSplashVisible, setIsAnimatedSplashVisible] = useState(true);
   const [isSplashMinTimeElapsed, setIsSplashMinTimeElapsed] = useState(false);
   const { isThemeLocked, isHydrated: arePurchasesHydrated } = useOwnedProducts();
+  const [areFontsLoaded, fontError] = useFonts({
+    BricolageGrotesque_700Bold,
+    BricolageGrotesque_800ExtraBold,
+    Inter_400Regular,
+    Inter_600SemiBold,
+    Inter_700Bold,
+  });
+  const areFontsReady = areFontsLoaded || fontError !== null;
 
   const {
     isMenuScreen,
@@ -183,8 +201,8 @@ export default function App() {
     };
   }, []);
 
-  // Splash só sai depois do tempo mínimo E das compras carregadas.
-  if (isAnimatedSplashVisible && isSplashMinTimeElapsed && arePurchasesHydrated) {
+  // Splash só sai depois do tempo mínimo, das compras e das fontes carregadas.
+  if (isAnimatedSplashVisible && isSplashMinTimeElapsed && arePurchasesHydrated && areFontsReady) {
     setIsAnimatedSplashVisible(false);
   }
 
@@ -245,7 +263,11 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <AdMobBootstrap />
-      <AtmosphereScreen mode={mode} scene={scene}>
+      <AtmosphereScreen
+        mode={mode}
+        scene={scene}
+        backgroundColor={isMenuScreen ? MENU_COLORS[mode].background : undefined}
+      >
       {isMenuScreen ? (
         <MenuScreen
           key={`menu-${language}`}

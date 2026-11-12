@@ -5,7 +5,7 @@ import { StatCard } from '../components/cards/StatCard';
 import { WordGameCard } from '../components/cards/WordGameCard';
 import { Consts, type LanguageCode } from '../data/Consts';
 import type { WordCard } from '../domain/types';
-import { BODY_FONT } from '../theme/fonts';
+import { BRICOLAGE_800 } from '../theme/fonts';
 import type { ScenePalette } from '../theme/scenePalette';
 import type { ThemeTokens } from '../theme/tokens';
 
@@ -44,9 +44,31 @@ export function GameScreen({
 }: GameScreenProps) {
   return (
     <View style={styles.gameScreenContent}>
-      <Text style={[styles.roundLabel, { color: scene.topTag }]}>
-        {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}
-      </Text>
+      <View style={styles.topBar}>
+        <Text style={[styles.roundLabel, { color: tokens.text }]} numberOfLines={1}>
+          {Consts.UI_TRANSLATIONS[language].LABEL_RODADA_NUMERO.replace('{round}', `${roundNumber}`)}
+        </Text>
+        <View style={styles.topActions}>
+          <ActionButton
+            label={Consts.UI_TRANSLATIONS[language].LABEL_SAIR}
+            onPress={onExit}
+            icon="close"
+            size="compact"
+            backgroundColor="transparent"
+            borderColor={scene.rail}
+            textColor={tokens.mutedText}
+          />
+          <ActionButton
+            label={Consts.UI_TRANSLATIONS[language].LABEL_ENCERRAR_RODADA}
+            onPress={onEndRound}
+            icon="flag"
+            size="compact"
+            backgroundColor={scene.chipPanel}
+            borderColor={tokens.primary}
+            textColor={scene.topTag}
+          />
+        </View>
+      </View>
       <View style={styles.gameHead}>
         <StatCard
           value={correctCount}
@@ -69,7 +91,7 @@ export function GameScreen({
           label={Consts.UI_TRANSLATIONS[language].LABEL_RITMO}
           borderColor={scene.rail}
           backgroundColor={scene.chipPanel}
-          valueColor={tokens.primary}
+          valueColor={scene.topTag}
           labelColor={tokens.mutedText}
         />
       </View>
@@ -88,38 +110,27 @@ export function GameScreen({
         language={language}
       />
 
-      <View style={styles.actionColumn}>
+      <View style={styles.rowButtons}>
         <ActionButton
-          label={Consts.UI_TRANSLATIONS[language].LABEL_ENCERRAR_RODADA}
-          onPress={onEndRound}
-          backgroundColor={tokens.primary}
-          textColor={tokens.primaryText}
+          label={Consts.UI_TRANSLATIONS[language].LABEL_PULAR}
+          onPress={onSkip}
+          icon="play-skip-forward"
+          size="large"
+          backgroundColor={tokens.warning}
+          textColor={tokens.mode === 'dark' ? '#0A0F1F' : '#FFFFFF'}
+          disabled={!currentCard}
+          style={styles.halfButton}
         />
         <ActionButton
-          label={Consts.UI_TRANSLATIONS[language].LABEL_SAIR}
-          onPress={onExit}
-          backgroundColor={scene.chipPanel}
-          borderColor={tokens.warning}
-          textColor={tokens.warning}
+          label={Consts.UI_TRANSLATIONS[language].LABEL_ACERTOU}
+          onPress={onCorrect}
+          icon="checkmark-circle"
+          size="large"
+          backgroundColor={tokens.success}
+          textColor="#ffffff"
+          disabled={!currentCard}
+          style={styles.halfButton}
         />
-        <View style={styles.rowButtons}>
-          <ActionButton
-            label={Consts.UI_TRANSLATIONS[language].LABEL_PULAR}
-            onPress={onSkip}
-            backgroundColor={tokens.warning}
-            textColor={tokens.primaryText}
-            disabled={!currentCard}
-            style={styles.halfButton}
-          />
-          <ActionButton
-            label={Consts.UI_TRANSLATIONS[language].LABEL_ACERTOU}
-            onPress={onCorrect}
-            backgroundColor={tokens.success}
-            textColor="#ffffff"
-            disabled={!currentCard}
-            style={styles.halfButton}
-          />
-        </View>
       </View>
     </View>
   );
@@ -130,23 +141,27 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingVertical: 22,
-    justifyContent: 'space-between',
     gap: 14,
   },
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
   roundLabel: {
-    fontSize: 11,
-    textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    fontFamily: BODY_FONT,
-    fontWeight: '700',
+    flexShrink: 1,
+    fontSize: 24,
+    lineHeight: 28,
+    fontFamily: BRICOLAGE_800,
+  },
+  topActions: {
+    flexDirection: 'row',
+    gap: 8,
   },
   gameHead: {
     flexDirection: 'row',
     gap: 8,
-  },
-  actionColumn: {
-    flexDirection: 'column',
-    gap: 10,
   },
   rowButtons: {
     flexDirection: 'row',

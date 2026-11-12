@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { BODY_FONT, DISPLAY_FONT } from '../../theme/fonts';
+import { BRICOLAGE_800, INTER_400 } from '../../theme/fonts';
 
 interface StatCardProps {
   value: string | number;
@@ -21,14 +21,21 @@ export function StatCard({
 }: StatCardProps) {
   return (
     <View style={[styles.card, { borderColor, backgroundColor }]}> 
-      <Text style={[styles.value, { color: valueColor }]}>{value}</Text>
-      <Text style={[styles.label, { color: labelColor }]}>{label}</Text>
+      <Text style={[styles.value, { color: valueColor }]} numberOfLines={1} adjustsFontSizeToFit>{value}</Text>
+      <Text
+        style={[styles.label, { color: labelColor }]}
+        numberOfLines={2}
+        adjustsFontSizeToFit
+        minimumFontScale={0.8}
+      >{label}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
+    flex: 1,
+    minWidth: 0,
     borderWidth: 1,
     borderRadius: 14,
     padding: 12,
@@ -36,13 +43,12 @@ const styles = StyleSheet.create({
   },
   value: {
     fontSize: 30,
-    fontFamily: DISPLAY_FONT,
-    fontWeight: '800',
+    fontFamily: BRICOLAGE_800,
   },
   label: {
-    fontSize: 12,
-    fontFamily: BODY_FONT,
+    fontSize: 11,
+    fontFamily: INTER_400,
     textTransform: 'uppercase',
-    letterSpacing: 0.8,
+    letterSpacing: 0.6,
   },
 });

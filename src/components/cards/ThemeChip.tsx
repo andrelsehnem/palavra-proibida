@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { BODY_FONT } from '../../theme/fonts';
+import { INTER_700 } from '../../theme/fonts';
 
 interface ThemeChipProps {
   label: string;
@@ -62,9 +62,8 @@ const styles = StyleSheet.create({
     borderRadius: 999,
   },
   label: {
-    fontWeight: '700',
     fontSize: 14,
-    fontFamily: BODY_FONT,
+    fontFamily: INTER_700,
   },
   lock: {
     fontSize: 12,
