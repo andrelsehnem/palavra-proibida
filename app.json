@@ -2,7 +2,7 @@
   "expo": {
     "name": "Palavra Proibida",
     "slug": "palavra-proibida",
-    "version": "1.0.23",
+    "version": "1.0.24",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -16,7 +16,7 @@
     },
     "android": {
       "package": "dev.andre100.palavraproibida",
-      "versionCode": 23,
+      "versionCode": 24,
       "permissions": [
         "com.google.android.gms.permission.AD_ID",
         "com.android.vending.BILLING"

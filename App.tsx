@@ -55,7 +55,13 @@ export default function App() {
   const { runWithInterstitial } = useAdInterstitialAction();
   const [isAnimatedSplashVisible, setIsAnimatedSplashVisible] = useState(true);
   const [isSplashMinTimeElapsed, setIsSplashMinTimeElapsed] = useState(false);
-  const { isThemeLocked, isHydrated: arePurchasesHydrated } = useOwnedProducts();
+  const {
+    isThemeLocked,
+    isHydrated: arePurchasesHydrated,
+    canPurchase,
+    getThemePrice,
+    buyTheme,
+  } = useOwnedProducts();
   const [areFontsLoaded, fontError] = useFonts({
     BricolageGrotesque_700Bold,
     BricolageGrotesque_800ExtraBold,
@@ -298,6 +304,9 @@ export default function App() {
           language={language}
           onToggleTheme={toggleTheme}
           isThemeLocked={isThemeLocked}
+          canPurchase={canPurchase}
+          getThemePrice={getThemePrice}
+          onBuyTheme={buyTheme}
           onToggleTeamMode={(value) => updateTeamSettings({ isEnabled: value })}
           onChangeTeamCount={(value) => updateNumericSetting('teamCount', value)}
           onChangeRoundSeconds={(value) => updateNumericSetting('roundSeconds', value)}

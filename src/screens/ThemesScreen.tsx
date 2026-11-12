@@ -1,9 +1,12 @@
-import { ActivityIndicator, Alert, Platform, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
+import { useState } from 'react';
+import { ActivityIndicator, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 
 import { ActionButton } from '../components/buttons/ActionButton';
+import { PurchaseModal, type PurchaseModalStep } from '../components/cards/PurchaseModal';
 import { StatCard } from '../components/cards/StatCard';
 import { ThemeChip } from '../components/cards/ThemeChip';
 import { Consts, type LanguageCode } from '../data/Consts';
+import type { PurchaseResult } from '../data/purchaseService';
 import { isPremiumTheme } from '../data/themeAccess';
 import type { TeamGameSettings, ThemeId, ThemeOption } from '../domain/types';
 import { BRICOLAGE_700, BRICOLAGE_800, INTER_400, INTER_600, INTER_700 } from '../theme/fonts';
@@ -25,6 +28,9 @@ interface ThemesScreenProps {
   language: LanguageCode;
   onToggleTheme: (themeId: ThemeId) => void;
   isThemeLocked: (themeId: ThemeId) => boolean;
+  canPurchase: boolean;
+  getThemePrice: (themeId: ThemeId) => string | undefined;
+  onBuyTheme: (themeId: ThemeId) => Promise<PurchaseResult>;
   onToggleTeamMode: (value: boolean) => void;
   onChangeTeamCount: (value: string) => void;
   onChangeRoundSeconds: (value: string) => void;
@@ -47,6 +53,9 @@ export function ThemesScreen({
   language,
   onToggleTheme,
   isThemeLocked,
+  canPurchase,
+  getThemePrice,
+  onBuyTheme,
   onToggleTeamMode,
   onChangeTeamCount,
   onChangeRoundSeconds,
@@ -66,16 +75,32 @@ export function ThemesScreen({
     },
   ];
 
-  const showLockedThemeMessage = () => {
-    const { PREMIUM_LOCKED_TITLE, PREMIUM_LOCKED_MESSAGE } = Consts.UI_TRANSLATIONS[language];
+  const [purchaseThemeId, setPurchaseThemeId] = useState<ThemeId | null>(null);
+  const [purchaseStep, setPurchaseStep] = useState<PurchaseModalStep>('confirm');
+  const purchaseTheme = themeOptions.find((theme) => theme.id === purchaseThemeId) ?? null;
 
-    // Alert.alert não funciona no react-native-web.
-    if (Platform.OS === 'web') {
-      window.alert(`${PREMIUM_LOCKED_TITLE}\n\n${PREMIUM_LOCKED_MESSAGE}`);
+  const openPurchaseModal = (themeId: ThemeId) => {
+    setPurchaseStep(canPurchase ? 'confirm' : 'unavailable');
+    setPurchaseThemeId(themeId);
+  };
+
+  const closePurchaseModal = () => setPurchaseThemeId(null);
+
+  const handleConfirmPurchase = async () => {
+    if (!purchaseThemeId) {
       return;
     }
 
-    Alert.alert(PREMIUM_LOCKED_TITLE, PREMIUM_LOCKED_MESSAGE);
+    setPurchaseStep('processing');
+    const result = await onBuyTheme(purchaseThemeId);
+
+    if (result === 'cancelled') {
+      // Usuário fechou a tela da loja: volta para a confirmação.
+      setPurchaseStep('confirm');
+      return;
+    }
+
+    setPurchaseStep(result);
   };
 
   const isStartDisabled =
@@ -205,7 +230,7 @@ export function ThemesScreen({
                       defaultDotColor={tokens.border}
                       chipPanelColor={scene.chipPanel}
                       locked={locked}
-                      onPress={() => (locked ? showLockedThemeMessage() : onToggleTheme(theme.id))}
+                      onPress={() => (locked ? openPurchaseModal(theme.id) : onToggleTheme(theme.id))}
                     />
                   );
                 })}
@@ -294,6 +319,18 @@ export function ThemesScreen({
           </View>
         </View>
       </View>
+
+      <PurchaseModal
+        visible={purchaseThemeId !== null}
+        step={purchaseStep}
+        theme={purchaseTheme}
+        price={purchaseThemeId ? getThemePrice(purchaseThemeId) : undefined}
+        language={language}
+        tokens={tokens}
+        scene={scene}
+        onConfirm={() => void handleConfirmPurchase()}
+        onClose={closePurchaseModal}
+      />
     </ScrollView>
   );
 }

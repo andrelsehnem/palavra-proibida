@@ -1,6 +1,6 @@
 {
   "name": "palavra-proibida",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "index.ts",
   "dependencies": {
     "@expo-google-fonts/bricolage-grotesque": "^0.4.1",

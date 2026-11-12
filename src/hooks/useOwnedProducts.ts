@@ -2,8 +2,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Sentry from '@sentry/react-native';
 import { useCallback, useEffect, useState } from 'react';
 
-import { fetchOwnedProductIds } from '../data/purchaseService';
-import { isThemeUnlocked, type ProductId } from '../data/themeAccess';
+import {
+  fetchOwnedProductIds,
+  fetchProductPrices,
+  isStoreAvailable,
+  purchaseProduct,
+  type PurchaseResult,
+} from '../data/purchaseService';
+import { getProductsForTheme, isThemeUnlocked, PREMIUM_PRODUCTS, type ProductId } from '../data/themeAccess';
 import type { ThemeId } from '../domain/types';
 
 const STORAGE_KEY = 'palavra-proibida:owned-products';
@@ -84,10 +90,57 @@ export const useOwnedProducts = () => {
     [ownedProductIds],
   );
 
+  // Preços da loja (carregados uma vez, em segundo plano).
+  const [productPrices, setProductPrices] = useState<Record<ProductId, string>>({});
+
+  useEffect(() => {
+    const allProductIds = PREMIUM_PRODUCTS.map((product) => product.productId);
+
+    fetchProductPrices(allProductIds)
+      .then(setProductPrices)
+      .catch((error: unknown) => {
+        Sentry.captureException(error, { tags: { area: 'product-prices-load' } });
+      });
+  }, []);
+
+  /** Preço do primeiro produto que libera o tema (ou undefined se ainda não carregou). */
+  const getThemePrice = useCallback(
+    (themeId: ThemeId): string | undefined => {
+      const [productId] = getProductsForTheme(themeId);
+      return productId ? productPrices[productId] : undefined;
+    },
+    [productPrices],
+  );
+
+  /** Compra o produto que libera o tema e, se aprovado, libera na hora. */
+  const buyTheme = useCallback(
+    async (themeId: ThemeId): Promise<PurchaseResult> => {
+      const [productId] = getProductsForTheme(themeId);
+      if (!productId) {
+        return 'error';
+      }
+
+      try {
+        const result = await purchaseProduct(productId);
+        if (result === 'purchased') {
+          await addOwnedProduct(productId);
+        }
+        return result;
+      } catch (error) {
+        Sentry.captureException(error, { tags: { area: 'purchase' } });
+        return 'error';
+      }
+    },
+    [addOwnedProduct],
+  );
+
   return {
     ownedProductIds,
     isHydrated,
     isThemeLocked,
+    canPurchase: isStoreAvailable,
+    getThemePrice,
+    buyTheme,
     addOwnedProduct,
     setOwnedProducts,
   };

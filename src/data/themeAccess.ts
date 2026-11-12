@@ -29,9 +29,8 @@ export const FREE_THEME_IDS: readonly ThemeId[] = [
 ];
 
 export const PREMIUM_PRODUCTS: readonly PremiumProduct[] = [
-  // TODO: trocar pelo productId real criado no Play Console.
-  { productId: 'pack_animais_plus', themeIds: ['animais_plus'] },
-  { productId: 'pack_profissoes_plus', themeIds: ['profissoes_plus'] },
+  { productId: 'animais-plus', themeIds: ['animais_plus'] },
+  { productId: 'profissoes-plus', themeIds: ['profissoes_plus'] },
   // Exemplo — substitua pelos produtos reais:
   // { productId: 'pack_esportes', themeIds: ['esportes'] },
   // { productId: 'pack_completo', themeIds: ['esportes', 'musica', 'paises'] },
