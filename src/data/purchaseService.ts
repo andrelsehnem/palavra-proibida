@@ -1,15 +1,6 @@
+import * as Sentry from '@sentry/react-native';
 import { Platform } from 'react-native';
-import {
-  ErrorCode,
-  fetchProducts,
-  finishTransaction,
-  getAvailablePurchases,
-  initConnection,
-  purchaseErrorListener,
-  purchaseUpdatedListener,
-  requestPurchase,
-  type Purchase,
-} from 'expo-iap';
+import type { Purchase } from 'expo-iap';
 
 import type { ProductId } from './themeAccess';
 
@@ -20,18 +11,44 @@ import type { ProductId } from './themeAccess';
 
 export type PurchaseResult = 'purchased' | 'pending' | 'cancelled' | 'error';
 
-export const isStoreAvailable = Platform.OS === 'android';
+type ExpoIap = typeof import('expo-iap');
+
+/** Carrega o expo-iap só se o módulo nativo existir (no Expo Go ele não existe). */
+const loadIap = (): ExpoIap | null => {
+  if (Platform.OS !== 'android') {
+    return null;
+  }
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    return require('expo-iap') as ExpoIap;
+  } catch {
+    return null;
+  }
+};
+
+const iap = loadIap();
+
+export const isStoreAvailable = iap !== null;
+
+const reportStoreError = (stage: string, error: unknown, extra?: Record<string, unknown>) => {
+  const details = error as { code?: unknown; message?: unknown; responseCode?: unknown; debugMessage?: unknown };
+  Sentry.captureException(error instanceof Error ? error : new Error(`IAP ${stage}: ${String(details?.message ?? error)}`), {
+    tags: { area: 'iap', iapStage: stage, iapCode: String(details?.code ?? 'unknown') },
+    extra: { ...extra, code: details?.code, message: details?.message, responseCode: details?.responseCode, debugMessage: details?.debugMessage },
+  });
+};
 
 let connectionPromise: Promise<boolean> | null = null;
 
 const ensureConnected = async (): Promise<boolean> => {
-  if (!isStoreAvailable) {
+  if (!iap) {
     return false;
   }
 
   if (!connectionPromise) {
-    connectionPromise = initConnection().catch((error: unknown) => {
+    connectionPromise = iap.initConnection().catch((error: unknown) => {
       connectionPromise = null;
+      reportStoreError('initConnection', error);
       throw error;
     });
   }
@@ -49,7 +66,7 @@ const acknowledgeIfNeeded = async (purchase: Purchase) => {
     return;
   }
 
-  await finishTransaction({ purchase, isConsumable: false });
+  await iap!.finishTransaction({ purchase, isConsumable: false });
 };
 
 /**
@@ -62,7 +79,7 @@ export const fetchOwnedProductIds = async (): Promise<ProductId[] | null> => {
     return null;
   }
 
-  const purchases = await getAvailablePurchases();
+  const purchases = await iap!.getAvailablePurchases();
   const completed = purchases.filter((purchase) => purchase.purchaseState === 'purchased');
 
   await Promise.all(completed.map((purchase) => acknowledgeIfNeeded(purchase).catch(() => undefined)));
@@ -76,7 +93,13 @@ export const fetchProductPrices = async (productIds: ProductId[]): Promise<Recor
     return {};
   }
 
-  const products = await fetchProducts({ skus: productIds, type: 'in-app' });
+  const products = await iap!.fetchProducts({ skus: productIds, type: 'in-app' });
+  const found = new Set((products ?? []).map((product) => product.id));
+  const missing = productIds.filter((id) => !found.has(id));
+  if (missing.length > 0) {
+    // Produto não retornado pela Play: inativo, id errado ou app não instalado pela loja.
+    reportStoreError('fetchProducts', new Error(`Produtos não encontrados na Play: ${missing.join(', ')}`), { missing });
+  }
   const prices: Record<ProductId, string> = {};
 
   for (const product of products ?? []) {
@@ -93,6 +116,7 @@ export const purchaseProduct = async (productId: ProductId): Promise<PurchaseRes
   if (!(await ensureConnected())) {
     return 'error';
   }
+  const store = iap!;
 
   return new Promise<PurchaseResult>((resolve) => {
     let settled = false;
@@ -108,7 +132,7 @@ export const purchaseProduct = async (productId: ProductId): Promise<PurchaseRes
       resolve(result);
     };
 
-    const updatedSubscription = purchaseUpdatedListener((purchase) => {
+    const updatedSubscription = store.purchaseUpdatedListener((purchase) => {
       if (purchase.productId !== productId) {
         return;
       }
@@ -122,16 +146,29 @@ export const purchaseProduct = async (productId: ProductId): Promise<PurchaseRes
       acknowledgeIfNeeded(purchase)
         .then(() => settle('purchased'))
         // A compra existe mesmo se a confirmação falhar; ela é refeita na próxima abertura.
-        .catch(() => settle('purchased'));
+        .catch((error: unknown) => {
+          reportStoreError('finishTransaction', error, { productId });
+          settle('purchased');
+        });
     });
 
-    const errorSubscription = purchaseErrorListener((error) => {
-      settle(error.code === ErrorCode.UserCancelled ? 'cancelled' : 'error');
+    const errorSubscription = store.purchaseErrorListener((error) => {
+      if (error.code === store.ErrorCode.UserCancelled) {
+        settle('cancelled');
+        return;
+      }
+      reportStoreError('purchaseError', error, { productId });
+      settle('error');
     });
 
-    requestPurchase({
-      request: { google: { skus: [productId] } },
-      type: 'in-app',
-    }).catch(() => settle('error'));
+    store
+      .requestPurchase({
+        request: { google: { skus: [productId] } },
+        type: 'in-app',
+      })
+      .catch((error: unknown) => {
+        reportStoreError('requestPurchase', error, { productId });
+        settle('error');
+      });
   });
 };
