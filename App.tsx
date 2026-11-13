@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import * as Sentry from '@sentry/react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
@@ -35,10 +35,10 @@ import { ThemesScreen } from './src/screens/ThemesScreen';
 import { getScenePalette } from './src/theme/scenePalette';
 import { TOKENS } from './src/theme/tokens';
 import { AtmosphereScreen } from './src/components/layout/AtmosphereScreen';
+import { AndreSplash } from './src/components/splash/AndreSplash';
 
 void SplashScreen.preventAutoHideAsync();
 
-const SPLASH_MIN_DURATION_MS = 3200;
 const SPLASH_MAX_DURATION_MS = 8000;
 
 const DEFAULT_TEAM_SETTINGS: TeamGameSettings = {
@@ -54,7 +54,8 @@ export default function App() {
   const scene = useMemo(() => getScenePalette(mode), [mode]);
   const { runWithInterstitial } = useAdInterstitialAction();
   const [isAnimatedSplashVisible, setIsAnimatedSplashVisible] = useState(true);
-  const [isSplashMinTimeElapsed, setIsSplashMinTimeElapsed] = useState(false);
+  const [isAppContentVisible, setIsAppContentVisible] = useState(false);
+  const [isSplashHoldExpired, setIsSplashHoldExpired] = useState(false);
   const {
     isThemeLocked,
     isHydrated: arePurchasesHydrated,
@@ -193,24 +194,18 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const minTimer = setTimeout(() => {
-      setIsSplashMinTimeElapsed(true);
-    }, SPLASH_MIN_DURATION_MS);
     // Garante que o splash não trava se a consulta de compras demorar.
     const maxTimer = setTimeout(() => {
-      setIsAnimatedSplashVisible(false);
+      setIsSplashHoldExpired(true);
     }, SPLASH_MAX_DURATION_MS);
 
     return () => {
-      clearTimeout(minTimer);
       clearTimeout(maxTimer);
     };
   }, []);
 
-  // Splash só sai depois do tempo mínimo, das compras e das fontes carregadas.
-  if (isAnimatedSplashVisible && isSplashMinTimeElapsed && arePurchasesHydrated && areFontsReady) {
-    setIsAnimatedSplashVisible(false);
-  }
+  // Splash só sai depois da animação, das compras e das fontes carregadas.
+  const isSplashOnHold = !isSplashHoldExpired && !(arePurchasesHydrated && areFontsReady);
 
   const updateTeamSettings = (updates: Partial<TeamGameSettings>) => {
     setTeamSettings((current) => ({
@@ -254,19 +249,9 @@ export default function App() {
     });
   };
 
-  if (isAnimatedSplashVisible) {
-    return (
-      <View style={styles.splashContainer}>
-        <Image
-          source={require('./assets/logo-transparent.png')}
-          style={styles.splashFallbackLogo}
-          resizeMode="contain"
-        />
-      </View>
-    );
-  }
-
   return (
+    <View style={styles.root}>
+    {isAppContentVisible ? (
     <SafeAreaProvider>
       <AdMobBootstrap />
       <AtmosphereScreen
@@ -403,20 +388,23 @@ export default function App() {
       ) : null}
       </AtmosphereScreen>
     </SafeAreaProvider>
+    ) : null}
+    {isAnimatedSplashVisible ? (
+      <AndreSplash
+        appName="Palavra Proibida"
+        appIcon={require('./assets/logo-transparent.png')}
+        appBackground="#C4161C"
+        hold={isSplashOnHold}
+        onExitStart={() => setIsAppContentVisible(true)}
+        onFinish={() => setIsAnimatedSplashVisible(false)}
+      />
+    ) : null}
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  splashContainer: {
+  root: {
     flex: 1,
-    backgroundColor: '#000000e0',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  splashFallbackLogo: {
-    position: 'absolute',
-    width: 220,
-    height: 220,
-    opacity: 0.92,
   },
 });
