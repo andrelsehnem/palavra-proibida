@@ -17,7 +17,7 @@
           "latir",
           "osso",
           "pet",
-          "cao",
+          "cão",
           "coleira"
         ]
       },
@@ -28,11 +28,11 @@
           "grande",
           "cinza",
           "presa",
-          "africa"
+          "áfrica"
         ]
       },
       {
-        "mainWord": "tubarao",
+        "mainWord": "tubarão",
         "forbiddenWords": [
           "mar",
           "nadadeira",
@@ -48,7 +48,7 @@
           "ave",
           "olhos",
           "voar",
-          "sabia"
+          "sábia"
         ]
       },
       {
@@ -64,11 +64,11 @@
       {
         "mainWord": "girafa",
         "forbiddenWords": [
-          "pescoco",
+          "pescoço",
           "alta",
           "savana",
           "manchas",
-          "africa"
+          "áfrica"
         ]
       },
       {
@@ -94,9 +94,9 @@
       {
         "mainWord": "crocodilo",
         "forbiddenWords": [
-          "reptil",
+          "réptil",
           "rio",
-          "jacare",
+          "jacaré",
           "dentes",
           "escamas"
         ]
@@ -105,7 +105,7 @@
         "mainWord": "golfinho",
         "forbiddenWords": [
           "oceano",
-          "mamifero",
+          "mamífero",
           "saltar",
           "inteligente",
           "nadar"
@@ -122,7 +122,7 @@
         ]
       },
       {
-        "mainWord": "leao",
+        "mainWord": "leão",
         "forbiddenWords": [
           "selva",
           "juba",
@@ -148,13 +148,13 @@
           "hibernar",
           "grande",
           "patas",
-          "mamifero"
+          "mamífero"
         ]
       },
       {
         "mainWord": "macaco",
         "forbiddenWords": [
-          "arvore",
+          "árvore",
           "banana",
           "selva",
           "primata",
@@ -177,15 +177,15 @@
           "casco",
           "lenta",
           "mar",
-          "reptil",
+          "réptil",
           "nadar"
         ]
       },
       {
-        "mainWord": "aguia",
+        "mainWord": "águia",
         "forbiddenWords": [
           "ave",
-          "ceu",
+          "céu",
           "garras",
           "voar",
           "rapina"
@@ -195,7 +195,7 @@
         "mainWord": "cobra",
         "forbiddenWords": [
           "veneno",
-          "reptil",
+          "réptil",
           "rastejar",
           "morder",
           "escamas"
@@ -207,7 +207,7 @@
         "mainWord": "pinguim",
         "forbiddenWords": [
           "gelo",
-          "antartida",
+          "antártida",
           "ave",
           "smoking",
           "nadar"
@@ -216,7 +216,7 @@
       {
         "mainWord": "canguru",
         "forbiddenWords": [
-          "australia",
+          "austrália",
           "pular",
           "bolsa",
           "filhote",
@@ -228,36 +228,36 @@
         "forbiddenWords": [
           "deserto",
           "corcova",
-          "agua",
+          "água",
           "areia",
-          "arabia"
+          "arábia"
         ]
       },
       {
         "mainWord": "polvo",
         "forbiddenWords": [
-          "tentaculo",
+          "tentáculo",
           "tinta",
           "mar",
           "oito",
-          "bracos"
+          "braços"
         ]
       },
       {
-        "mainWord": "jacare",
+        "mainWord": "jacaré",
         "forbiddenWords": [
           "pantanal",
           "rio",
           "dentes",
-          "reptil",
+          "réptil",
           "boca"
         ]
       },
       {
-        "mainWord": "preguica",
+        "mainWord": "preguiça",
         "forbiddenWords": [
           "lenta",
-          "arvore",
+          "árvore",
           "dormir",
           "garras",
           "devagar"
@@ -269,14 +269,14 @@
           "bico",
           "colorido",
           "ave",
-          "amazonia",
+          "amazônia",
           "laranja"
         ]
       },
       {
-        "mainWord": "hipopotamo",
+        "mainWord": "hipopótamo",
         "forbiddenWords": [
-          "africa",
+          "áfrica",
           "rio",
           "gordo",
           "boca",
@@ -287,7 +287,7 @@
         "mainWord": "rinoceronte",
         "forbiddenWords": [
           "chifre",
-          "africa",
+          "áfrica",
           "pele",
           "grosso",
           "savana"
@@ -329,16 +329,16 @@
           "formigueiro",
           "pequena",
           "trabalhadora",
-          "acucar",
+          "açúcar",
           "fila"
         ]
       },
       {
-        "mainWord": "camaleao",
+        "mainWord": "camaleão",
         "forbiddenWords": [
           "cor",
-          "lingua",
-          "reptil",
+          "língua",
+          "réptil",
           "disfarce",
           "mudar"
         ]
@@ -367,7 +367,7 @@
         "mainWord": "esquilo",
         "forbiddenWords": [
           "nozes",
-          "arvore",
+          "árvore",
           "cauda",
           "roedor",
           "bolota"
@@ -376,7 +376,7 @@
       {
         "mainWord": "ovelha",
         "forbiddenWords": [
-          "la",
+          "lã",
           "fazenda",
           "balir",
           "tosquia",
@@ -429,7 +429,7 @@
           "oceano",
           "enorme",
           "jubarte",
-          "mamifero",
+          "mamífero",
           "jato"
         ]
       },
@@ -449,7 +449,7 @@
           "mar",
           "vermelha",
           "garras",
-          "crustaceo",
+          "crustáceo",
           "caro"
         ]
       },
@@ -458,7 +458,7 @@
         "forbiddenWords": [
           "ave",
           "correr",
-          "pescoco",
+          "pescoço",
           "areia",
           "ovo"
         ]
@@ -469,12 +469,12 @@
           "listras",
           "laranja",
           "felino",
-          "asia",
+          "ásia",
           "bengala"
         ]
       },
       {
-        "mainWord": "onca",
+        "mainWord": "onça",
         "forbiddenWords": [
           "pintada",
           "felino",
@@ -494,10 +494,10 @@
         ]
       },
       {
-        "mainWord": "tamandua",
+        "mainWord": "tamanduá",
         "forbiddenWords": [
           "formiga",
-          "lingua",
+          "língua",
           "bandeira",
           "focinho",
           "cerrado"
@@ -506,12 +506,12 @@
     ],
     "trabalho": [
       {
-        "mainWord": "medico",
+        "mainWord": "médico",
         "forbiddenWords": [
           "hospital",
           "paciente",
           "consulta",
-          "saude",
+          "saúde",
           "doutor"
         ]
       },
@@ -528,7 +528,7 @@
       {
         "mainWord": "programador",
         "forbiddenWords": [
-          "codigo",
+          "código",
           "software",
           "computador",
           "bug",
@@ -548,7 +548,7 @@
       {
         "mainWord": "piloto",
         "forbiddenWords": [
-          "aviao",
+          "avião",
           "voo",
           "cockpit",
           "aeroporto",
@@ -559,7 +559,7 @@
         "mainWord": "bombeiro",
         "forbiddenWords": [
           "fogo",
-          "incendio",
+          "incêndio",
           "mangueira",
           "resgate",
           "sirene"
@@ -569,10 +569,10 @@
         "mainWord": "engenheiro",
         "forbiddenWords": [
           "obra",
-          "calculo",
+          "cálculo",
           "projeto",
-          "construcao",
-          "tecnico"
+          "construção",
+          "técnico"
         ]
       },
       {
@@ -589,7 +589,7 @@
         "mainWord": "arquiteto",
         "forbiddenWords": [
           "planta",
-          "predio",
+          "prédio",
           "design",
           "projeto",
           "urbanismo"
@@ -598,18 +598,18 @@
       {
         "mainWord": "jornalista",
         "forbiddenWords": [
-          "noticia",
+          "notícia",
           "reportagem",
           "entrevista",
           "imprensa",
-          "camera"
+          "câmera"
         ]
       },
       {
         "mainWord": "dentista",
         "forbiddenWords": [
           "dente",
-          "consultorio",
+          "consultório",
           "sorriso",
           "canal",
           "boca"
@@ -620,7 +620,7 @@
         "forbiddenWords": [
           "carro",
           "volante",
-          "transito",
+          "trânsito",
           "corrida",
           "passageiro"
         ]
@@ -641,8 +641,8 @@
           "hospital",
           "paciente",
           "cuidado",
-          "plantao",
-          "medicacao"
+          "plantão",
+          "medicação"
         ]
       },
       {
@@ -652,7 +652,7 @@
           "empresa",
           "planilha",
           "financeiro",
-          "balanco"
+          "balanço"
         ]
       },
       {
@@ -660,8 +660,8 @@
         "forbiddenWords": [
           "delegacia",
           "farda",
-          "seguranca",
-          "prisao",
+          "segurança",
+          "prisão",
           "viatura"
         ]
       },
@@ -678,7 +678,7 @@
       {
         "mainWord": "cientista",
         "forbiddenWords": [
-          "laboratorio",
+          "laboratório",
           "pesquisa",
           "experimento",
           "teoria",
@@ -686,9 +686,9 @@
         ]
       },
       {
-        "mainWord": "fotografo",
+        "mainWord": "fotógrafo",
         "forbiddenWords": [
-          "camera",
+          "câmera",
           "lente",
           "ensaio",
           "flash",
@@ -708,19 +708,19 @@
     ],
     "profissoes_plus": [
       {
-        "mainWord": "veterinario",
+        "mainWord": "veterinário",
         "forbiddenWords": [
           "animal",
           "pet",
           "cachorro",
-          "clinica",
+          "clínica",
           "vacina"
         ]
       },
       {
         "mainWord": "padeiro",
         "forbiddenWords": [
-          "pao",
+          "pão",
           "forno",
           "padaria",
           "farinha",
@@ -751,7 +751,7 @@
         "mainWord": "encanador",
         "forbiddenWords": [
           "cano",
-          "agua",
+          "água",
           "vazamento",
           "pia",
           "banheiro"
@@ -764,7 +764,7 @@
           "obra",
           "cimento",
           "parede",
-          "construcao"
+          "construção"
         ]
       },
       {
@@ -772,7 +772,7 @@
         "forbiddenWords": [
           "tribunal",
           "martelo",
-          "sentenca",
+          "sentença",
           "lei",
           "toga"
         ]
@@ -780,7 +780,7 @@
       {
         "mainWord": "astronauta",
         "forbiddenWords": [
-          "espaco",
+          "espaço",
           "foguete",
           "lua",
           "nasa",
@@ -793,12 +793,12 @@
           "cabelo",
           "corte",
           "tesoura",
-          "salao",
+          "salão",
           "escova"
         ]
       },
       {
-        "mainWord": "garcom",
+        "mainWord": "garçom",
         "forbiddenWords": [
           "restaurante",
           "bandeja",
@@ -828,7 +828,7 @@
         ]
       },
       {
-        "mainWord": "mecanico",
+        "mainWord": "mecânico",
         "forbiddenWords": [
           "carro",
           "oficina",
@@ -838,22 +838,22 @@
         ]
       },
       {
-        "mainWord": "psicologo",
+        "mainWord": "psicólogo",
         "forbiddenWords": [
           "mente",
           "terapia",
           "consulta",
           "sentimento",
-          "divan"
+          "divã"
         ]
       },
       {
-        "mainWord": "farmaceutico",
+        "mainWord": "farmacêutico",
         "forbiddenWords": [
-          "remedio",
-          "farmacia",
+          "remédio",
+          "farmácia",
           "receita",
-          "balcao",
+          "balcão",
           "comprimido"
         ]
       },
@@ -861,7 +861,7 @@
         "mainWord": "marceneiro",
         "forbiddenWords": [
           "madeira",
-          "movel",
+          "móvel",
           "serra",
           "plaina",
           "mesa"
@@ -874,25 +874,25 @@
           "agulha",
           "roupa",
           "tecido",
-          "maquina"
+          "máquina"
         ]
       },
       {
-        "mainWord": "bibliotecario",
+        "mainWord": "bibliotecário",
         "forbiddenWords": [
           "livro",
           "biblioteca",
-          "silencio",
-          "emprestimo",
+          "silêncio",
+          "empréstimo",
           "estante"
         ]
       },
       {
-        "mainWord": "arqueologo",
+        "mainWord": "arqueólogo",
         "forbiddenWords": [
-          "fossil",
+          "fóssil",
           "escavar",
-          "ruina",
+          "ruína",
           "antigo",
           "dinossauro"
         ]
@@ -910,7 +910,7 @@
       {
         "mainWord": "detetive",
         "forbiddenWords": [
-          "misterio",
+          "mistério",
           "pista",
           "crime",
           "investigar",
@@ -918,7 +918,7 @@
         ]
       },
       {
-        "mainWord": "palhaco",
+        "mainWord": "palhaço",
         "forbiddenWords": [
           "circo",
           "nariz",
@@ -933,7 +933,7 @@
           "cozinha",
           "restaurante",
           "prato",
-          "chapeu",
+          "chapéu",
           "receita"
         ]
       },
@@ -954,16 +954,16 @@
           "passageiro",
           "corrida",
           "amarelo",
-          "taximetro"
+          "taxímetro"
         ]
       },
       {
         "mainWord": "comissario de bordo",
         "forbiddenWords": [
-          "aviao",
+          "avião",
           "voo",
           "passageiro",
-          "aeromoca",
+          "aeromoça",
           "cinto"
         ]
       },
@@ -973,14 +973,14 @@
           "voz",
           "desenho",
           "filme",
-          "estudio",
-          "traducao"
+          "estúdio",
+          "tradução"
         ]
       },
       {
         "mainWord": "youtuber",
         "forbiddenWords": [
-          "video",
+          "vídeo",
           "canal",
           "inscrito",
           "internet",
@@ -998,7 +998,7 @@
         ]
       },
       {
-        "mainWord": "guia turistico",
+        "mainWord": "guia turístico",
         "forbiddenWords": [
           "viagem",
           "turista",
@@ -1020,7 +1020,7 @@
         ]
       },
       {
-        "mainWord": "guarda chuva",
+        "mainWord": "guarda-chuva",
         "forbiddenWords": [
           "chuva",
           "molhar",
@@ -1035,12 +1035,12 @@
           "cortar",
           "papel",
           "duas",
-          "lamina",
-          "escritorio"
+          "lâmina",
+          "escritório"
         ]
       },
       {
-        "mainWord": "relogio",
+        "mainWord": "relógio",
         "forbiddenWords": [
           "hora",
           "pulso",
@@ -1073,14 +1073,14 @@
         "mainWord": "mochila",
         "forbiddenWords": [
           "costas",
-          "ziper",
+          "zíper",
           "escola",
           "bolso",
-          "alca"
+          "alça"
         ]
       },
       {
-        "mainWord": "lampada",
+        "mainWord": "lâmpada",
         "forbiddenWords": [
           "luz",
           "energia",
@@ -1093,7 +1093,7 @@
         "mainWord": "panela",
         "forbiddenWords": [
           "cozinhar",
-          "fogao",
+          "fogão",
           "tampa",
           "comida",
           "metal"
@@ -1110,11 +1110,11 @@
         ]
       },
       {
-        "mainWord": "oculos",
+        "mainWord": "óculos",
         "forbiddenWords": [
-          "visao",
+          "visão",
           "lente",
-          "armao",
+          "armação",
           "grau",
           "enxergar"
         ]
@@ -1122,11 +1122,11 @@
       {
         "mainWord": "garrafa",
         "forbiddenWords": [
-          "agua",
+          "água",
           "beber",
-          "plastico",
+          "plástico",
           "tampa",
-          "liquido"
+          "líquido"
         ]
       },
       {
@@ -1135,7 +1135,7 @@
           "folha",
           "escrever",
           "escola",
-          "anotacao",
+          "anotação",
           "espiral"
         ]
       },
@@ -1194,8 +1194,8 @@
         "forbiddenWords": [
           "beber",
           "vidro",
-          "agua",
-          "liquido",
+          "água",
+          "líquido",
           "cozinha"
         ]
       },
@@ -1204,7 +1204,7 @@
         "forbiddenWords": [
           "cama",
           "sono",
-          "cabeca",
+          "cabeça",
           "dormir",
           "macio"
         ]
@@ -1234,13 +1234,13 @@
         "forbiddenWords": [
           "vento",
           "calor",
-          "helice",
+          "hélice",
           "ligar",
           "ar"
         ]
       },
       {
-        "mainWord": "televisao",
+        "mainWord": "televisão",
         "forbiddenWords": [
           "canal",
           "controle",
@@ -1252,25 +1252,25 @@
       {
         "mainWord": "controle remoto",
         "forbiddenWords": [
-          "televisao",
-          "botao",
+          "televisão",
+          "botão",
           "pilha",
           "canal",
-          "distancia"
+          "distância"
         ]
       },
       {
-        "mainWord": "fogao",
+        "mainWord": "fogão",
         "forbiddenWords": [
           "cozinhar",
-          "gas",
+          "gás",
           "boca",
           "panela",
           "fogo"
         ]
       },
       {
-        "mainWord": "microondas",
+        "mainWord": "micro-ondas",
         "forbiddenWords": [
           "aquecer",
           "comida",
@@ -1286,14 +1286,14 @@
           "limpeza",
           "sugar",
           "casa",
-          "chao"
+          "chão"
         ]
       },
       {
         "mainWord": "vassoura",
         "forbiddenWords": [
           "varrer",
-          "chao",
+          "chão",
           "limpeza",
           "cabo",
           "sujeira"
@@ -1302,10 +1302,10 @@
       {
         "mainWord": "rodo",
         "forbiddenWords": [
-          "agua",
+          "água",
           "limpeza",
           "puxar",
-          "chao",
+          "chão",
           "secar"
         ]
       },
@@ -1375,17 +1375,17 @@
           "pedal",
           "roda",
           "ciclista",
-          "guidao",
+          "guidão",
           "corrente"
         ]
       },
       {
         "mainWord": "capacete",
         "forbiddenWords": [
-          "cabeca",
-          "seguranca",
+          "cabeça",
+          "segurança",
           "moto",
-          "protecao",
+          "proteção",
           "usar"
         ]
       },
@@ -1403,7 +1403,7 @@
         "mainWord": "elevador",
         "forbiddenWords": [
           "andar",
-          "predio",
+          "prédio",
           "subir",
           "descer",
           "porta"
@@ -1442,11 +1442,11 @@
       {
         "mainWord": "tapete",
         "forbiddenWords": [
-          "chao",
+          "chão",
           "sala",
           "tecido",
           "pisar",
-          "decoracao"
+          "decoração"
         ]
       },
       {
@@ -1456,15 +1456,15 @@
           "imagem",
           "arte",
           "moldura",
-          "decoracao"
+          "decoração"
         ]
       },
       {
         "mainWord": "livro",
         "forbiddenWords": [
           "ler",
-          "pagina",
-          "historia",
+          "página",
+          "história",
           "autor",
           "biblioteca"
         ]
@@ -1473,14 +1473,14 @@
         "mainWord": "borracha",
         "forbiddenWords": [
           "apagar",
-          "lapis",
+          "lápis",
           "escola",
           "erro",
           "papel"
         ]
       },
       {
-        "mainWord": "lapis",
+        "mainWord": "lápis",
         "forbiddenWords": [
           "escrever",
           "grafite",
@@ -1492,7 +1492,7 @@
       {
         "mainWord": "apontador",
         "forbiddenWords": [
-          "lapis",
+          "lápis",
           "grafite",
           "afiar",
           "escola",
@@ -1503,7 +1503,7 @@
         "mainWord": "calculadora",
         "forbiddenWords": [
           "conta",
-          "numero",
+          "número",
           "somar",
           "tecla",
           "resultado"
@@ -1525,7 +1525,7 @@
           "tela",
           "computador",
           "imagem",
-          "video",
+          "vídeo",
           "display"
         ]
       },
@@ -1542,7 +1542,7 @@
       {
         "mainWord": "fone de ouvido",
         "forbiddenWords": [
-          "musica",
+          "música",
           "ouvido",
           "som",
           "escutar",
@@ -1552,18 +1552,18 @@
       {
         "mainWord": "caixa de som",
         "forbiddenWords": [
-          "musica",
-          "audio",
+          "música",
+          "áudio",
           "alto",
           "som",
           "volume"
         ]
       },
       {
-        "mainWord": "violao",
+        "mainWord": "violão",
         "forbiddenWords": [
           "corda",
-          "musica",
+          "música",
           "tocar",
           "instrumento",
           "acorde"
@@ -1575,12 +1575,12 @@
           "voz",
           "som",
           "cantar",
-          "audio",
+          "áudio",
           "gravar"
         ]
       },
       {
-        "mainWord": "camera",
+        "mainWord": "câmera",
         "forbiddenWords": [
           "foto",
           "imagem",
@@ -1614,7 +1614,7 @@
         "forbiddenWords": [
           "fogo",
           "acender",
-          "gas",
+          "gás",
           "chama",
           "cigarro"
         ]
@@ -1624,7 +1624,7 @@
         "forbiddenWords": [
           "dinheiro",
           "senha",
-          "seguranca",
+          "segurança",
           "guardar",
           "metal"
         ]
@@ -1635,7 +1635,7 @@
           "dinheiro",
           "documento",
           "bolso",
-          "cartao",
+          "cartão",
           "guardar"
         ]
       },
@@ -1656,24 +1656,24 @@
           "joia",
           "corrente",
           "usar",
-          "acessorio"
+          "acessório"
         ]
       },
       {
-        "mainWord": "guarda roupa",
+        "mainWord": "guarda-roupa",
         "forbiddenWords": [
           "roupa",
           "porta",
           "quarto",
           "cabide",
-          "armario"
+          "armário"
         ]
       },
       {
         "mainWord": "cabide",
         "forbiddenWords": [
           "roupa",
-          "armario",
+          "armário",
           "pendurar",
           "gancho",
           "quarto"
@@ -1685,7 +1685,7 @@
           "luz",
           "quarto",
           "mesa",
-          "lampada",
+          "lâmpada",
           "iluminar"
         ]
       },
@@ -1696,11 +1696,11 @@
           "alarme",
           "hora",
           "sono",
-          "manha"
+          "manhã"
         ]
       },
       {
-        "mainWord": "termometro",
+        "mainWord": "termômetro",
         "forbiddenWords": [
           "temperatura",
           "febre",
@@ -1728,7 +1728,7 @@
           "mar",
           "sol",
           "onda",
-          "verao"
+          "verão"
         ]
       },
       {
@@ -1736,25 +1736,25 @@
         "forbiddenWords": [
           "amigo",
           "parceria",
-          "confianca",
+          "confiança",
           "companheiro",
           "lealdade"
         ]
       },
       {
-        "mainWord": "aniversario",
+        "mainWord": "aniversário",
         "forbiddenWords": [
           "festa",
           "bolo",
           "vela",
           "presente",
-          "parabens"
+          "parabéns"
         ]
       },
       {
         "mainWord": "cozinha",
         "forbiddenWords": [
-          "fogao",
+          "fogão",
           "panela",
           "comida",
           "receita",
@@ -1794,17 +1794,17 @@
       {
         "mainWord": "hospital",
         "forbiddenWords": [
-          "medico",
-          "emergencia",
+          "médico",
+          "emergência",
           "enfermeiro",
-          "doenca",
+          "doença",
           "leito"
         ]
       },
       {
         "mainWord": "futuro",
         "forbiddenWords": [
-          "amanha",
+          "amanhã",
           "tempo",
           "plano",
           "destino",
@@ -1812,7 +1812,7 @@
         ]
       },
       {
-        "mainWord": "musica",
+        "mainWord": "música",
         "forbiddenWords": [
           "som",
           "ritmo",
@@ -1827,15 +1827,15 @@
           "mala",
           "destino",
           "passeio",
-          "aviao",
+          "avião",
           "turismo"
         ]
       },
       {
-        "mainWord": "familia",
+        "mainWord": "família",
         "forbiddenWords": [
           "pai",
-          "mae",
+          "mãe",
           "filhos",
           "casa",
           "parentes"
@@ -1845,16 +1845,16 @@
         "mainWord": "tempo",
         "forbiddenWords": [
           "horas",
-          "relampago",
+          "relâmpago",
           "passar",
-          "relogio",
+          "relógio",
           "minuto"
         ]
       },
       {
         "mainWord": "chuva",
         "forbiddenWords": [
-          "agua",
+          "água",
           "nuvem",
           "molhar",
           "tempestade",
@@ -1875,8 +1875,8 @@
         "mainWord": "cidade",
         "forbiddenWords": [
           "rua",
-          "predio",
-          "transito",
+          "prédio",
+          "trânsito",
           "urbano",
           "bairro"
         ]
@@ -1884,7 +1884,7 @@
       {
         "mainWord": "parque",
         "forbiddenWords": [
-          "arvores",
+          "árvores",
           "lazer",
           "brincar",
           "grama",
@@ -1914,10 +1914,10 @@
       {
         "mainWord": "saudade",
         "forbiddenWords": [
-          "distancia",
+          "distância",
           "longe",
           "falta",
-          "memoria",
+          "memória",
           "sentir"
         ]
       },
@@ -1926,7 +1926,7 @@
         "forbiddenWords": [
           "susto",
           "escuro",
-          "panico",
+          "pânico",
           "terror",
           "coragem"
         ]
@@ -1938,7 +1938,7 @@
           "noite",
           "pesadelo",
           "desejo",
-          "imaginacao"
+          "imaginação"
         ]
       },
       {
@@ -1948,14 +1948,14 @@
           "gritar",
           "nervoso",
           "irritado",
-          "emocao"
+          "emoção"
         ]
       },
       {
-        "mainWord": "ciume",
+        "mainWord": "ciúme",
         "forbiddenWords": [
           "inveja",
-          "desconfianca",
+          "desconfiança",
           "possessivo",
           "relacionamento",
           "amor"
@@ -1978,16 +1978,16 @@
           "triste",
           "dor",
           "sofrimento",
-          "lagrima"
+          "lágrima"
         ]
       },
       {
         "mainWord": "vergonha",
         "forbiddenWords": [
           "envergonhado",
-          "situacao",
+          "situação",
           "constrangimento",
-          "timido",
+          "tímido",
           "rubor"
         ]
       },
@@ -1998,11 +1998,11 @@
           "filho",
           "vaidade",
           "merecimento",
-          "arrogancia"
+          "arrogância"
         ]
       },
       {
-        "mainWord": "esperanca",
+        "mainWord": "esperança",
         "forbiddenWords": [
           "futuro",
           "fé",
@@ -2012,11 +2012,11 @@
         ]
       },
       {
-        "mainWord": "solidao",
+        "mainWord": "solidão",
         "forbiddenWords": [
           "sozinho",
           "isolamento",
-          "silencio",
+          "silêncio",
           "abandono",
           "vazio"
         ]
@@ -2025,10 +2025,10 @@
         "mainWord": "ansiedade",
         "forbiddenWords": [
           "nervoso",
-          "preocupacao",
+          "preocupação",
           "aperto",
           "sufoco",
-          "tensao"
+          "tensão"
         ]
       },
       {
@@ -2042,13 +2042,13 @@
         ]
       },
       {
-        "mainWord": "odio",
+        "mainWord": "ódio",
         "forbiddenWords": [
           "rancor",
           "raiva",
           "sentimento",
           "inimigo",
-          "aversao"
+          "aversão"
         ]
       },
       {
@@ -2057,7 +2057,7 @@
           "tranquilo",
           "calma",
           "guerra",
-          "silencio",
+          "silêncio",
           "harmonia"
         ]
       },
@@ -2067,7 +2067,7 @@
           "livre",
           "preso",
           "escolha",
-          "independencia",
+          "independência",
           "asas"
         ]
       },
@@ -2087,12 +2087,12 @@
           "guardar",
           "revelar",
           "esconder",
-          "silencio",
+          "silêncio",
           "contar"
         ]
       },
       {
-        "mainWord": "traicao",
+        "mainWord": "traição",
         "forbiddenWords": [
           "trair",
           "deslealdade",
@@ -2102,12 +2102,12 @@
         ]
       },
       {
-        "mainWord": "perdao",
+        "mainWord": "perdão",
         "forbiddenWords": [
           "desculpa",
           "erro",
-          "reconciliacao",
-          "magoa",
+          "reconciliação",
+          "mágoa",
           "superar"
         ]
       },
@@ -2115,9 +2115,9 @@
         "mainWord": "natal",
         "forbiddenWords": [
           "dezembro",
-          "familia",
+          "família",
           "presente",
-          "arvore",
+          "árvore",
           "papai noel"
         ]
       },
@@ -2138,16 +2138,16 @@
           "folga",
           "dia",
           "trabalho",
-          "calendario"
+          "calendário"
         ]
       },
       {
-        "mainWord": "ferias",
+        "mainWord": "férias",
         "forbiddenWords": [
           "descanso",
           "viagem",
           "folga",
-          "verao",
+          "verão",
           "escola"
         ]
       },
@@ -2156,17 +2156,17 @@
         "forbiddenWords": [
           "noiva",
           "altar",
-          "uniao",
+          "união",
           "festa",
           "anel"
         ]
       },
       {
-        "mainWord": "divorcio",
+        "mainWord": "divórcio",
         "forbiddenWords": [
-          "separacao",
+          "separação",
           "casal",
-          "termino",
+          "término",
           "advogado",
           "partilha"
         ]
@@ -2174,10 +2174,10 @@
       {
         "mainWord": "gravidez",
         "forbiddenWords": [
-          "bebe",
+          "bebê",
           "barriga",
-          "mae",
-          "gestacao",
+          "mãe",
+          "gestação",
           "parto"
         ]
       },
@@ -2186,7 +2186,7 @@
         "forbiddenWords": [
           "descanso",
           "velhice",
-          "pensao",
+          "pensão",
           "trabalho",
           "INSS"
         ]
@@ -2197,7 +2197,7 @@
           "diploma",
           "beca",
           "faculdade",
-          "conclusao",
+          "conclusão",
           "festa"
         ]
       },
@@ -2206,48 +2206,48 @@
         "forbiddenWords": [
           "prova",
           "universidade",
-          "concorrencia",
+          "concorrência",
           "estudar",
           "nota"
         ]
       },
       {
-        "mainWord": "eleicao",
+        "mainWord": "eleição",
         "forbiddenWords": [
           "voto",
           "candidato",
           "urna",
           "partido",
-          "politica"
+          "política"
         ]
       },
       {
         "mainWord": "greve",
         "forbiddenWords": [
           "trabalhador",
-          "paralisacao",
+          "paralisação",
           "protesto",
-          "salario",
+          "salário",
           "sindicato"
         ]
       },
       {
         "mainWord": "pandemia",
         "forbiddenWords": [
-          "virus",
-          "doenca",
+          "covid",
+          "doença",
           "isolamento",
           "vacina",
-          "mascara"
+          "máscara"
         ]
       },
       {
         "mainWord": "guerra",
         "forbiddenWords": [
           "conflito",
-          "pais",
+          "país",
           "morte",
-          "exercito",
+          "exército",
           "bombas"
         ]
       },
@@ -2258,13 +2258,13 @@
           "dificuldade",
           "problema",
           "desemprego",
-          "solucao"
+          "solução"
         ]
       },
       {
-        "mainWord": "inflacao",
+        "mainWord": "inflação",
         "forbiddenWords": [
-          "preco",
+          "preço",
           "dinheiro",
           "economia",
           "caro",
@@ -2275,20 +2275,20 @@
         "mainWord": "desemprego",
         "forbiddenWords": [
           "trabalho",
-          "demissao",
+          "demissão",
           "vaga",
-          "salario",
+          "salário",
           "crise"
         ]
       },
       {
-        "mainWord": "reuniao",
+        "mainWord": "reunião",
         "forbiddenWords": [
           "trabalho",
           "pauta",
           "empresa",
-          "discussao",
-          "apresentacao"
+          "discussão",
+          "apresentação"
         ]
       },
       {
@@ -2302,7 +2302,7 @@
         ]
       },
       {
-        "mainWord": "transito",
+        "mainWord": "trânsito",
         "forbiddenWords": [
           "engarrafamento",
           "carro",
@@ -2315,8 +2315,8 @@
         "mainWord": "academia",
         "forbiddenWords": [
           "treino",
-          "exercicio",
-          "musculo",
+          "exercício",
+          "músculo",
           "suor",
           "disciplina"
         ]
@@ -2326,53 +2326,53 @@
         "forbiddenWords": [
           "emagrecer",
           "comida",
-          "restricao",
+          "restrição",
           "peso",
-          "saude"
+          "saúde"
         ]
       },
       {
         "mainWord": "ressaca",
         "forbiddenWords": [
           "bebida",
-          "alcool",
+          "álcool",
           "dor",
-          "cabeca",
+          "cabeça",
           "festa"
         ]
       },
       {
-        "mainWord": "preguica",
+        "mainWord": "preguiça",
         "forbiddenWords": [
           "descanso",
           "cama",
           "trabalho",
           "moleza",
-          "preguicoso"
+          "preguiçoso"
         ]
       },
       {
-        "mainWord": "habito",
+        "mainWord": "hábito",
         "forbiddenWords": [
           "rotina",
           "costume",
-          "repeticao",
+          "repetição",
           "comportamento",
-          "diario"
+          "diário"
         ]
       },
       {
-        "mainWord": "infancia",
+        "mainWord": "infância",
         "forbiddenWords": [
-          "crianca",
+          "criança",
           "brincar",
           "escola",
-          "inocencia",
+          "inocência",
           "passado"
         ]
       },
       {
-        "mainWord": "adolescencia",
+        "mainWord": "adolescência",
         "forbiddenWords": [
           "jovem",
           "puberdade",
@@ -2386,7 +2386,7 @@
         "forbiddenWords": [
           "idoso",
           "rugas",
-          "experiencia",
+          "experiência",
           "aposentadoria",
           "idade"
         ]
@@ -2397,8 +2397,8 @@
           "conquista",
           "fama",
           "dinheiro",
-          "esforco",
-          "vitoria"
+          "esforço",
+          "vitória"
         ]
       },
       {
@@ -2417,10 +2417,10 @@
         "mainWord": "matrix",
         "forbiddenWords": [
           "neo",
-          "simulacao",
+          "simulação",
           "pill",
-          "maquina",
-          "acao"
+          "máquina",
+          "ação"
         ]
       },
       {
@@ -2439,7 +2439,7 @@
           "ogro",
           "burro",
           "princesa",
-          "pantano",
+          "pântano",
           "verde"
         ]
       },
@@ -2470,13 +2470,13 @@
           "azul",
           "navi",
           "floresta",
-          "ficcao"
+          "ficção"
         ]
       },
       {
         "mainWord": "interestelar",
         "forbiddenWords": [
-          "espaco",
+          "espaço",
           "nasa",
           "buraco",
           "tempo",
@@ -2489,7 +2489,7 @@
           "brinquedo",
           "woody",
           "buzz",
-          "animacao",
+          "animação",
           "andy"
         ]
       },
@@ -2498,7 +2498,7 @@
         "forbiddenWords": [
           "gotham",
           "morcego",
-          "heroi",
+          "herói",
           "coringa",
           "wayne"
         ]
@@ -2509,7 +2509,7 @@
           "boxe",
           "luta",
           "treino",
-          "campeao",
+          "campeão",
           "ringue"
         ]
       },
@@ -2517,10 +2517,10 @@
         "mainWord": "coco",
         "forbiddenWords": [
           "pixar",
-          "musica",
-          "familia",
-          "mexico",
-          "violao"
+          "música",
+          "família",
+          "méxico",
+          "violão"
         ]
       },
       {
@@ -2530,7 +2530,7 @@
           "gigante",
           "cidade",
           "destruir",
-          "japao"
+          "japão"
         ]
       },
       {
@@ -2548,7 +2548,7 @@
         "forbiddenWords": [
           "roma",
           "arena",
-          "imperio",
+          "império",
           "luta",
           "espada"
         ]
@@ -2556,7 +2556,7 @@
       {
         "mainWord": "alien",
         "forbiddenWords": [
-          "espaco",
+          "espaço",
           "nave",
           "xenomorfo",
           "terror",
@@ -2566,11 +2566,11 @@
       {
         "mainWord": "predador",
         "forbiddenWords": [
-          "cacador",
+          "caçador",
           "selva",
-          "invisivel",
+          "invisível",
           "extraterrestre",
-          "acao"
+          "ação"
         ]
       },
       {
@@ -2580,13 +2580,13 @@
           "arrakis",
           "especiaria",
           "fremen",
-          "ficcao"
+          "ficção"
         ]
       },
       {
         "mainWord": "inside out",
         "forbiddenWords": [
-          "emocao",
+          "emoção",
           "pixar",
           "mente",
           "alegria",
@@ -2608,9 +2608,9 @@
         "forbiddenWords": [
           "deserto",
           "carros",
-          "pos apocalipse",
+          "pós-apocalipse",
           "furiosa",
-          "acao"
+          "ação"
         ]
       }
     ],
@@ -2969,7 +2969,7 @@
         "mainWord": "Sandy",
         "forbiddenWords": [
           "dupla",
-          "Junior",
+          "Júnior",
           "cantora",
           "infância",
           "família"

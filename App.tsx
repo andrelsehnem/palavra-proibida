@@ -173,7 +173,7 @@ export default function App() {
         });
 
         setAllWords([]);
-        setLoadError('Nao foi possivel carregar as palavras.');
+        setLoadError('Não foi possível carregar as palavras.');
       } finally {
         if (isMounted) {
           setIsLoading(false);
